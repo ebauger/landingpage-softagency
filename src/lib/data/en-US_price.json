@@ -1,0 +1,22 @@
+{
+	"BCP47": "en-US",
+	"currency": "USD",
+	"monthly": {
+		"price": 4995.0,
+		"addon": {
+			"price": 3995.0
+		}
+	},
+	"quarterly": {
+		"price": 19780.0,
+		"addon": {
+			"price": 3995.0
+		}
+	},
+	"yearly": {
+		"price": 47940.0,
+		"addon": {
+			"price": 3995.0
+		}
+	}
+}

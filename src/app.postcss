@@ -1,0 +1,70 @@
+/*place global styles here */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+	--theme-font-family-base: 'Inter', sans-serif;
+	--theme-font-family-heading: 'Inter', sans-serif;
+} */
+html,
+body {
+	@apply h-full;
+	@apply font-token;
+}
+/* p,
+div,
+span {
+	@apply font-token;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+	@apply font-heading-token;
+	text-wrap: balance;
+}
+h1 {
+	@apply text-center text-7xl;
+}
+h2 {
+	@apply text-center text-5xl;
+}
+h3 {
+	@apply inline pt-12 text-center text-3xl font-thin;
+}
+h4 {
+	@apply pb-4 text-2xl;
+}
+h5 {
+	@apply text-base;
+}
+h6 {
+	@apply text-lg;
+}
+h7 {
+	@apply text-lg font-bold;
+}
+
+p {
+	@apply text-xl;
+}
+span {
+	@apply text-black;
+}
+ul {
+	@apply list-inside list-disc;
+}
+section {
+	@apply flex flex-col items-center;
+	@apply px-2 md:px-12 md:py-2 lg:px-28;
+	@apply border;
+}
+
+footer {
+	background-image: url('noise-ref.png'), linear-gradient(#000, #000);
+
+	@apply px-48 py-48;
+	font-family: 'Anonymous Pro', monospace;
+}

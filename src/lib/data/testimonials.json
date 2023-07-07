@@ -1,0 +1,20 @@
+[
+	{
+		"fullName": "He offer an exceptional solution to manage our products sold at the store",
+		"quote": "I'm a quote",
+		"imgURL": "/testimonials/riel.jpeg"
+	},
+	{
+		"fullName": "Serge L'Heureux",
+        "title": "ex Circle K",
+		"quote": "I am satisfied with his expertise during the transition to our new platform and I recommend
+				him.",
+		"imgURL": "/testimonials/serge.jpeg"
+	},
+	{
+		"fullName": "Dave Cameron",
+        "title": "Business Development Advisor",
+		"quote": "Following the meeting, he enhanced everything with an email including the next steps and a relevant video.",
+		"imgURL": "/testimonials/dave.jpeg"
+	}
+]
