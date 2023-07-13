@@ -1,8 +1,39 @@
 <script lang="ts">
+	import { getContext, onDestroy, onMount, setContext } from 'svelte';
 	import { browser } from '$app/environment';
 	import P5Canvas from '$lib/P5Canvas.svelte';
+	import { get } from 'svelte/store';
+	let sketch: void; // sketch is a function
 
-	let sketch = null;
+	let parentElement: HTMLElement;
+	let parentWidth, parentHeight: number;
+
+	const handleResize = () => {
+		parentWidth = parentElement.clientWidth;
+		parentHeight = parentElement.clientHeight;
+	};
+
+	onMount(() => {
+		console.log('init mounted');
+		if (browser) {
+			console.log('mounted');
+			parentElement = getContext('parent');
+			console.log('getContext', parentElement);
+			parentWidth = parentElement.clientHeight;
+			parentHeight = parentElement.clientHeight;
+			console.log(parentElement);
+			window.addEventListener('resize', handleResize);
+		}
+	});
+
+	onDestroy(() => {
+		console.log('init unmounted');
+		if (browser) {
+			console.log('unmounted');
+			window.removeEventListener('resize', handleResize);
+		}
+	});
+
 	if (browser) {
 		sketch = function (p5: any) {
 			let aNotionofTime: number;
@@ -10,7 +41,7 @@
 			let aMagnitudeofColor: number;
 
 			p5.setup = () => {
-				p5.createCanvas(window.innerWidth, window.innerHeight);
+				p5.createCanvas(parentElement.clientWidth, parentElement.clientHeight);
 			};
 
 			p5.draw = () => {

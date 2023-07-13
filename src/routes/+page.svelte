@@ -2,7 +2,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
-	import viewport from '$actions/viewport';
+	//import viewport from '$actions/viewport';
 	import { fly } from 'svelte/transition';
 	import Sunset from '$lib/Sunset.svelte';
 	import ProvinceOfQuebec from '$lib/assets/ProvinceOfQuebec.svelte';
@@ -55,30 +55,51 @@
 
 		window.addEventListener('scroll', updateTransform);
 	}
+
+	import { setContext } from 'svelte';
+	let heroSection: HTMLElement;
+	onMount(() => {
+		if (browser) {
+			console.log('setContext', heroSection);
+			setContext('parent', heroSection);
+		}
+	});
 </script>
 
-<Sunset />
-<section id="hero" class="h-screen w-screen p-0">
-	<div class="flex h-full w-full place-content-center bg-surface-100 bg-opacity-80">
-		<div class="gap flex flex-col flex-wrap place-content-center items-center rounded-full">
-			<Logo />
+<section id="hero" class="relative h-screen w-screen p-0" bind:this={heroSection}>
+	<!-- <Sunset /> -->
+	<div class="flex h-full w-full place-content-center bg-opacity-80 text-2xl">
+		<div
+			class="flex flex-col flex-wrap place-content-center items-center gap-6 rounded-full text-xl"
+		>
+			<!-- TODO fix the size of the svg logo  -->
+			<!-- <Logo /> -->
+			<img src="/Zbranch.png" alt="" width="150px" />
 			<!-- <h1 class="font-extrabold italic md:text-6xl">We manage technology chaos.</h1> -->
-			<h1 class="font-extrabold italic md:text-6xl">Ask for developing software ideas.</h1>
-			<h3 class="text-5xl font-extrabold">
+			<h1 class="anim pt-6 font-extrabold italic md:text-6xl">
+				Turn your digital visions into reality
+			</h1>
+			<h2 class="p-8 text-5xl font-extrabold">
 				Software engineering subscriptions to scale your organization.
-			</h3>
-			<a
-				class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
-				href="#plans">Start now</a
-			>
+			</h2>
+			<div class="cta-zone flex flex-row gap-6">
+				<a
+					class="bg-initial btn mx-auto my-8 w-max border-2 border-b-4 text-2xl hover:translate-y-1 hover:border-b-0"
+					href="#plans">Book a call</a
+				>
+				<a
+					class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1 hover:border-b-0"
+					href="#plans">Start now</a
+				>
+			</div>
 			<span class="mt-4 text-center">You'll ❤ our craft.</span>
 		</div>
 	</div>
 </section>
 <!-- 
 <section id="hero-bg" class="border-5 h-screen w-screen border border-black p-0">
-	<div class="flex h-full w-full place-content-center bg-surface-100 bg-opacity-80">
-		<div class="gap flex flex-col flex-wrap place-content-center items-center rounded-full">
+	<div class="flex h-full text-xl w-full text-xl place-content-center bg-surface-100 bg-opacity-80">
+		<div class="gap flex flex-col flex-wrap place-content-center items-center rounded-full text-xl">
 			<Logo />
 			<h1 class="font-extrabold italic md:text-6xl">Ask for developing software ideas.</h1>
 			<h3 class="text-5xl font-extrabold">
@@ -88,7 +109,7 @@
 				class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
 				href="#plans">Start now</a
 			>
-			<span class="mt-4 text-center">You'll ❤ our craft.</span>
+			<li class="mt-4 text-center">You'll ❤ our craft.</li>
 		</div>
 	</div>
 </section> 
@@ -102,7 +123,7 @@
 		class="absolute left-48 z-10 w-[15%] -rotate-12"
 	/>
 	<div
-		class="flex w-max flex-row gap-6 overflow-hidden pb-24 pt-24"
+		class="flex w-screen flex-row gap-6 overflow-hidden pb-24 pt-24"
 		style="transform: translate3d(-{translateXValue}px, 0, 0)"
 	>
 		<img src="/ArchitectureDemo.jpg " alt="" sizes="" srcset="" class="animate-scaleUp h-96 w-96" />
@@ -124,20 +145,20 @@
 		{/each}
 	</div>
 </div>
-<section>
+<section class="benefits">
 	<h2>Branch it's your partner of succeed</h2>
 	<h3>Technology as you want it just arrived.</h3>
-	<div class="flex flex-row flex-wrap place-content-center">
-		<div>
-			<svg />
+	<div class="benefit-grid">
+		<div class="benefit-item">
+			<img src="/animate/add.apng" alt="add" class="benefit-item-img" />
 			<p class="text-center">Subscribe and request <br /> unlimited features.</p>
 		</div>
-		<div>
-			<svg />
+		<div class="benefit-item">
+			<img src="/animate/diamond.apng" alt="diamond" class="benefit-item-img" />
 			<p class="text-center">Receive your feature on <br /> next weeks during business days</p>
 		</div>
-		<div>
-			<svg />
+		<div class="benefit-item">
+			<img src="/animate/success.apng" alt="success" class="benefit-item-img" />
 			<p class="text-center">We’ll tune up yours features <br /> until you’re 100% satisfied.</p>
 		</div>
 	</div>
@@ -185,37 +206,47 @@
 		</div>
 	</div>
 </section>
-<section id="benefits">
+<section class="benefits">
 	<h2>Membership benefits</h2>
 	<h3>We delevers results for your business challenges.</h3>
-	<a>See plans</a>
-	<div class="flex flex-row flex-wrap">
-		<div>
-			<h4>Design board</h4>
-			<p>Unlimited feature requests to your board as you'd like</p>
+	<a
+		class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
+		href="#plans">Start now</a
+	>
+	<div class="benefit-grid">
+		<div class="benefit-item">
+			<img src="/animate/edit.apng" alt="edit" class="benefit-item-img" />
+			<h4>Requests board</h4>
+			<p class="benefit-item-text">Unlimited feature requests to your board as you'd like</p>
 		</div>
-		<div>
+		<div class="benefit-item">
+			<img src="/animate/calendar.apng" alt="calendar" class="benefit-item-img" />
 			<h4>Quick delivery</h4>
-			<p>Get results in days of your request.</p>
+			<p class="benefit-item-text">Get results in days of your request.</p>
 		</div>
-		<div>
+		<div class="benefit-item">
+			<img src="/animate/analysis.apng" alt="analysis" class="benefit-item-img" />
 			<h4>Flat monthly rate</h4>
-			<p>Manage your budget without surprise.</p>
+			<p class="benefit-item-text">Manage your budget without surprise.</p>
 		</div>
-		<div>
+		<div class="benefit-item">
+			<img src="/animate/guarantee.apng" alt="guarantee" class="benefit-item-img" />
 			<h4>Top quality</h4>
-			<p>Usable software and yours requirements respected.</p>
+			<p class="benefit-item-text">Usable software and yours requirements respected.</p>
 		</div>
-		<div>
-			<h4>Flexible and scalable</h4>
-			<p>Extend, pay or cancel anytime your subscription.</p>
+		<div class="benefit-item">
+			<img src="/animate/pause.apng" alt="" class="benefit-item-img" />
+			<h4>Flexible</h4>
+			<p class="benefit-item-text">Pause or cancel anytime your membership.</p>
 		</div>
-		<div>
+		<div class="benefit-item">
+			<img src="/animate/fingerprint.apng" alt="fingerprint" class="benefit-item-img" />
 			<h4>Unique and all yours</h4>
-			<p>All code and infrastructure it's 100% yours.</p>
+			<p class="benefit-item-text">All code and infrastructure it's 100% yours.</p>
 		</div>
 	</div>
 </section>
+
 <!-- <section>
 	<h2>Recent works</h2>
 	<h3>Best crafted software, and nothing else.</h3>
@@ -237,28 +268,37 @@
 	</div>
 </section> -->
 <section id="scope">
-	<h2>We helping crafting SaaS, eCommerce, API, QA, digital process SOP & more.</h2>
-	<div class="grid grid-cols-3">
-		<p>Mobile apps</p>
-		<p>AI</p>
-		<p>Large Language Models (LLM) integration</p>
-		<p>SaaS</p>
-		<p>Browser Extension</p>
-		<p>Data Collecting</p>
-		<p>Nocode/lowcode integration</p>
-		<p>API integration</p>
-		<p>API Design</p>
-		<p>Deploy on the cloud</p>
-		<p>Cloud migration</p>
-		<p>Software Architecture</p>
-		<p>Proof of Concept</p>
-		<p>MVP</p>
-		<p>Project Kickoff</p>
-		<p>DevOps</p>
-		<p>TDD</p>
-		<p>API & tooling documentions</p>
-		<p>Peer Review</p>
-	</div>
+	<h2>Here good reasons why you want to work with us</h2>
+	<!-- <ul class="grid grid-cols-3 gap-6"></ul> -->
+	<ul class="m-4 w-10/12 text-center">
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			I need a web application running a good UX on mobile & desktop
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			We want to add AI with LLM integration like OpenAI
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			I want to create a web browser extension.
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			I need help for collecting data.
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full text-xl">
+			I want to open a stunning Shopify boutique.
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			I need a high-performance, reliable and secure backend.
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			We need help for migrating on the public cloud
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			I want to reenforce me engineering team.
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+			I wish to develope a Minimum Viable Product.
+		</li>
+	</ul>
 </section>
 
 <section id="plans">
@@ -277,7 +317,9 @@
 		</div>
 		<div class="card border-primary-900 bg-primary-200 hover:bg-primary-hover-token">
 			<div class="top">
-				<h4>Monthly <span>⚀</span></h4>
+				<h4>
+					Monthly <span>⚀</span>
+				</h4>
 				<p class="h4-subtitle">No minimum commitment. <br /> Pause or cancel anytime.</p>
 				<p class="price">{monthlyAsMonthly}/m</p>
 				<p class="price-info">Pause or cancel anytime</p>
@@ -297,7 +339,9 @@
 		</div>
 		<div class="card border-warning-900 bg-warning-200 hover:bg-warning-hover-token">
 			<div class="top">
-				<h4>Quarterly <span>⚃</span></h4>
+				<h4>
+					Quarterly <span>⚃</span>
+				</h4>
 				<p class="h4-subtitle">No minimum commitment. <br /> Pause or cancel anytime.</p>
 				<p class="price">{quarterlyAsMonthly}/m</p>
 				<p class="price-info">Paid quarterly</p>
@@ -317,7 +361,9 @@
 		</div>
 		<div class="card border-success-900 bg-success-200 hover:bg-success-hover-token">
 			<div class="top">
-				<h4>Yearly <span>⚅ ⚅</span></h4>
+				<h4>
+					Yearly <span>⚅ ⚅</span>
+				</h4>
 				<p class="h4-subtitle">
 					Save {formatter.format(price.monthly.price - price.yearly.price / 12)} per month.
 				</p>
@@ -354,15 +400,13 @@
 		</div>
 	</div>
 	<div class="addon">
-		<!-- <div class="mt-4 w-24 rounded-full bg-slate-700 text-white">+ add-on</div> -->
+		<!-- <div class="mt-4 w-24 rounded-full text-xl bg-slate-700 text-white">+ add-on</div> -->
 		<div class="badge variant-filled text-lg font-medium uppercase text-white">add-on</div>
 		<div class="flex flex-col gap-6 pt-6">
 			<h2 class="text-white">Unlimited call</h2>
 			<p class="text-white">Get access to unlimited advisory services</p>
 			<p class="price text-white">
-				<span class="badge variant-filled-secondary text-lg font-medium uppercase text-white"
-					>+</span
-				>
+				<li class="badge variant-filled-secondary text-lg font-medium uppercase text-white">+</li>
 				{addonAsMonthly}/m
 			</p>
 			<div class="text-white">
@@ -385,14 +429,14 @@
 		<AccordionItem>
 			<!-- <svelte:fragment slot="lead">(icon)</svelte:fragment> -->
 			<svelte:fragment slot="summary">
-				<p class="summary">Why wouldn't I just hire a full time software engineer?</p>
+				<p class="summary">Why wouldn't I just hire a full text-xl time software engineer?</p>
 			</svelte:fragment>
 			<svelte:fragment slot="content">
 				<p class="content">
-					You could, in but the reality it's difficult to hire a full-time senior-level software
-					engineer. Actually, to entry salaries exceed $110 000, plus beneficts. The process for
-					hiring one is long and costly. It cost thosands of dollars for just hiring someone without
-					starting to work with your team.
+					You could, in but the reality it's difficult to hire a full text-xl-time senior-level
+					software engineer. Actually, to entry salaries exceed $110 000, plus beneficts. The
+					process for hiring one is long and costly. It cost thosands of dollars for just hiring
+					someone without starting to work with your team.
 				</p>
 			</svelte:fragment>
 		</AccordionItem>
@@ -476,30 +520,36 @@
 	</Accordion>
 </section>
 
-<footer class="flex flex-row bg-stone-950">
-	<div class="flex flex-row">
-		<!-- <svg id="logo" /> -->
+<footer class="grid grid-flow-col bg-stone-950">
+	<!-- <svg id="logo" /> -->
+	<div class="grid grid-flow-col items-center">
 		<ProvinceOfQuebec />
-
-		<p class="mw inline self-center pl-4 text-xs text-white">
-			Branch is headquartered in <br /> Montréal, Québec.
-		</p>
+		<span class="mw inline self-center pl-4 text-xs text-white"
+			>Branch is headquartered in <br /> Montréal, Québec.</span
+		>
 	</div>
-	<nav class="grid grid-flow-col grid-cols-3 text-white">
+
+	<nav class="text-white">
 		<div>
-			<div class="text-white">LEGALS</div>
-			<a href="#" class="text-white">Privacy Policy</a>
-			<a href="#">Terms & Conditions Terms & Conditions</a>
+			<div class="mb-4 font-bold text-white">LEGALS</div>
+			<ul class="">
+				<li class="mb-3 list-none">
+					<a href="#">Privacy Policy</a>
+				</li>
+				<li class="mb-3 list-none">
+					<a href="#">Terms & Conditions </a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 </footer>
-<div class="absolute">
+<!-- <div class="absolute">
 	<div class="relative">
 		<Logo />
 	</div>
-</div>
+</div> -->
 
-<nav role="navigation" class="border border-slate-800">
+<nav id="floating-menu" role="navigation" class="border border-slate-800">
 	<a href="#hero" class="bg-slate-800">⬆</a>
 	<a href="#benefits">Benefits</a>
 	<a href="#recent-works">Recent works</a>
@@ -510,6 +560,8 @@
 </nav>
 
 <style lang="scss">
+	//@import "open-props/postcss/animations";
+
 	.projects {
 		--duration: 0.3s;
 		transition: transform var(--duration) ease-out;
@@ -523,22 +575,48 @@
 			box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; // adjust as needed
 		}
 	}
+
+	.benefits {
+		p {
+			@apply font-light;
+		}
+		.benefit-grid {
+			@apply grid grid-cols-1 gap-20;
+
+			@media (min-aspect-ratio: 1/1) {
+				@apply grid-flow-row grid-cols-3;
+			}
+		}
+
+		.benefit-item {
+			@apply flex h-full flex-col items-center justify-center text-center text-2xl;
+		}
+
+		.benefit-item-img {
+			@apply h-24;
+		}
+
+		.benefit-item-text {
+			@apply h-8;
+		}
+	}
+
 	cite {
 		//@apply p-8;
 
 		/* 		&:before {
 			content: '’’';
-			@apply pointer-events-none absolute left-0 top-0 h-full w-full;
+			@apply pointer-events-none absolute left-0 top-0 h-full text-xl w-full text-xl;
 			@apply text-left text-9xl font-extrabold text-tertiary-500;
 		} */
 	}
 
-	nav {
+	nav#floating-menu {
 		@apply sm:visible;
-		@apply fixed inset-x-0 bottom-1 mx-auto flex w-max flex-row items-center justify-center gap-0 rounded-full bg-black bg-opacity-90 px-1 py-1 text-white;
+		@apply fixed inset-x-0 bottom-1 mx-auto flex w-max flex-row items-center justify-center gap-0 rounded-full bg-black bg-opacity-90 px-1 py-1 text-2xl text-white;
 
 		a {
-			@apply h-max rounded-full px-4 py-2 text-center text-sm font-bold;
+			@apply h-max rounded-full px-4 py-2 text-center text-2xl text-sm font-bold;
 			&:hover {
 				@apply bg-white text-black;
 			}
@@ -604,7 +682,7 @@
 	}
 
 	.addon {
-		@apply w-full bg-black p-8 text-center;
+		@apply w-full bg-black p-8 text-center text-2xl;
 		@media (min-aspect-ratio: 1/1) {
 			//@apply text-left;
 		}
@@ -620,6 +698,22 @@
 		}
 	}
 
+	@keyframes appear {
+		0% {
+			opacity: 0;
+			transform: translate3d(0, -10px, 0);
+		}
+
+		50% {
+			opacity: 0.5;
+			//transform: translate3d(0, -5px, 0);
+		}
+
+		100% {
+			opacity: 1;
+			transform: none;
+		}
+	}
 	#hero {
 		//background: url(/illustration.svg);
 		/* This makes the background image cover the entire div */
@@ -634,6 +728,31 @@
 		@media (min-aspect-ratio: 1/1) {
 			//lg
 			background-size: 100% auto;
+		}
+		// linear
+		/* 
+			    animation: 1200ms ease 0ms 1 normal backwards running gisjuz;
+				animation: 1000ms ease 0s 1 normal backwards running gisjuz;
+				animation: 1200ms ease 400ms 1 normal backwards running gisjuz;
+				animation: 1200ms ease 800ms 1 normal backwards running gisjuz;
+
+			*/
+		:global(svg),
+		img {
+			animation: 1200ms ease 0ms 1 normal backwards running appear;
+			backface-visibility: hidden;
+		}
+		h1 {
+			animation: 1000ms ease 0s 1 normal backwards running appear;
+		}
+
+		h2 {
+			@apply inline pt-12 text-center font-medium;
+			animation: 1200ms ease 400ms 1 normal backwards running appear;
+		}
+
+		cta-zone {
+			animation: 1200ms ease 800ms 1 normal backwards running appear;
 		}
 	}
 

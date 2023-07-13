@@ -19,3 +19,12 @@
 </script>
 
 <div bind:this={canvasDiv} />
+
+<style lang="scss">
+	div {
+		@apply absolute left-0 top-0 -z-10 h-full w-full;
+		/* 		.p5Canvas {
+			@apply h-full w-full;
+		} */
+	}
+</style>

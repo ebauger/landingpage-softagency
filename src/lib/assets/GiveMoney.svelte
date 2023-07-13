@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1024 1024" width="400px">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1024 1024" width="150px">
 	<g clip-path="url(#a)">
 		<path
 			fill="#B6B6B6"
