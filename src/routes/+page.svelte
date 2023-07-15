@@ -57,6 +57,7 @@
 	}
 
 	import { setContext } from 'svelte';
+	import CurrentTime from '$lib/utils/CurrentTime.svelte';
 	let heroSection: HTMLElement;
 	onMount(() => {
 		if (browser) {
@@ -66,12 +67,13 @@
 	});
 </script>
 
-<section id="hero" class="relative h-screen w-screen p-0" bind:this={heroSection}>
-	<!-- <Sunset /> -->
-	<div class="flex h-full w-full place-content-center bg-opacity-80 text-2xl">
-		<div
-			class="flex flex-col flex-wrap place-content-center items-center gap-6 rounded-full text-xl"
-		>
+<section
+	id="hero"
+	class="relative h-screen w-screen max-w-full overflow-x-hidden border-2"
+	bind:this={heroSection}
+>
+	<div class="z-10 flex h-full w-full place-content-center bg-opacity-80 text-2xl">
+		<div class="flex flex-col place-content-center items-center gap-6 rounded-full text-xl">
 			<!-- TODO fix the size of the svg logo  -->
 			<!-- <Logo /> -->
 			<img src="/Zbranch.png" alt="" width="150px" />
@@ -92,7 +94,33 @@
 					href="#plans">Start now</a
 				>
 			</div>
-			<span class="mt-4 text-center">You'll ❤ our craft.</span>
+		</div>
+	</div>
+	<!-- <Sunset /> -->
+	<div class="z-0">
+		<div class="blob-left">
+			<img
+				src="/demidonut1.svg"
+				alt="blob"
+				class="absolute -left-4 top-0 w-24 rotate-180 md:left-0 md:top-20 md:w-[150px] 2xl:w-[240px]"
+			/>
+			<img
+				src="/blobSquareMulti.svg"
+				alt="blob"
+				class="absolute -left-4 top-0 w-24 md:left-0 md:top-20 md:w-[150px] 2xl:w-[240px]"
+			/>
+		</div>
+		<div class="blob-right">
+			<img
+				src="/demidonut2.svg"
+				alt="blob"
+				class="absolute -right-4 bottom-1/2 z-0 w-24 rotate-90 md:visible md:bottom-40 md:right-5 md:w-[150px] 2xl:w-[240px]"
+			/>
+			<img
+				src="/circleDots.svg"
+				alt="blob"
+				class="absolute -right-4 bottom-1/2 z-0 w-24 rotate-90 md:visible md:bottom-40 md:right-5 md:w-[150px] 2xl:w-[240px]"
+			/>
 		</div>
 	</div>
 </section>
@@ -267,35 +295,31 @@
 		<p>Skeleton</p>
 	</div>
 </section> -->
-<section id="scope">
+<section class="scope">
 	<h2>Here good reasons why you want to work with us</h2>
 	<!-- <ul class="grid grid-cols-3 gap-6"></ul> -->
-	<ul class="m-4 w-10/12 text-center">
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+	<ul class="max-w-10/12 m-4 text-center">
+		<li class="badge variant-filled mb-6 rounded-full">
 			I need a web application running a good UX on mobile & desktop
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+		<li class="badge variant-filled mb-6 rounded-full">
 			We want to add AI with LLM integration like OpenAI
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+		<li class="badge variant-filled mb-6 rounded-full">
 			I want to create a web browser extension.
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
-			I need help for collecting data.
-		</li>
-		<li class="badge variant-filled mb-6 rounded-full text-xl">
+		<li class="badge variant-filled mb-6 rounded-full">I need help for collecting data.</li>
+		<li class="badge variant-filled mb-6 rounded-full">
 			I want to open a stunning Shopify boutique.
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+		<li class="badge variant-filled mb-6 rounded-full">
 			I need a high-performance, reliable and secure backend.
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+		<li class="badge variant-filled mb-6 rounded-full">
 			We need help for migrating on the public cloud
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
-			I want to reenforce me engineering team.
-		</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 text-xl">
+		<li class="badge variant-filled mb-6 rounded-full">I want to reenforce me engineering team.</li>
+		<li class="badge variant-filled mb-6 rounded-full px-6 py-3">
 			I wish to develope a Minimum Viable Product.
 		</li>
 	</ul>
@@ -520,28 +544,38 @@
 	</Accordion>
 </section>
 
-<footer class="grid grid-flow-col bg-stone-950">
+<footer class="grid grid-flow-col grid-cols-6 bg-stone-950">
 	<!-- <svg id="logo" /> -->
-	<div class="grid grid-flow-col items-center">
+	<div class="grid grid-flow-col items-center border">
 		<ProvinceOfQuebec />
-		<span class="mw inline self-center pl-4 text-xs text-white"
-			>Branch is headquartered in <br /> Montréal, Québec.</span
-		>
+		<div>
+			<div class="self-center text-white">Montréal</div>
+			<div class="text-xs text-white"><CurrentTime /></div>
+		</div>
 	</div>
 
-	<nav class="text-white">
-		<div>
-			<div class="mb-4 font-bold text-white">LEGALS</div>
-			<ul class="">
-				<li class="mb-3 list-none">
-					<a href="#">Privacy Policy</a>
-				</li>
-				<li class="mb-3 list-none">
-					<a href="#">Terms & Conditions </a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<div class="col-start-5 border text-white">
+		<div class="mb-4 font-bold text-white">LEGALS</div>
+		<ul class="">
+			<li class="mb-3 list-none">
+				<a href="#">Privacy Policy</a>
+			</li>
+			<li class="mb-3 list-none">
+				<a href="#">Terms & Conditions </a>
+			</li>
+		</ul>
+	</div>
+	<div class="col-start-6 border text-white">
+		<div class="mb-4 font-bold text-white">NAV</div>
+		<ul class="">
+			<li class="mb-3 list-none">
+				<a href="#">Customer Portal</a>
+			</li>
+			<li class="mb-3 list-none">
+				<a href="#plans">Prices</a>
+			</li>
+		</ul>
+	</div>
 </footer>
 <!-- <div class="absolute">
 	<div class="relative">
@@ -549,7 +583,7 @@
 	</div>
 </div> -->
 
-<nav id="floating-menu" role="navigation" class="border border-slate-800">
+<nav id="floating-menu" class="z-20 border border-slate-800">
 	<a href="#hero" class="bg-slate-800">⬆</a>
 	<a href="#benefits">Benefits</a>
 	<a href="#recent-works">Recent works</a>
@@ -576,6 +610,13 @@
 		}
 	}
 
+	.scope {
+		li {
+			font-size: clamp(0.7rem, 3vw, 1.5rem);
+			line-height: clamp(1.5rem, 2.5vw, 1.75rem);
+			padding: clamp(0.5rem, 2vw, 0.8rem) clamp(0.5rem, 2vw, 1rem);
+		}
+	}
 	.benefits {
 		p {
 			@apply font-light;
@@ -715,6 +756,8 @@
 		}
 	}
 	#hero {
+		//height: 100vh;
+		//height: 100vh;
 		//background: url(/illustration.svg);
 		/* This makes the background image cover the entire div */
 		background-size: auto 100%;
@@ -731,19 +774,22 @@
 		}
 		// linear
 		/* 
-			    animation: 1200ms ease 0ms 1 normal backwards running gisjuz;
-				animation: 1000ms ease 0s 1 normal backwards running gisjuz;
-				animation: 1200ms ease 400ms 1 normal backwards running gisjuz;
-				animation: 1200ms ease 800ms 1 normal backwards running gisjuz;
+			animation: 1200ms ease 0ms 1 normal backwards running gisjuz;
+			animation: 1000ms ease 0s 1 normal backwards running gisjuz;
+			animation: 1200ms ease 400ms 1 normal backwards running gisjuz;
+			animation: 1200ms ease 800ms 1 normal backwards running gisjuz;
 
-			*/
+		*/
 		:global(svg),
 		img {
 			animation: 1200ms ease 0ms 1 normal backwards running appear;
 			backface-visibility: hidden;
 		}
+		.blob-left {
+		}
 		h1 {
 			animation: 1000ms ease 0s 1 normal backwards running appear;
+			@apply text-5xl md:text-7xl;
 		}
 
 		h2 {
@@ -780,7 +826,7 @@
 // hero from Outlinemen03
 	*/
 	#ruban {
-		@apply relative flex w-screen overflow-hidden;
+		@apply relative flex w-screen max-w-full overflow-hidden;
 		@apply h-24 bg-black;
 
 		> div {

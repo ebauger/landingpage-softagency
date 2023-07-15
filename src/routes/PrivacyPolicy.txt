@@ -1,0 +1,98 @@
+Zbranch Privacy Policy 
+
+Zbranch understands the importance of protecting personal information. For this reason, we strive to have business procedures and security safeguards in place to protect personal information under its control. 
+
+1. Application and Scope 
+This Privacy Policy (this “Policy”) describes our practices with respect to the collection, use and disclosure of Personal Information by Zbranch and our affiliated entities in Canada, such as GSoft Technologies inc., Didacte inc. and Laboratoire d’Innovation Technologique GSoft Inc. (collectively, “Zbranch”). 
+
+This Policy governs personal information collected about Zbranch’s website users (the “Users”) and explains how Zbranch uses and discloses personal information collected from people who visit its website and otherwise interact with Zbranch through zbranch.io (the “Website”). It also explains how Zbranch uses cookies and similar technologies. 
+
+2. International Compliance 
+Zbranch complies with: (i) data protection laws applicable to Zbranch; (ii) anti-spam laws applicable to Zbranch; and (iii) applicable industry standards concerning data protection, confidentiality or information security. Zbranch has global operations and therefore, in some cases, information managed by Zbranch may be transferred, processed and stored in other countries, although at all times, Zbranch will ensure that personal information is protected by confidentiality and security procedures and protections that are, at a minimum, equivalent to those employed by Zbranch itself. 
+
+Zbranch complies with this Policy as well as applicable Canadian private sector data protection laws such as the Personal Information Protection and Electronic Documents Act (“PIPEDA”) and substantially similar provincial laws pertaining to the collection, use and disclosure of personal information. PIPEDA provides for an adequate protection of personal information according to the European Commission Decision of 20 December 2001 pursuant to Directive 95/46/EC of the European Parliament and the Council. 
+
+3. Definition of Personal Information 
+“Personal Information” is defined as any information about an identifiable individual. This may include, for example, email addresses and contact details and any similar information provided to Zbranch in the course of its business operations, or which Zbranch may receive from business inquiries. Personal Information that is aggregated and/or anonymized and cannot be associated with an identifiable individual is not considered Personal Information. 
+
+4. Collection and Use of Personal Information through the Website 
+Zbranch generally collects and uses personal information from or about its Website Users in furtherance of the following purposes: 
+
+4.1 Information provided by Users. 
+In many cases, Zbranch collects Personal Information directly from Users when they visit or use the Website. For instance, Zbranch may collect the following types of information: 
+
+Inquiries. Zbranch may collect Users’ name, contact information, e-mail address and any information provided when users make an inquiry or contact Zbranch through the Website, download documentation or gated content from the Website, and/or sign up to receive Zbranch’s newsletter.  
+Application Submission. Zbranch may collect Users’ name, contact information, e-mail address and any other information provided to Zbranch when Users submit an application for a job posting on the Website.  
+Personalization of Website. When Users visit the Website, they may, from time to time, be invited to provide information such as User’s title and company size to help Zbranch personalise or customise the User’s experience when using the Website.
+4.2 Technical information.
+When Users visit the Website, Zbranch may collect, using electronic means such as cookies, technical information. This information may include information about visits to the website, including the IP address of the Users’ computer and which browser was used to view the Website, the Users’ operating system, screen resolution, location, language settings in browsers, the site the User came from, keywords searched (if arriving from a search engine), the number of page views, information entered, advertisements seen, etc.  This data is used to measure and improve the effectiveness of the Website or enhance the experience for Users. While most of the time this information is depersonalized, if this information relates to an identifiable individual, Zbranch will treat this information as Personal Information. Zbranch may also, without limitations, collect and use the following type of information when Users visit and/or interact with Zbranch on the Website: 
+
+Google Analytics: Zbranch uses Google Analytics which allows it to see information on User Website activities including, but not limited to, page views, source and time spent on our Website. This information is depersonalized and is displayed as numbers, meaning that it cannot be tracked back to individuals. Users may opt-out of Zbranch’s use of Google Analytics by visiting the Google Analytics opt-out page. 
+Umami: Zbranch uses Umami which allows it to see information on User Website activities including, but not limited to, page views, source and time spent on our Website. However, this information is not depersonalized and Users may not opt-out of Zbranch’s use of Umami. 
+Google AdWords: Zbranch uses Google AdWords Remarketing to advertise Zbranch across the Internet and to advertise on third party websites (including Google) to previous visitors to the Website. AdWords remarketing will display ads to Users based on what parts of the Zbranch Website they have viewed by placing a cookie on the Users’ web browser. It could mean that Zbranch advertises to previous visitors who haven’t completed a task on the site or this could be in the form of an advertisement on the Google search results page, or a site in the Google Display Network. This cookie does not in any way identify the User or give access to the User’s computer or mobile device. The cookie is only used to indicate to other websites that the User has visited a particular page on the Website, so that they may show the User ads relating to that page. If Users do not wish to participate in Google AdWords Remarketing, they can opt out by visiting Google’s Ads Preferences Manager. 
+Interest-based Advertising. Zbranch may also allow a limited number of trusted third parties to install cookies on Users’ hard drive from the Website. The Website may include third-party advertising and links to other websites which may be used to generate personalized advertisements. Personalized ads, sometimes referred to as interest-based or behavioral ads, are ads based upon information about Users, such as page views on the Website, information requests or purchases on the Website. Zbranch does not provide any personal information to advertisers or to third party sites that display interest-based ads on the Website. However, advertisers and other third parties (including the ad networks, ad-serving companies, and other service providers they may use) may assume that Users who interact with or click on a personalized ad or content displayed on the Website are part of the group that the ad or content is directed towards. Advertisers or ad companies working on their behalf sometimes use technology to serve the ads that appear on the Website directly to Users’ browser. They may also use cookies to measure the effectiveness of their ads and to personalize ad content. Zbranch does not have access to or control over cookies or other features that advertisers and third-party sites may use, and the information practices of these advertisers and third-party websites are not covered by this Policy. Please contact them directly for more information about their privacy practices. Users can also generally opt-out of receiving personalized ads from third party advertisers and ad networks who are members of the Digital Advertising Alliance of Canada. Please visit the DAAC opt-out page for more information. 
+4.3 Choice with Cookies.
+Users can block the use of cookies by activating the settings in their browser. The “Help” feature on most browsers will tell users how to prevent their browser from accepting new cookies, how to have the browser notify the Users when they receive a new cookie, or how to disable cookies altogether. If Users choose to withhold consent, or subsequently block cookies, they may not be able to access all or part of the content of the Website. Additionally, Users can disable or delete similar data used by browser add-ons, by changing the add-on’s settings or visiting the website of its manufacturer. 
+
+4.4 Privacy Policies of other Websites.
+This Policy only addresses the use and disclosure of information by Zbranch. Other websites that may be accessible through the website have their own privacy policies and data collection, use and disclosure practices.
+
+4.5 Personal Information from other Sources.
+Zbranch may obtain from third parties additional personal information about a Website User if such User gave permission to those third parties to share their information. 
+
+5. Legal bases for processing Personal Information 
+Zbranch collects and processes Personal Information about individuals under a variety of legal bases, depending on the reasons for such collection or processing. Zbranch shall only collect, process or use Personal Information where: 
+
+Personal Information is required to provide the Website and all services ancillary to the proper functioning of the Website, such as support services, to provide a personalized experience, and to ensure the safety and security of the Website; 
+The User gave Zbranch consent to use Personal Information for a specific purpose; 
+Processing of Personal Information is necessary to comply with a legal obligation. 
+Processing of Personal Information is warranted by a legitimate Interest of Zbranch (which is not overridden by your data protection interests), or to protect Zbranch’s legal rights and interests. 
+6. Sharing and Transferring of Personal Information 
+Zbranch will not sell, rent or trade personal information to any third party. However, Zbranch may share personal information when authorized and/or required by law or as follows: 
+
+6.1 Within Zbranch.
+We may share Personal Information within Zbranch (i.e. between our affiliates and subsidiaries) in Canada for the purposes described in Section 4.1. 
+
+6.2 Service providers.
+Zbranch may transfer Personal Information to third-party service providers acting as sub-processors in connection with the performance or the improvement of its Website and products. Before transferring any Personal Information with any of its third-party service providers, Zbranch will ensure that the third party maintains reasonable data management practices for maintaining the confidentiality and security of personal information and preventing unauthorized access. 
+
+6.3 As permitted or required by law.
+Zbranch may disclose Personal Information as required by applicable law or by proper legal or governmental authority. Zbranch may also disclose Personal Information to its accountants, auditors, agents and lawyers in connection with the enforcement or protection of its legal rights. Zbranch may also release certain Personal Information when it has reasonable grounds to believe that such release is reasonably necessary to protect the rights, property and safety of others and itself, in accordance with or as authorized by law. In the event Zbranch receives a governmental or other regulatory request for any User’s Personal Information, it agrees to immediately notify the User in order to allow the User to defend such action. Zbranch shall reasonably cooperate with the User in such defense. 
+
+6.4 Business transaction.
+Zbranch may disclose Personal Information to a third party in connection with a sale or transfer of business or assets, an amalgamation, re-organization or financing of parts of our business. However, in the event the transaction is completed, Personal Information will remain protected by applicable data protection laws. In the event the transaction is not completed, Zbranch will require the other party not to use or disclose the Personal Information received in any manner whatsoever and to delete such information. 
+
+7. Security of Personal Information 
+Zbranch will store and process the Personal Information in a manner consistent with industry security standards. Zbranch has implemented technical, organizational and administrative systems, policies, and procedures to help ensure the security, integrity and confidentiality of Personal Information and to mitigate the risk of unauthorized access to or use of Personal Information, including (i) appropriate administrative, technical and physical safeguards and other security measures designed to ensure the security and confidentiality of the Personal Information it manages; (ii) a security design intended to prevent any compromise of its own information systems, computer networks or data files by unauthorized users, viruses or malicious computer programs; (iii) appropriate internal practices including, but not limited to, encryption of data in transit or at rest; using appropriate firewall and antivirus software; maintaining these countermeasures, operating systems and other applications with appropriate reasonable up-to-date virus definitions and security patches so as to avoid any adverse impact to the Personal Information that it manages; appropriate logging and alerts to monitor access controls and to ensure data integrity and confidentiality; permitting only authorized users access to systems and applications; and (iv) all persons with authorized access to Personal Information must have a genuine business need-to-know prior to access (“Security Program”). 
+
+8. Training and Supervision 
+Zbranch maintains adequate training programs to ensure that its employees and any others acting on its behalf are aware of and adhere to its Security Program. Zbranch shall exercise necessary and appropriate supervision over its relevant employees to maintain appropriate confidentiality and security of the Personal Information it manages. 
+
+9. Data Incidents involving User’s Personal Information 
+Zbranch shall promptly notify the User of a data breach, of a loss of data or of a failure of Zbranch’s Security Program: 
+
+which has resulted or is suspected to have resulted in the loss, unauthorised access, disclosure, use or acquisition of Personal Information (including hard copy records); and 
+which, in Zbranch’s opinion, presents a real risk of significant harm to individuals whose Personal Information is impacted (“Data Incident”). 
+While the initial notice may be in a summary form, a comprehensive written notice shall be given to the User within the legally required timeframe, where applicable. The notice shall summarize in reasonable detail the nature and scope of the Data Incident (including each data element type) and the corrective action taken or to be taken by Zbranch. Zbranch shall promptly take all necessary and advisable corrective actions, and shall cooperate with the User in all reasonable efforts to mitigate the adverse effects of Data Incidents and to prevent their recurrence.  
+
+10. Users Legal Rights Regarding Personal Information 
+To the extent that Zbranch’s processing of Personal Information is subject to the General Data Protection Regulation (Regulation (EU) 2016/679) or to the Data Protection Act 2018 and the GDPR as saved into United Kingdom law by virtue of Section 3 of the United Kingdom’s European Union (Withdrawal) Act 2018, Zbranch relies on its legitimate interests, described above, which are not overridden by your data protection interests, to process Personal Information. Subject to applicable laws, Users also have the right to: (i) access and rectification or erasure of Personal Information, to the extent that Zbranch may need to retain certain Personal Information, including for record keeping purposes or to comply with legal obligations; (ii) restrict or object Zbranch’s use of Personal Information (though, in some cases, this may mean no longer using the Website) where Zbranch is relying on a legitimate interest (or those of a third party) and there is something about User’s particular situation which impacts on User’s fundamental rights and freedoms; (iii) lodge a complaint with their local data protection authority (contact details for data protection authorities in the European Economic Area are available here); and (iv) data portability. Users will not have to pay a fee to exercise such rights, however, Zbranch may charge a reasonable fee or refuse to comply if the request is unfounded, repetitive or excessive.  
+
+11. How to Contact Us 
+Any questions or complaints regarding this Policy or Zbranch’s handling of Personal Information can be addressed to Zbranch’s customer service at: 
+
+Zbranch inc. 
+Attention: Data Protection Officer 
+
+1949 rue de Villiers
+Montréal (Québec) H4E 1L2 
+email: info@eba.expert  
+
+Our Data Protection Officer will attempt to respond to your request within the legally applicable timeframe, and in any case no later than 30 days after receipt of such request. We will advise you in writing of our response to your request. Should we refuse to grant your request, we will inform you of the legal reason of our refusal, and we will apprise you of remedies available to you and of the time limit for exercising them. 
+
+Should you be unsatisfied with the outcome of your request, you may lodge a complaint with Zbranch’s supervisory authority, the Commission d’accès à l’information (https://www.cai.gouv.qc.ca/a-propos/nous-joindre/). 
+
+12. Change of Privacy Policy 
+Zbranch will review and update its policies and procedures as required to keep current with rules and regulations, new technologies, standards and User concerns. This Policy may therefore change from time to time. 
+
+This Policy was last updated on June 26th, 2023. 
