@@ -48,12 +48,14 @@
 	let translateXValue = 50;
 
 	function initTheatreStudio() {
-		studio.initialize();
+		if (process.env.NODE_ENV === 'development') {
+			studio.initialize();
+			const project = core.getProject('Branch');
+			const sheet = project.sheet('LandingPage');
+		}
 	}
 
 	if (browser) {
-		initTheatreStudio();
-
 		const updateTransform = () => {
 			const rect = projectElement.getBoundingClientRect();
 
@@ -73,6 +75,7 @@
 	let heroSection: HTMLElement;
 	onMount(() => {
 		if (browser) {
+			initTheatreStudio();
 			console.log('setContext', heroSection);
 			setContext('parent', heroSection);
 		}
