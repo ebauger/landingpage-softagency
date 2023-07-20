@@ -4,6 +4,8 @@
 	import { onMount } from 'svelte';
 	//import viewport from '$actions/viewport';
 	import { fly } from 'svelte/transition';
+
+	/** Import SVG sssets */
 	import Sunset from '$lib/Sunset.svelte';
 	import ProvinceOfQuebec from '$lib/assets/ProvinceOfQuebec.svelte';
 	import ListMorph from '$lib/ListMorph.svelte';
@@ -18,10 +20,14 @@
 	import Outlinemen03 from '$lib/assets/Outlinemen03.svelte';
 	import Logo from '$lib/assets/Logo.svelte';
 	import Panel from '$lib/Panel.svelte';
+	import HeroIllustration from '$lib/assets/illustration/HeroIllustration.svelte';
+
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 	import brands from '$lib/data/brands.json';
-	import HeroIllustration from '$lib/assets/illustration/HeroIllustration.svelte';
+
+	import * as core from '@theatre/core';
+	import studio from '@theatre/studio';
 
 	let formatter = new Intl.NumberFormat(price.BCP47, {
 		style: 'currency',
@@ -41,7 +47,13 @@
 	let projectElement: HTMLElement;
 	let translateXValue = 50;
 
+	function initTheatreStudio() {
+		studio.initialize();
+	}
+
 	if (browser) {
+		initTheatreStudio();
+
 		const updateTransform = () => {
 			const rect = projectElement.getBoundingClientRect();
 
