@@ -5,6 +5,11 @@
 	--theme-font-family-base: 'Inter', sans-serif;
 	--theme-font-family-heading: 'Inter', sans-serif;
 } */
+
+/* :global(.bg-noise) {
+	background-image: var(--bg-noise-url);
+} */
+
 html,
 body {
 	@apply h-full;
@@ -60,15 +65,47 @@ span {
 ul {
 	@apply list-inside list-disc;
 }
+
+/* section:not(:first-of-type) {
+	@apply py-24;
+} */
+
 section {
 	@apply flex flex-col items-center;
 	@apply px-2 md:px-12 md:py-2 lg:px-28;
-	@apply border;
+	/* @apply border; */
+	@apply relative;
+
+	background: var(--bg-noise-url);
+
+	&:not(:first-of-type) {
+		/* for the first one */
+		@apply py-24 pb-60;
+	}
+
+	&:nth-of-type(odd) {
+		@apply bg-tertiary-50;
+	}
+
+	&:not(:last-of-type)::after {
+		@apply z-20;
+		@apply absolute; /* Add this */
+		content: '';
+		display: block;
+		width: 100%;
+		height: 60px; /* Increased height */
+		/* margin-bottom: -14rem; */ /* Half of the height */
+		background: url('/separator.svg') no-repeat center center;
+		background-size: contain; /* Adjust according to your needs */
+		@apply -bottom-6;
+	}
+
+	/* 	& div {
+		background-image: var(--bg-noise-url);
+	} */
 }
 
 footer {
-	background-image: url('noise-ref.png'), linear-gradient(#000, #000);
-
 	@apply px-48 py-48;
 	font-family: 'Anonymous Pro', monospace;
 }

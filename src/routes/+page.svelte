@@ -46,7 +46,7 @@
 			const rect = projectElement.getBoundingClientRect();
 
 			// Check if element is in viewport
-			console.log(rect.top, rect.bottom, window.innerHeight);
+			//console.log(rect.top, rect.bottom, window.innerHeight);
 			if (rect.top >= 0 && rect.bottom <= window.innerHeight * 2) {
 				// Calculate translateX value based on the scroll position
 				translateXValue = window.scrollY * 0.5; // adjust multiplier as needed
@@ -79,18 +79,24 @@
 			<img src="/Zbranch.png" alt="" width="150px" />
 			<!-- <h1 class="font-extrabold italic md:text-6xl">We manage technology chaos.</h1> -->
 			<h1 class="anim pt-6 font-extrabold italic md:text-6xl">
-				Turn your digital visions into reality
+				Turn your digital vision into reality
 			</h1>
 			<h2 class="p-8 text-5xl font-extrabold">
-				Software engineering subscriptions to scale your organization.
+				Software engineering subscriptions to scale your organization
 			</h2>
-			<div class="cta-zone flex flex-row gap-6">
+			<div class="cta-zone flex flex-row gap-6 overflow-y-hidden">
+				<!-- 				
 				<a
 					class="bg-initial btn mx-auto my-8 w-max border-2 border-b-4 text-2xl hover:translate-y-1 hover:border-b-0"
 					href="#plans">Book a call</a
 				>
+				-->
 				<a
-					class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1 hover:border-b-0"
+					class="bg-initial btn mx-auto my-8 w-max text-2xl text-neutral-600 hover:text-neutral-950"
+					href="#plans">Book a call</a
+				>
+				<a
+					class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
 					href="#plans">Start now</a
 				>
 			</div>
@@ -174,30 +180,45 @@
 	</div>
 </div>
 <section class="benefits">
-	<h2>Branch it's your partner of succeed</h2>
-	<h3>Technology as you want it just arrived.</h3>
+	<h2>Branch is your partner for success</h2>
+	<h3>Technology as you want it, just arrived</h3>
 	<div class="benefit-grid">
 		<div class="benefit-item">
 			<img src="/animate/add.apng" alt="add" class="benefit-item-img" />
-			<p class="text-center">Subscribe and request <br /> unlimited features.</p>
+			<p class="text-center">Subscribe and request <br /> unlimited features</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/diamond.apng" alt="diamond" class="benefit-item-img" />
-			<p class="text-center">Receive your feature on <br /> next weeks during business days</p>
+			<p class="text-center">Receive your feature the <br /> following week during business days</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/success.apng" alt="success" class="benefit-item-img" />
-			<p class="text-center">We’ll tune up yours features <br /> until you’re 100% satisfied.</p>
+			<p class="text-center">We’ll tune up your features <br /> until you’re 100% satisfied</p>
+		</div>
+		<div class="bg-noise relative col-span-3 flex flex-col items-center gap-6 bg-surface-300 p-6">
+			<div class="h-14 text-left text-9xl font-extrabold text-tertiary-500">’’</div>
+			<cite class="text-center text-2xl font-semibold">
+				He offers an exceptional solution to manage our products sold at the store.
+			</cite>
+			<div class="flex flex-row items-center gap-2">
+				<Avatar src="/testimonials/riel.jpeg" width="w-8" />
+				<p class="inline-block text-xs">
+					Riel B., <strong>Trevi</strong>
+				</p>
+			</div>
+			<img class="absolute -right-8 top-0 w-24" src="/blobSquareDots.svg" alt="blob" />
 		</div>
 	</div>
 </section>
 <section class="bg-tertiary-50">
-	<h2>You’ll never going back <br /> for going forward</h2>
+	<h2>Never going back <br /> Only going forward</h2>
 	<h3 class="pb-8 text-lg sm:w-1/2">
 		We are a branch of your core team. Share your request directly with an engineer.
 	</h3>
 	<div class="grid grid-cols-1 gap-6 border md:grid-cols-2">
-		<div class="flex flex-col self-center bg-surface-50 p-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+		<div
+			class="bg-noise flex flex-col self-center bg-surface-50 p-4 md:px-12 md:py-12 lg:px-16 lg:py-16"
+		>
 			<div class="flex flex-col gap-6">
 				<div class="h-14 text-left text-9xl font-extrabold text-tertiary-500">’’</div>
 				<cite class="text-left text-2xl font-semibold">
@@ -216,19 +237,20 @@
 			<div>
 				<h4 class="font-bold">Share Async</h4>
 				<p class="">
-					Simple design board. We nail the process of communication where you are on the glob.
+					Simple design board. We nail the process of communication wherever you are on the globe
 				</p>
 			</div>
 			<div>
 				<h4 class="font-bold">Bring your own stack</h4>
 				<p class="">
-					We enhance your own stack. If not, we'll handle the right one for your project.
+					We enhance your own stack. If you don't have one, we'll provide the right one for your
+					project
 				</p>
 			</div>
 			<div>
 				<h4 class="font-bold">Unlimited team members</h4>
 				<p class="">
-					Invite all members of your team can submit requests and review their process.
+					Invite all members of your team! They can submit requests and review their process
 				</p>
 			</div>
 		</div>
@@ -236,7 +258,7 @@
 </section>
 <section class="benefits">
 	<h2>Membership benefits</h2>
-	<h3>We delevers results for your business challenges.</h3>
+	<h3>We delever results for your business challenges</h3>
 	<a
 		class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
 		href="#plans">Start now</a
@@ -245,32 +267,34 @@
 		<div class="benefit-item">
 			<img src="/animate/edit.apng" alt="edit" class="benefit-item-img" />
 			<h4>Requests board</h4>
-			<p class="benefit-item-text">Unlimited feature requests to your board as you'd like</p>
+			<p class="benefit-item-text">
+				Unlimited feature requests to your board as long as you are a member
+			</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/calendar.apng" alt="calendar" class="benefit-item-img" />
 			<h4>Quick delivery</h4>
-			<p class="benefit-item-text">Get results in days of your request.</p>
+			<p class="benefit-item-text">Get results for your requests within days</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/analysis.apng" alt="analysis" class="benefit-item-img" />
 			<h4>Flat monthly rate</h4>
-			<p class="benefit-item-text">Manage your budget without surprise.</p>
+			<p class="benefit-item-text">Manage your budget without surprises</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/guarantee.apng" alt="guarantee" class="benefit-item-img" />
 			<h4>Top quality</h4>
-			<p class="benefit-item-text">Usable software and yours requirements respected.</p>
+			<p class="benefit-item-text">We only apply the highest standards of the industry</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/pause.apng" alt="" class="benefit-item-img" />
 			<h4>Flexible</h4>
-			<p class="benefit-item-text">Pause or cancel anytime your membership.</p>
+			<p class="benefit-item-text">Pause or cancel your membership at anytime</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/fingerprint.apng" alt="fingerprint" class="benefit-item-img" />
 			<h4>Unique and all yours</h4>
-			<p class="benefit-item-text">All code and infrastructure it's 100% yours.</p>
+			<p class="benefit-item-text">All code and infrastructure it's 100% yours</p>
 		</div>
 	</div>
 </section>
@@ -296,31 +320,29 @@
 	</div>
 </section> -->
 <section class="scope">
-	<h2>Here good reasons why you want to work with us</h2>
+	<h2>Why you should work with us</h2>
 	<!-- <ul class="grid grid-cols-3 gap-6"></ul> -->
 	<ul class="max-w-10/12 m-4 text-center">
 		<li class="badge variant-filled mb-6 rounded-full">
-			I need a web application running a good UX on mobile & desktop
+			I need a web application running on mobile & desktop
 		</li>
 		<li class="badge variant-filled mb-6 rounded-full">
-			We want to add AI with LLM integration like OpenAI
+			We want to add AI with LLM integration with OpenAI
+		</li>
+		<li class="badge variant-filled mb-6 rounded-full">I want to create a web browser extension</li>
+		<li class="badge variant-filled mb-6 rounded-full">I need help to collect data</li>
+		<li class="badge variant-filled mb-6 rounded-full">
+			I want to open a stunning Shopify boutique
 		</li>
 		<li class="badge variant-filled mb-6 rounded-full">
-			I want to create a web browser extension.
-		</li>
-		<li class="badge variant-filled mb-6 rounded-full">I need help for collecting data.</li>
-		<li class="badge variant-filled mb-6 rounded-full">
-			I want to open a stunning Shopify boutique.
+			I need a high-performance, reliable and secure backend
 		</li>
 		<li class="badge variant-filled mb-6 rounded-full">
-			I need a high-performance, reliable and secure backend.
+			We need help to migrate on the public cloud
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full">
-			We need help for migrating on the public cloud
-		</li>
-		<li class="badge variant-filled mb-6 rounded-full">I want to reenforce me engineering team.</li>
+		<li class="badge variant-filled mb-6 rounded-full">I want to reenforce my engineering team</li>
 		<li class="badge variant-filled mb-6 rounded-full px-6 py-3">
-			I wish to develope a Minimum Viable Product.
+			I wish to develop a Minimum Viable Product
 		</li>
 	</ul>
 </section>
@@ -344,9 +366,9 @@
 				<h4>
 					Monthly <span>⚀</span>
 				</h4>
-				<p class="h4-subtitle">No minimum commitment. <br /> Pause or cancel anytime.</p>
+				<p class="h4-subtitle">No minimum commitment</p>
 				<p class="price">{monthlyAsMonthly}/m</p>
-				<p class="price-info">Pause or cancel anytime</p>
+				<p class="price-info">Pay only what you consume</p>
 				<a class="btn" href="#plans">Get started</a>
 				<a href={callUrl} class="cta-call">Book a call</a>
 			</div>
@@ -357,7 +379,8 @@
 					<li>Unlimited projects</li>
 					<li>Unlimited team members</li>
 					<li>Easy credit-card payments</li>
-					<li>Pause and cancel anytime</li>
+					<li>Pay only what you consume</li>
+					<li>Cancel anytime</li>
 				</ul>
 			</div>
 		</div>
@@ -366,9 +389,11 @@
 				<h4>
 					Quarterly <span>⚃</span>
 				</h4>
-				<p class="h4-subtitle">No minimum commitment. <br /> Pause or cancel anytime.</p>
+				<p class="h4-subtitle">
+					Save {formatter.format(price.monthly.price - price.quarterly.price / 4)} per month
+				</p>
 				<p class="price">{quarterlyAsMonthly}/m</p>
-				<p class="price-info">Paid quarterly</p>
+				<p class="price-info">Save cost for mid size project</p>
 				<a class="btn" href="#plans">Get started</a>
 				<a href={callUrl} class="cta-call inline-block">Book a call</a>
 			</div>
@@ -379,7 +404,8 @@
 					<li>Unlimited projects</li>
 					<li>Unlimited team members</li>
 					<li>Easy credit-card payments</li>
-					<li>Pause and cancel anytime</li>
+					<li>Pay only what you consume</li>
+					<li>Cancel anytime</li>
 				</ul>
 			</div>
 		</div>
@@ -389,7 +415,7 @@
 					Yearly <span>⚅ ⚅</span>
 				</h4>
 				<p class="h4-subtitle">
-					Save {formatter.format(price.monthly.price - price.yearly.price / 12)} per month.
+					Save {formatter.format(price.monthly.price - price.yearly.price / 12)} per month
 				</p>
 				<p class="price">{yearlyAsMonthly}/m</p>
 				<p class="price-info">Paid annually</p>
@@ -403,7 +429,8 @@
 					<li>Unlimited projects</li>
 					<li>Unlimited team members</li>
 					<li>Easy credit-card payments</li>
-					<li>Pause and cancel anytime</li>
+					<li>Pay only what you consume</li>
+					<li>Cancel anytime</li>
 				</ul>
 			</div>
 		</div>
@@ -453,14 +480,30 @@
 		<AccordionItem>
 			<!-- <svelte:fragment slot="lead">(icon)</svelte:fragment> -->
 			<svelte:fragment slot="summary">
-				<p class="summary">Why wouldn't I just hire a full text-xl time software engineer?</p>
+				<p class="summary">Pay only what you consume</p>
 			</svelte:fragment>
 			<svelte:fragment slot="content">
 				<p class="content">
-					You could, in but the reality it's difficult to hire a full text-xl-time senior-level
-					software engineer. Actually, to entry salaries exceed $110 000, plus beneficts. The
-					process for hiring one is long and costly. It cost thosands of dollars for just hiring
-					someone without starting to work with your team.
+					Here a example of how it works: You start your Monthly membership at May 1st. You pause at
+					May 16th. At June 1st we'll not billing you. If you resume your Monthly subscribtion at
+					September 18th. Your nexy billing will be at October 1st..
+				</p>
+			</svelte:fragment>
+		</AccordionItem>
+		<AccordionItem>
+			<!-- <svelte:fragment slot="lead">(icon)</svelte:fragment> -->
+			<svelte:fragment slot="summary">
+				<p class="summary">Why wouldn't I just hire a fulltime software engineer?</p>
+			</svelte:fragment>
+			<svelte:fragment slot="content">
+				<p class="content">
+					You could, in but the reality it's difficult to hire a fulltime senior-level software
+					engineer. Actually, to entry salaries exceed $110 000, plus beneficts. The process for
+					hiring one is long and costly. It cost thosands of dollars for just hiring process.
+				</p>
+				<p>
+					Sometimes it's more valuable to spend your time on your business and let us handle the
+					technology.
 				</p>
 			</svelte:fragment>
 		</AccordionItem>
@@ -489,14 +532,11 @@
 				</p>
 
 				<p>
-					If the complexity is about about kickoff a project and advisory, we recommand using the
-					addon for unlimited call. We'll be able to help you to define the next actions for your
-					goal outcome.
+					If the complexity is kickoff for a project and a advisory, we recommand using the addon
+					for unlimited call. We'll be able to help you to define the next actions for your goal
+					outcome.
 				</p>
-				<p>
-					Sometimes, the complexity of the project is too big for us. We'll let you know and we'll
-					refund you.
-				</p>
+				<p>If we can't commit to your project, we'll let you know and we'll refund you.</p>
 			</svelte:fragment>
 		</AccordionItem>
 		<AccordionItem>
@@ -544,14 +584,18 @@
 	</Accordion>
 </section>
 
-<footer class="grid grid-flow-col grid-cols-6 bg-stone-950">
+<footer class="bg-noise grid grid-flow-col grid-cols-6 bg-stone-950">
 	<!-- <svg id="logo" /> -->
 	<div class="grid grid-flow-col items-center border">
 		<ProvinceOfQuebec />
 		<div>
-			<div class="self-center text-white">Montréal</div>
+			<div class="self-center text-white">Montreal</div>
 			<div class="text-xs text-white"><CurrentTime /></div>
 		</div>
+		<!-- 		<div>
+			<div class="self-center text-white">{Intl.DateTimeFormat().resolvedOptions().timeZone}</div>
+			<div class="text-xs text-white"><CurrentTime local={true} /></div>
+		</div> -->
 	</div>
 
 	<div class="col-start-5 border text-white">
@@ -595,7 +639,11 @@
 
 <style lang="scss">
 	//@import "open-props/postcss/animations";
-
+	.bg-noise {
+		background-image: var(--bg-noise-url);
+		background-repeat: repeat;
+		/* Add other properties if needed */
+	}
 	.projects {
 		--duration: 0.3s;
 		transition: transform var(--duration) ease-out;
@@ -678,13 +726,13 @@
 	.card {
 		@apply flex flex-col gap-6 p-6;
 		@apply text-center;
-
+		@apply bg-noise;
 		@media (min-aspect-ratio: 1/1) {
 			@apply text-left;
 		}
 
 		.top {
-			@apply relative border-b-2 border-black pb-6;
+			@apply relative pb-6;
 		}
 		h4 > span {
 			@apply absolute -right-1 -top-1 text-3xl font-bold;
@@ -723,7 +771,9 @@
 	}
 
 	.addon {
-		@apply w-full bg-black p-8 text-center text-2xl;
+		background: var(--bg-noise-url), #000;
+		@apply mt-1 w-full bg-black p-8 text-center text-2xl;
+		@apply bg-noise;
 		@media (min-aspect-ratio: 1/1) {
 			//@apply text-left;
 		}
@@ -760,17 +810,17 @@
 		//height: 100vh;
 		//background: url(/illustration.svg);
 		/* This makes the background image cover the entire div */
-		background-size: auto 100%;
+		//background-size: auto 100%;
 		/* By default, background images will be positioned at the top-left corner of the div */
-		background-position: top center;
+		//background-position: top center;
 		/* This makes the background image not repeat */
-		background-repeat: no-repeat;
+		//background-repeat: no-repeat;
 		/* Allow div to overflow */
 		overflow: visible;
 
 		@media (min-aspect-ratio: 1/1) {
 			//lg
-			background-size: 100% auto;
+			//background-size: 100% auto;
 		}
 		// linear
 		/* 
@@ -797,7 +847,7 @@
 			animation: 1200ms ease 400ms 1 normal backwards running appear;
 		}
 
-		cta-zone {
+		.cta-zone {
 			animation: 1200ms ease 800ms 1 normal backwards running appear;
 		}
 	}
