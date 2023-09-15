@@ -1,0 +1,478 @@
+{
+	"benefits2": {
+		"neverGoingBack": {
+			"en": "Never going back \n Only going forward"
+		},
+		"coreTeam": {
+			"en": "We are a branch of your core team. Share your request directly with a CTO with an engineering degree."
+		},
+		"testimonialText": {
+			"en": "I am satisfied with his expertise during the transition to our new platform and I recommend him."
+		},
+		"testimonialName": {
+			"en": "Serge L'Heureux"
+		},
+		"testimonialCompany": {
+			"en": "ex Cercle K"
+		},
+		"shareAsync": {
+			"title": {
+				"en": "Share Async"
+			},
+			"description": {
+				"en": "Simple design board. We nail the process of communication wherever you are on the globe"
+			}
+		},
+		"bringYourStack": {
+			"title": {
+				"en": "Bring your own stack"
+			},
+			"description": {
+				"en": "We enhance your own stack. If you don't have one, we'll provide the right one for your project"
+			}
+		},
+		"unlimitedTeamMembers": {
+			"title": {
+				"en": "Unlimited team members"
+			},
+			"description": {
+				"en": "Invite all members of your team! They can submit requests and review their process"
+			}
+		}
+	},
+	"benefits": {
+		"partnerForSuccess": {
+			"en": "Branch is your partner for success"
+		},
+		"managingTech": {
+			"en": "Managing technology as you want it, just arrived"
+		},
+		"subscribeAndAsk": {
+			"en": "Subscribe and ask \nunlimited request"
+		},
+		"receiveChange": {
+			"en": "Receive change \nfollowing the first day"
+		},
+		"tuneUp": {
+			"en": "We’ll tune up \nuntil you’re 100% satisfied"
+		},
+		"testimonialText": {
+			"en": "He offers an exceptional solution to manage our products sold at the store."
+		},
+		"testimonialName": {
+			"en": "Riel B."
+		},
+		"testimonialCompany": {
+			"en": "Trevi"
+		}
+	},
+	"membership": {
+		"title": {
+			"en": "Membership benefits"
+		},
+		"subtitle": {
+			"en": "We deliver results for your business challenges"
+		},
+		"startNow": {
+			"en": "Start now"
+		},
+		"benefits": {
+			"requestsBoard": {
+				"title": {
+					"en": "Requests board"
+				},
+				"description": {
+					"en": "Unlimited requests to your board as long as you are a member"
+				}
+			},
+			"quickDelivery": {
+				"title": {
+					"en": "Quick delivery"
+				},
+				"description": {
+					"en": "Get results for your requests within days"
+				}
+			},
+			"flatRate": {
+				"title": {
+					"en": "Flat rate"
+				},
+				"description": {
+					"en": "Manage your budget without surprises"
+				}
+			},
+			"topQuality": {
+				"title": {
+					"en": "Top quality"
+				},
+				"description": {
+					"en": "We only apply the highest standards of the industry"
+				}
+			},
+			"flexible": {
+				"title": {
+					"en": "Flexible"
+				},
+				"description": {
+					"en": "Pause or cancel your membership at anytime"
+				}
+			},
+			"uniqueAndYours": {
+				"title": {
+					"en": "Unique and all yours"
+				},
+				"description": {
+					"en": "All strategy, codes and infrastructure, it's 100% yours"
+				}
+			}
+		}
+	},
+	"whyWorkUs": {
+		"title": {
+			"en": "Why you should work with us"
+		},
+		"reasons": {
+			"webApp": {
+				"en": "I need a web application running on mobile & desktop"
+			},
+			"aiIntegration": {
+				"en": "We want to add AI with LLM integration with OpenAI"
+			},
+			"browserExtension": {
+				"en": "I want to create a web browser extension"
+			},
+			"collectData": {
+				"en": "I need help to collect data"
+			},
+			"shopifyBoutique": {
+				"en": "I want to open a stunning Shopify boutique"
+			},
+			"reliableBackend": {
+				"en": "I need a high-performance, reliable and secure backend"
+			},
+			"cloudMigration": {
+				"en": "We need help to migrate on the public cloud"
+			},
+			"reinforceTeam": {
+				"en": "I want to reinforce my engineering team"
+			},
+			"mvpDevelopment": {
+				"en": "I wish to develop a Minimum Viable Product"
+			},
+			"ctoReplacement": {
+				"en": "We need to replace our CTO for a parental leave or departures"
+			},
+			"hiringHelp": {
+				"en": "Help us to hire an agency or a software engineer and build our internal team"
+			},
+			"ctoLeaveReplacement": {
+				"en": "We need to replace our CTO for a parental leave or departures."
+			}
+		}
+	},
+	"plans": {
+		"title": {
+			"en": "Memberships levels"
+		},
+		"subtitle": {
+			"en": "Choose your convenient plan"
+		},
+		"mostPopular": {
+			"en": "most popular"
+		},
+		"monthly": {
+			"title": {
+				"en": "Monthly"
+			},
+			"subtitle": {
+				"en": "No minimum commitment"
+			},
+			"priceInfo": {
+				"en": "Billing monthly"
+			},
+			"getStarted": {
+				"en": "Get started"
+			},
+			"bookACall": {
+				"en": "Book a call"
+			},
+			"includesTitle": {
+				"en": "What's included:"
+			},
+			"includes": {
+				"oneRequest": {
+					"en": "One request at a time"
+				},
+				"unlimitedProjects": {
+					"en": "Unlimited projects"
+				},
+				"unlimitedTeamMembers": {
+					"en": "Unlimited team members"
+				},
+				"easyPayments": {
+					"en": "Easy credit-card payments"
+				},
+				"payOnly": {
+					"en": "Pay only what you consume"
+				},
+				"cancelAnytime": {
+					"en": "Cancel anytime"
+				}
+			}
+		},
+		"quarterly": {
+			"title": {
+				"en": "Quarterly"
+			},
+			"subtitle": {
+				"en": "Save per month"
+			},
+			"priceInfo": {
+				"en": "Billing every 4 months"
+			},
+			"getStarted": {
+				"en": "Get started"
+			},
+			"bookACall": {
+				"en": "Book a call"
+			},
+			"includesTitle": {
+				"en": "What's included:"
+			},
+			"includes": {
+				"oneRequest": {
+					"en": "One request at a time"
+				},
+				"unlimitedProjects": {
+					"en": "Unlimited projects"
+				},
+				"unlimitedTeamMembers": {
+					"en": "Unlimited team members"
+				},
+				"easyPayments": {
+					"en": "Easy credit-card payments"
+				},
+				"payOnly": {
+					"en": "Pay only what you consume"
+				},
+				"cancelAnytime": {
+					"en": "Cancel anytime"
+				}
+			}
+		},
+		"yearly": {
+			"title": {
+				"en": "Yearly"
+			},
+			"subtitle": {
+				"en": "Save per month"
+			},
+			"priceInfo": {
+				"en": "Billing yearly"
+			},
+			"getStarted": {
+				"en": "Get started"
+			},
+			"bookACall": {
+				"en": "Book a call"
+			},
+			"includesTitle": {
+				"en": "What's included:"
+			},
+			"includes": {
+				"oneRequest": {
+					"en": "One request at a time"
+				},
+				"unlimitedProjects": {
+					"en": "Unlimited projects"
+				},
+				"unlimitedTeamMembers": {
+					"en": "Unlimited team members"
+				},
+				"easyPayments": {
+					"en": "Easy credit-card payments"
+				},
+				"payOnly": {
+					"en": "Pay only what you consume"
+				},
+				"cancelAnytime": {
+					"en": "Cancel anytime"
+				}
+			}
+		},
+		"call": {
+			"title": {
+				"en": "Book a call"
+			},
+			"subtitle": {
+				"en": "Learn more about how Branch works and how it can help you."
+			},
+			"bookNow": {
+				"en": "Book a call"
+			}
+		},
+		"referral": {
+			"title": {
+				"en": "Refer a friend & earn"
+			},
+			"subtitle": {
+				"en": "Earn monthly recurring commissions for each referral."
+			},
+			"joinNow": {
+				"en": "Join now"
+			}
+		}
+	},
+	"addon": {
+		"title": {
+			"en": "add-on"
+		},
+		"unlimitedCall": {
+			"title": {
+				"en": "Unlimited call"
+			},
+			"subtitle": {
+				"en": "Get access to unlimited booking call for advisory services"
+			}
+		},
+		"forWhom": {
+			"en": "For whom?"
+		},
+		"includes": {
+			"direction": {
+				"en": "Need direction for the project and your team"
+			},
+			"hireTech": {
+				"en": "Hire new tech engineer leadership"
+			},
+			"prioritizeRequests": {
+				"en": "We help to prioritize what requests have more value for your business"
+			}
+		}
+	},
+	"faqs": {
+		"title": {
+			"en": "FAQs"
+		},
+		"questions": [
+			{
+				"summary": {
+					"en": "Pay only what you consume"
+				},
+				"content": {
+					"en": "Here a example of how it works: \nYou start your Monthly membership at May 1st. \nYou pause at May 16th. \nAt June 1st we'll not billing you. \nIf you resume your Monthly subscribtion at September 18th. \nYour nexy billing will be at October 1st."
+				}
+			},
+			{
+				"summary": {
+					"en": "Why wouldn't I just hire a fulltime software engineer?"
+				},
+				"content": {
+					"en": "You could, in but the reality it's difficult to hire a fulltime senior-level software engineer. Actually, to entry salaries exceed $110 000, plus beneficts. The process for hiring one is long and costly. It cost thosands of dollars for just hiring process. \n\nSometimes it's more valuable to spend your time on your business and let us handle the technology."
+				}
+			},
+			{
+				"summary": {
+					"en": "Really unlimited?"
+				},
+				"content": {
+					"en": "Once you have your membership, you can submit as many requests on our queue as you want. And we'll be delivery one by one. First in first out."
+				}
+			},
+			{
+				"summary": {
+					"en": "How fast I will receive my request"
+				},
+				"content": {
+					"en": "On average, you'll receive your request in next few days for smaller scope of work: bug fix. For bigger scope of work. like a new feature, it can take up to 2 weeks. For new kickoff project, it can take up to weeks to months depending the complexity of the project. If the scope of work is too big, we'll split it in smaller scope of work for delivery faster where you can review and give feedback. \n\nIf the complexity is kickoff for a project and a advisory, we recommand using the addon for unlimited call. We'll be able to help you to define the next actions for your goal outcome. \n\nIf we can't commit to your project, we'll let you know and we'll refund you."
+				}
+			},
+			{
+				"summary": {
+					"en": "Who is the principal Software engineer?"
+				},
+				"content": {
+					"en": "ZBRANCH is actually a studio of one person. The founder, myself, will work directly with you. For bigger ou more complex request, like custom backend or particular tech expertise with senior level engineer, I'll work with our network of senior level engineer or third parties provider like AWS."
+				}
+			},
+			{
+				"summary": {
+					"en": "What stack do you use?"
+				},
+				"content": {
+					"en": "For frontend, we use SvelteKit/Skeleton/Tailwind. For backend, we use Supabase or SurrealDB. For the infrastructure deploying we can deploy on AWS, Vercel, Netlify or Cloudflare or custom deployment with Kubernetes. \n\nIf you already a custom stack like react or vue or any language like PHP, Python, Ruby. We can work with your stack."
+				}
+			},
+			{
+				"summary": {
+					"en": "What if I don't like the service?"
+				},
+				"content": {
+					"en": "We provide a high quality of service, there will be no refunds issued. You may cancel your membership on the portal."
+				}
+			}
+		]
+	},
+	"footer": {
+		"location": {
+			"en": "Montreal",
+			"fr": "..."
+		},
+		"legals": {
+			"en": "LEGALS",
+			"links": [
+				{
+					"name": {
+						"en": "Privacy Policy",
+						"fr": "..."
+					}
+				},
+				{
+					"name": {
+						"en": "Terms & Conditions",
+						"fr": "..."
+					}
+				}
+			]
+		},
+		"shortcuts": {
+			"en": "SHORTCUTS",
+			"links": [
+				{
+					"name": {
+						"en": "Customer Portal",
+						"fr": "..."
+					}
+				},
+				{
+					"name": {
+						"en": "Prices",
+						"fr": "..."
+					}
+				}
+			]
+		}
+	},
+	"heroContent": {
+		"logoAlt": {
+			"en": "zbranch logo",
+			"fr": "..."
+		},
+		"title": {
+			"en": "Turn your vision into reality",
+			"fr": "..."
+		},
+		"subtitle": {
+			"en": "We offer technical direction without the full commitment",
+			"fr": "..."
+		},
+		"cta1": {
+			"en": "Book a call",
+			"fr": "..."
+		},
+		"cta2": {
+			"en": "Start now",
+			"fr": "..."
+		}
+	}
+}

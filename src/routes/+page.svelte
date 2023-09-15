@@ -1,15 +1,20 @@
-<!-- <section id="hero" class="bg-fixed bg-local" style="background-image: url({men03})"> -->
+<!-- /src/routes/+page.svelte -->
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
-	//import viewport from '$actions/viewport';
-	import { fly } from 'svelte/transition';
 
-	/** Import SVG sssets */
+	/* 	import HeroSection from '$lib/sections/HeroSection.svelte';
+	import ServicesSection from '$lib/sections/ServicesSection.svelte';
+	import PlansSection from '$lib/sections/PlansSection.svelte';
+	import ContactSection from '$lib/sections/ContactSection.svelte'; */
+
+	/** Import Actions Animations */
+	import viewport from '$lib/actions/viewport';
+	let once = false;
+	/** Import SVG assets */
 	import Sunset from '$lib/Sunset.svelte';
 	import ProvinceOfQuebec from '$lib/assets/ProvinceOfQuebec.svelte';
 	import ListMorph from '$lib/ListMorph.svelte';
-	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import callUrl from '$lib/data/bookacall.json';
 	import price from '$lib/data/en-US_price.json';
 	import GiveMoney from '$lib/assets/GiveMoney.svelte';
@@ -22,10 +27,14 @@
 	import Panel from '$lib/Panel.svelte';
 	import HeroIllustration from '$lib/assets/illustration/HeroIllustration.svelte';
 
+	/** Import Components */
 	import { Avatar } from '@skeletonlabs/skeleton';
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
+	/** Import Datas */
 	import brands from '$lib/data/brands.json';
 
+	/** Import Studio*/
 	import * as core from '@theatre/core';
 	import studio from '@theatre/studio';
 
@@ -52,6 +61,7 @@
 			studio.initialize();
 			const project = core.getProject('Branch');
 			const sheet = project.sheet('LandingPage');
+			studio.ui.hide();
 		}
 	}
 
@@ -97,7 +107,7 @@
 				Turn your digital vision into reality
 			</h1>
 			<h2 class="p-8 text-5xl font-extrabold">
-				Software engineering subscriptions to scale your organization
+				Software engineering subscriptions to success projects.
 			</h2>
 			<div class="cta-zone flex flex-row gap-6 overflow-y-hidden">
 				<!-- 				
@@ -119,11 +129,11 @@
 	</div>
 	<!-- <Sunset /> -->
 	<div class="z-0">
-		<div class="blob-left">
+		<div class="blob-left slideInRight">
 			<img
 				src="/demidonut1.svg"
 				alt="blob"
-				class="absolute -left-4 top-0 w-24 rotate-180 md:left-0 md:top-20 md:w-[150px] 2xl:w-[240px]"
+				class="absolute -left-4 top-0 w-24 md:left-0 md:top-20 md:w-[150px] 2xl:w-[240px]"
 			/>
 			<img
 				src="/blobSquareMulti.svg"
@@ -131,16 +141,16 @@
 				class="absolute -left-4 top-0 w-24 md:left-0 md:top-20 md:w-[150px] 2xl:w-[240px]"
 			/>
 		</div>
-		<div class="blob-right">
+		<div class="blob-right slideInLeft">
 			<img
 				src="/demidonut2.svg"
 				alt="blob"
-				class="absolute -right-4 bottom-1/2 z-0 w-24 rotate-90 md:visible md:bottom-40 md:right-5 md:w-[150px] 2xl:w-[240px]"
+				class="absolute -right-4 bottom-1/2 z-0 w-24 md:visible md:bottom-40 md:right-5 md:w-[150px] 2xl:w-[240px]"
 			/>
 			<img
 				src="/circleDots.svg"
 				alt="blob"
-				class="absolute -right-4 bottom-1/2 z-0 w-24 rotate-90 md:visible md:bottom-40 md:right-5 md:w-[150px] 2xl:w-[240px]"
+				class="absolute -right-4 bottom-1/2 z-0 w-24 md:visible md:bottom-40 md:right-5 md:w-[150px] 2xl:w-[240px]"
 			/>
 		</div>
 	</div>
@@ -169,7 +179,8 @@
 		loading="lazy"
 		src="/latestrepos.svg"
 		alt=""
-		class="absolute left-48 z-10 w-[15%] -rotate-12"
+		class="slideInRight absolute left-48 z-10 w-[15%] -rotate-12"
+		use:viewport={{ once }}
 	/>
 	<div
 		class="flex w-screen flex-row gap-6 overflow-hidden pb-24 pt-24"
@@ -199,25 +210,43 @@
 	<h3>Technology as you want it, just arrived</h3>
 	<div class="benefit-grid">
 		<div class="benefit-item">
-			<img src="/animate/add.apng" alt="add" class="benefit-item-img" />
+			<img
+				src="/animate/add.apng"
+				alt="add"
+				class="benefit-item-img fadeIn animation-delay-1"
+				use:viewport={{ once }}
+			/>
 			<p class="text-center">Subscribe and request <br /> unlimited features</p>
 		</div>
 		<div class="benefit-item">
-			<img src="/animate/diamond.apng" alt="diamond" class="benefit-item-img" />
+			<img
+				src="/animate/diamond.apng"
+				alt="diamond"
+				class="benefit-item-img fadeIn animation-delay-2"
+				use:viewport={{ once }}
+			/>
 			<p class="text-center">Receive your feature the <br /> following week during business days</p>
 		</div>
 		<div class="benefit-item">
-			<img src="/animate/success.apng" alt="success" class="benefit-item-img" />
+			<img
+				src="/animate/success.apng"
+				alt="success"
+				class="benefit-item-img fadeIn animation-delay-3"
+				use:viewport={{ once }}
+			/>
 			<p class="text-center">We’ll tune up your features <br /> until you’re 100% satisfied</p>
 		</div>
-		<div class="bg-noise relative col-span-3 flex flex-col items-center gap-6 bg-surface-300 p-6">
+		<div
+			class="bg-noise slideInLeft relative col-span-3 flex flex-col items-center gap-6 bg-surface-300 p-6"
+			use:viewport={{ once }}
+		>
 			<div class="h-14 text-left text-9xl font-extrabold text-tertiary-500">’’</div>
 			<cite class="text-center text-2xl font-semibold">
 				He offers an exceptional solution to manage our products sold at the store.
 			</cite>
-			<div class="flex flex-row items-center gap-2">
-				<Avatar src="/testimonials/riel.jpeg" width="w-8" />
-				<p class="inline-block text-xs">
+			<div class="flex flex-row items-center gap-4">
+				<Avatar src="/testimonials/riel.jpeg" width="w-12" />
+				<p class="inline-block text-base">
 					Riel B., <strong>Trevi</strong>
 				</p>
 			</div>
@@ -230,9 +259,10 @@
 	<h3 class="pb-8 text-lg sm:w-1/2">
 		We are a branch of your core team. Share your request directly with an engineer.
 	</h3>
-	<div class="grid grid-cols-1 gap-6 border md:grid-cols-2">
+	<div class=" grid grid-cols-1 gap-6 border md:grid-cols-2">
 		<div
-			class="bg-noise flex flex-col self-center bg-surface-50 p-4 md:px-12 md:py-12 lg:px-16 lg:py-16"
+			class="bg-noise slideInRight flex flex-col self-center bg-surface-50 p-4 md:px-12 md:py-12 lg:px-16 lg:py-16"
+			use:viewport={{ once }}
 		>
 			<div class="flex flex-col gap-6">
 				<div class="h-14 text-left text-9xl font-extrabold text-tertiary-500">’’</div>
@@ -240,15 +270,15 @@
 					I am satisfied with his expertise during the transition to our new platform and I
 					recommend him.
 				</cite>
-				<div class="flex flex-row items-center gap-2">
-					<Avatar src="/testimonials/serge.jpeg" width="w-8" />
-					<p class="inline-block text-xs">
+				<div class="flex flex-row items-center gap-4">
+					<Avatar src="/testimonials/serge.jpeg" width="w-12" />
+					<p class="inline-block text-base">
 						Serge L'Heureux, <strong>ex Cercle K</strong>
 					</p>
 				</div>
 			</div>
 		</div>
-		<div class="flex flex-col gap-4 border">
+		<div class="slideInLeft flex flex-col gap-4 border" use:viewport={{ once }}>
 			<div>
 				<h4 class="font-bold">Share Async</h4>
 				<p class="">
@@ -278,7 +308,7 @@
 		class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
 		href="#plans">Start now</a
 	>
-	<div class="benefit-grid">
+	<div class="benefit-grid fadeIn" use:viewport={{ once }}>
 		<div class="benefit-item">
 			<img src="/animate/edit.apng" alt="edit" class="benefit-item-img" />
 			<h4>Requests board</h4>
@@ -334,29 +364,71 @@
 		<p>Skeleton</p>
 	</div>
 </section> -->
-<section class="scope">
+<section class="scope" id="scope">
 	<h2>Why you should work with us</h2>
 	<!-- <ul class="grid grid-cols-3 gap-6"></ul> -->
 	<ul class="max-w-10/12 m-4 text-center">
-		<li class="badge variant-filled mb-6 rounded-full">
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=1"
+		>
 			I need a web application running on mobile & desktop
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full">
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=2"
+		>
 			We want to add AI with LLM integration with OpenAI
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full">I want to create a web browser extension</li>
-		<li class="badge variant-filled mb-6 rounded-full">I need help to collect data</li>
-		<li class="badge variant-filled mb-6 rounded-full">
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=3"
+		>
+			I want to create a web browser extension
+		</li>
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=4"
+		>
+			I need help to collect data
+		</li>
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=5"
+		>
 			I want to open a stunning Shopify boutique
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full">
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=6"
+		>
 			I need a high-performance, reliable and secure backend
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full">
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=7"
+		>
 			We need help to migrate on the public cloud
 		</li>
-		<li class="badge variant-filled mb-6 rounded-full">I want to reenforce my engineering team</li>
-		<li class="badge variant-filled mb-6 rounded-full px-6 py-3">
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full"
+			use:viewport={{ once }}
+			style="--animation-step=8"
+		>
+			I want to reenforce my engineering team
+		</li>
+		<li
+			class="fadeIn badge variant-filled mb-6 rounded-full px-6 py-3"
+			use:viewport={{ once }}
+			style="--animation-step=9"
+		>
 			I wish to develop a Minimum Viable Product
 		</li>
 	</ul>
@@ -383,7 +455,7 @@
 				</h4>
 				<p class="h4-subtitle">No minimum commitment</p>
 				<p class="price">{monthlyAsMonthly}/m</p>
-				<p class="price-info">Pay only what you consume</p>
+				<p class="price-info">Billing monthly</p>
 				<a class="btn" href="#plans">Get started</a>
 				<a href={callUrl} class="cta-call">Book a call</a>
 			</div>
@@ -408,7 +480,7 @@
 					Save {formatter.format(price.monthly.price - price.quarterly.price / 4)} per month
 				</p>
 				<p class="price">{quarterlyAsMonthly}/m</p>
-				<p class="price-info">Save cost for mid size project</p>
+				<p class="price-info">Billing {formatter.format(price.quarterly.price)} every 4 months</p>
 				<a class="btn" href="#plans">Get started</a>
 				<a href={callUrl} class="cta-call inline-block">Book a call</a>
 			</div>
@@ -433,7 +505,7 @@
 					Save {formatter.format(price.monthly.price - price.yearly.price / 12)} per month
 				</p>
 				<p class="price">{yearlyAsMonthly}/m</p>
-				<p class="price-info">Paid annually</p>
+				<p class="price-info">Billing {formatter.format(price.yearly.price)} yearly</p>
 				<a class="btn" href="#plans">Get started</a>
 				<a href={callUrl} class="cta-call">Book a call</a>
 			</div>
@@ -499,9 +571,12 @@
 			</svelte:fragment>
 			<svelte:fragment slot="content">
 				<p class="content">
-					Here a example of how it works: You start your Monthly membership at May 1st. You pause at
-					May 16th. At June 1st we'll not billing you. If you resume your Monthly subscribtion at
-					September 18th. Your nexy billing will be at October 1st..
+					Here a example of how it works: <br />
+					You start your Monthly membership at May 1st. <br />
+					You pause at May 16th. <br />
+					At June 1st we'll not billing you. <br />
+					If you resume your Monthly subscribtion at September 18th. <br />
+					Your nexy billing will be at October 1st.
 				</p>
 			</svelte:fragment>
 		</AccordionItem>
@@ -599,21 +674,178 @@
 	</Accordion>
 </section>
 
-<footer class="bg-noise grid grid-flow-col grid-cols-6 bg-stone-950">
-	<!-- <svg id="logo" /> -->
-	<div class="grid grid-flow-col items-center border">
+<!-- <div class="wp-block-columns is-layout-flex wp-container-89 gap-8 lg:gap-5">
+	<div class="wp-block-column is-layout-flow col-span-12 lg:col-span-4" style="flex-basis:33%">
+		<figure class="wp-block-image size-full mb-3 ml-auto mr-auto">
+			<img
+				loading="lazy"
+				width="301"
+				height="75"
+				src="https://workleap.com/wp-content/uploads/2023/05/workleap-logo-inverted.svg"
+				alt="Workleap Logo Inverted"
+				class="wp-image-381"
+			/>
+		</figure>
+		<div
+			class="wp-block-buttons is-style-small-buttons is-content-justification-center is-layout-flex wp-container-77"
+		>
+			<div class="wp-block-button is-inverted">
+				<a class="wp-block-button__link wp-element-button" href="https://workleap.com/demo/"
+					><span class="text-wrapper">Talk to an expert</span></a
+				>
+			</div>
+		</div>
+	</div>
+	<div class="wp-block-column is-layout-flow col-span-12 lg:col-span-8">
+		<div
+			class="wp-block-columns breakpoint-sm breakpoint-sm is-layout-flex wp-container-87 gap-6 lg:gap-5"
+		>
+			<div class="wp-block-column is-layout-flow col-span-6 lg:col-span-3">
+				<div class="wp-block-group is-layout-constrained">
+					<p class="is-style-overline has-content-default-inverted-color has-text-color">Company</p>
+					<ul class="has-sm-font-size">
+						<li><a href="https://workleap.com/about/" data-type="URL">Who we are</a></li>
+						<li>
+							<a href="https://workleap.com/why-workleap/" data-type="page" data-id="358"
+								>Why Workleap</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wp-block-column is-layout-flow col-span-6 lg:col-span-3">
+				<div class="wp-block-group is-layout-constrained">
+					<p class="is-style-overline has-content-default-inverted-color has-text-color">Product</p>
+					<ul class="has-sm-font-size">
+						<li>
+							<a href="https://workleap.com/pricing/" data-type="page" data-id="1243">Pricing</a>
+						</li>
+						<li>
+							<a
+								href="https://workleap.com/products/"
+								data-type="URL"
+								data-id="https://workleap.com/products/">Product overview</a
+							>
+						</li>
+						<li>
+							<a href="https://workleap.com/softstart/" data-type="page" data-id="522">Onboarding</a
+							>
+						</li>
+						<li>
+							<a href="https://workleap.com/officevibe/" data-type="page" data-id="523"
+								>Officevibe</a
+							>
+						</li>
+						<li>
+							<a href="https://workleap.com/didacte/" data-type="page" data-id="521">Learning</a>
+						</li>
+						<li>
+							<a href="https://workleap.com/talentscope/" data-type="page" data-id="518"
+								>Talent Development</a
+							>
+						</li>
+						<li>
+							<a href="https://workleap.com/sharegate/" data-type="page" data-id="520">ShareGate</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wp-block-column is-layout-flow col-span-6 lg:col-span-3">
+				<div class="wp-block-group is-layout-constrained">
+					<p class="is-style-overline has-content-default-inverted-color has-text-color">Careers</p>
+					<ul class="has-sm-font-size">
+						<li>
+							<a href="https://workleap.com/careers/" data-type="page" data-id="1446"
+								>Join the team</a
+							>
+						</li>
+						<li>
+							<a href="https://workleap.com/innovation-lab/" data-type="page" data-id="1271"
+								>Innovation lab</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://workleap.com/careers-developers/"
+								data-type="URL"
+								data-id="https://workleap.com/careers-developers/">Being a Workleap dev</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://workleap.com/careers-internships/"
+								data-type="URL"
+								data-id="https://workleap.com/careers-internships/">Internship program</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wp-block-column is-layout-flow col-span-6 lg:col-span-3">
+				<div class="wp-block-group is-layout-constrained">
+					<p class="is-style-overline has-content-default-inverted-color has-text-color">
+						Resources
+					</p>
+					<ul class="has-sm-font-size">
+						<li><a href="https://workleap.com/blog/" data-type="page" data-id="50">Blog</a></li>
+						<li>
+							<a href="https://workleap.com/contact/" data-type="page" data-id="1303">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<footer id="footer" class="bg-noise flex flex-col bg-black text-white md:flex-row md:gap-6">
+	<div class="flex flex-col md:col-span-2 md:flex-row md:justify-start md:gap-6">
 		<ProvinceOfQuebec />
 		<div>
 			<div class="self-center text-white">Montreal</div>
 			<div class="text-xs text-white"><CurrentTime /></div>
 		</div>
-		<!-- 		<div>
-			<div class="self-center text-white">{Intl.DateTimeFormat().resolvedOptions().timeZone}</div>
-			<div class="text-xs text-white"><CurrentTime local={true} /></div>
-		</div> -->
+	</div>
+	<div class="mt-auto flex flex-col md:col-span-2 md:ml-auto md:flex-row md:justify-end md:gap-6">
+		<div>
+			<div class="mb-4 font-bold text-white">LEGALS</div>
+			<ul class="">
+				<li class="mb-3 list-none">
+					<a href="#">Privacy Policy</a>
+				</li>
+				<li class="mb-3 list-none">
+					<a href="#">Terms & Conditions </a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<div class="mb-4 font-bold text-white">SHORTCUTS</div>
+			<ul class="">
+				<li class="mb-3 list-none">
+					<a href="#">Customer Portal</a>
+				</li>
+				<li class="mb-3 list-none">
+					<a href="#plans">Prices</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<!-- <footer
+	class="bg-noise grid grid-flow-row grid-rows-6 bg-stone-950 md:grid-flow-col md:grid-cols-6"
+>
+
+	<div class="row-span-2 grid grid-flow-col items-center border md:col-span-2">
+		<ProvinceOfQuebec />
+		<div>
+			<div class="self-center text-white">Montreal</div>
+			<div class="text-xs text-white"><CurrentTime /></div>
+		</div>
+
 	</div>
 
-	<div class="col-start-5 border text-white">
+	<div class="row-start-5 border text-white md:col-start-5">
 		<div class="mb-4 font-bold text-white">LEGALS</div>
 		<ul class="">
 			<li class="mb-3 list-none">
@@ -624,8 +856,8 @@
 			</li>
 		</ul>
 	</div>
-	<div class="col-start-6 border text-white">
-		<div class="mb-4 font-bold text-white">NAV</div>
+	<div class="row-start-6 border text-white md:col-start-6">
+		<div class="mb-4 font-bold text-white">SHORTCUTS</div>
 		<ul class="">
 			<li class="mb-3 list-none">
 				<a href="#">Customer Portal</a>
@@ -635,7 +867,8 @@
 			</li>
 		</ul>
 	</div>
-</footer>
+</footer> 
+-->
 <!-- <div class="absolute">
 	<div class="relative">
 		<Logo />
@@ -716,18 +949,15 @@
 	}
 
 	nav#floating-menu {
-		@apply sm:visible;
-		@apply fixed inset-x-0 bottom-1 mx-auto flex w-max flex-row items-center justify-center gap-0 rounded-full bg-black bg-opacity-90 px-1 py-1 text-2xl text-white;
+		font-family: var(--theme-font-family-heading);
+		@apply invisible lg:visible;
+		@apply fixed inset-x-0 bottom-1 mx-auto flex w-max flex-row items-center justify-center gap-0 rounded-full bg-black bg-opacity-90 p-5 text-2xl text-white;
 
 		a {
-			@apply h-max rounded-full px-4 py-2 text-center text-2xl text-sm font-bold;
+			@apply h-max rounded-full px-4 py-2 text-center text-xl font-bold;
 			&:hover {
-				@apply bg-white text-black;
+				@apply bg-white text-black no-underline;
 			}
-		}
-
-		&[data-scroll='0'] {
-			@apply hidden;
 		}
 	}
 	.cards-container {
@@ -883,13 +1113,7 @@
 			background-size: 100% auto;
 		}
 	}
-	/* 	#hero {
-		@apply flex w-screen content-end border-black md:flex-row md:border-8 md:px-0 md:py-0;
-		@apply md:px-20;
-		background-color: rgba(255, 165, 0, 1);
-	} 
-// hero from Outlinemen03
-	*/
+
 	#ruban {
 		@apply relative flex w-screen max-w-full overflow-hidden;
 		@apply h-24 bg-black;
@@ -910,6 +1134,13 @@
 			100% {
 				transform: translate3d(-2016px, 0, 0); //1008px +  9 * 112px
 			}
+		}
+	}
+
+	footer {
+		@media (min-aspect-ratio: 1/1) {
+			//lg
+			//background-size: 100% auto;
 		}
 	}
 </style>

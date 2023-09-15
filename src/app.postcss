@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
 /*place global styles here */
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -103,6 +107,24 @@ section {
 	/* 	& div {
 		background-image: var(--bg-noise-url);
 	} */
+}
+
+.onscreen.slideInLeft {
+	animation: var(--animation-slide-in-left) forwards;
+}
+
+.onscreen.slideInRight {
+	animation: var(--animation-slide-in-right) forwards;
+}
+
+.onscreen {
+	&.fadeIn {
+		--animation-delay: 0.5s;
+		opacity: 0;
+		animation: var(--animation-fade-in) 1s forwards;
+		animation-delay: calc(var(--animation-step, 1) * var(--animation-delay));
+		animation-timing-function: var(--ease-out);
+	}
 }
 
 footer {
