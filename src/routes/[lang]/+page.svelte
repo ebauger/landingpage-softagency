@@ -25,6 +25,11 @@
 	/** Import Datas */
 	import t from '$lib/sections/en_translations.json';
 	import brands from '$lib/data/brands.json';
+	import type { PageData } from './$types';
+	export let data: PageData;
+	//const { data, DataType } = data;
+
+	//TODO: use data type and convert the json to /lang/fr.ts
 
 	/** Import Studio*/
 	import * as core from '@theatre/core';
