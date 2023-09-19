@@ -6,6 +6,12 @@
 	//import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
+
+	import type { Config } from '@sveltejs/adapter-vercel';
+
+	export const config: Config = {
+		runtime: 'edge'
+	};
 </script>
 
 <slot />
