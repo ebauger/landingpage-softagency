@@ -9,10 +9,10 @@ export const load: PageLoad = async ({ params }) => {
         } else {
             return { ...data };
         } */
-    console.log(params.lang);
+    //console.log(params.lang);
 
-    const { content, DataType } = await import(/* @vite-ignore */ `/src/lib/lang/${params.lang}.ts`);
-    console.log(content.benefits.partnerForSuccess);
+    const { content, DataType } = await import(`./${params.lang}.ts`);
+    //console.log(content.benefits.partnerForSuccess);
 
 
     return { content, DataType };
