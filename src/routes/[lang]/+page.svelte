@@ -23,7 +23,6 @@
 	/* import FloatingMenu from '$lib/sections/FloatingMenu.svelte'; */
 
 	/** Import Datas */
-	import t from '$lib/sections/en_translations.json';
 	import brands from '$lib/data/brands.json';
 	import type { PageData } from './$types';
 	export let data: PageData;
@@ -78,7 +77,7 @@
 	let faqsSection: HTMLElement;
 </script>
 
-<HeroSection bind:heroSection />
+<HeroSection bind:heroSection content={data.content} />
 <div bind:this={projectElement} class="projects relative">
 	<img
 		loading="lazy"
@@ -110,43 +109,47 @@
 		{/each}
 	</div>
 </div>
-<BenefitsSection bind:benefitsSection />
-<Benefits2Section bind:benefits2Section />
-<MembershipSection bind:membershipSection />
-<WhyWorkUsSection bind:whyWorkUsSection />
-<PlansSection bind:plansSection />
-<FaqsSection bind:faqsSection />
+<BenefitsSection bind:benefitsSection content={data.content} />
+<Benefits2Section bind:benefits2Section content={data.content} />
+<MembershipSection bind:membershipSection content={data.content} />
+<WhyWorkUsSection bind:whyWorkUsSection content={data.content} />
+<PlansSection bind:plansSection content={data.content} />
+<FaqsSection bind:faqsSection content={data.content} />
 
 <footer id="footer" class="bg-noise flex flex-col bg-black text-white md:flex-row md:gap-6">
 	<div class="flex flex-col md:col-span-2 md:flex-row md:justify-start md:gap-6">
 		<ProvinceOfQuebec />
 		<div>
-			<div class="self-center text-white">{t.footer.location}</div>
+			<div class="self-center text-white">{data.content.footer.location}</div>
 			<div class="text-xs text-white"><CurrentTime /></div>
 		</div>
 	</div>
 	<div class="mt-auto flex flex-col md:col-span-2 md:ml-auto md:flex-row md:justify-end md:gap-6">
 		<div>
-			<div class="mb-4 font-bold text-white">{t.footer.legals}</div>
+			<div class="mb-4 font-bold text-white">{data.content.footer.legals.name}</div>
 			<ul class="">
 				<li class="mb-3 list-none">
-					<a href="#">{t.footer.legals.links[0].name}</a>
+					<a href={data.content.footer.legals.links[0].href}
+						>{data.content.footer.legals.links[0].name}</a
+					>
 				</li>
 				<li class="mb-3 list-none">
-					<a href="#">{t.footer.legals.links[1].name}</a>
+					<a href={data.content.footer.legals.links[1].href}
+						>{data.content.footer.legals.links[1].name}</a
+					>
 				</li>
 			</ul>
 		</div>
 		<div>
-			<div class="mb-4 font-bold text-white">{t.footer.shortcuts}</div>
+			<div class="mb-4 font-bold text-white">{data.content.footer.shortcuts.name}</div>
 			<ul class="">
 				<li class="mb-3 list-none">
 					<a href="https://billing.stripe.com/p/login/14k4iybRo2tz5BC288"
-						>{t.footer.shortcuts.links[0].name}</a
+						>{data.content.footer.shortcuts.links[0].name}</a
 					>
 				</li>
 				<li class="mb-3 list-none">
-					<a href="#plans">{t.footer.shortcuts.links[1].name}</a>
+					<a href="#plans">{data.content.footer.shortcuts.links[1].name}</a>
 				</li>
 			</ul>
 		</div>

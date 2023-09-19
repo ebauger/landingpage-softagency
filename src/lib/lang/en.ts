@@ -1,6 +1,6 @@
 export const content = {
     "benefits2": {
-        "neverGoingBack": "Never going back \n Only going forward",
+        "neverGoingBack": "Only going forward",
         "coreTeam": "We are a branch of your core team. Share your request directly with a CTO with an engineering degree.",
         "testimonialText": "I am satisfied with his expertise during the transition to our new platform and I recommend him.",
         "testimonialName": "Serge L'Heureux",
@@ -15,7 +15,7 @@ export const content = {
         },
         "unlimitedTeamMembers": {
             "title": "Unlimited team members",
-            "description": "Invite all members of your team! They can submit requests and review their process"
+            "description": "Invite all members of your team! They can submit requests."
         }
     },
     "benefits": {
@@ -70,7 +70,7 @@ export const content = {
             "mvpDevelopment": "I wish to develop a Minimum Viable Product",
             "ctoReplacement": "We need to replace our CTO for a parental leave or departures",
             "hiringHelp": "Help us to hire an agency or a software engineer and build our internal team",
-            "ctoLeaveReplacement": "We need to replace our CTO for a parental leave or departures."
+            "ctoLeaveReplacement": "We need to replace our CTO for a parental leave or departure."
         }
     },
     "plans": {
@@ -183,11 +183,9 @@ export const content = {
         ]
     },
     "footer": {
-        "location": {
-            "title": "Montreal"
-        },
+        "location": "Montréal",
         "legals": {
-            "title": "LEGALS",
+            "name": "LEGALS",
             "links": [
                 {
                     "name": "Privacy Policy",
@@ -207,7 +205,7 @@ export const content = {
                     "href": "https://billing.stripe.com/p/login/14k4iybRo2tz5BC288"
                 },
                 {
-                    "name": "Pricesr",
+                    "name": "Prices",
                     "href": "#"
                 }
             ]

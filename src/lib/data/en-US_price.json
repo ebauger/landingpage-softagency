@@ -1,22 +1,28 @@
 {
-	"BCP47": "en-US",
-	"currency": "USD",
+	"BCP47": "en-CA",
+	"currency": "CAD",
 	"monthly": {
-		"price": 4995.0,
+		"href": "https://buy.stripe.com/14kbM46LDfFYcFi3cq",
+		"price": 6675.0,
 		"addon": {
-			"price": 3995.0
+			"href": "https://buy.stripe.com/eVadUc0nf79sdJm14l",
+			"price": 12175.0
 		}
 	},
 	"quarterly": {
-		"price": 19780.0,
+		"href": "https://buy.stripe.com/9AQ17q4DvfFY5cQ5kz",
+		"price": 24697.5,
 		"addon": {
-			"price": 3995.0
+			"href": "https://buy.stripe.com/28o17q0nf1P87kY00i",
+			"price": 45047.5
 		}
 	},
 	"yearly": {
-		"price": 47940.0,
+		"href": "https://buy.stripe.com/cN25nG1rjgK26gUbIY",
+		"price": 68085.0,
 		"addon": {
-			"price": 3995.0
+			"href": "https://buy.stripe.com/00g2bu6LDeBU9t65kD",
+			"price": 124185.0
 		}
 	}
 }

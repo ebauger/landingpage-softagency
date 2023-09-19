@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
-	import t from '$lib/sections/en_translations.json';
 
 	export let faqsSection: HTMLElement;
+	export let content: any;
 </script>
 
 <section id="faqs" bind:this={faqsSection}>
-	<h2>{t.faqs.title}</h2>
+	<h2>{content.faqs.title}</h2>
 	<Accordion>
-		{#each t.faqs.questions as question}
+		{#each content.faqs.questions as question}
 			<AccordionItem>
 				<svelte:fragment slot="summary">
 					<p class="summary">{question.summary}</p>

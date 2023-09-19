@@ -1,22 +1,22 @@
 <script lang="ts">
-	import t from '$lib/sections/en_translations.json';
 	export let heroSection: HTMLElement;
+	export let content: any;
 </script>
 
 <section id="hero" class="relative h-screen w-screen max-w-full border-2" bind:this={heroSection}>
 	<div class="z-10 flex h-full w-full place-content-center bg-opacity-80 text-2xl">
 		<div class="flex flex-col place-content-center items-center gap-6 rounded-full text-xl">
-			<img src="/Zbranch.png" alt={t.heroContent.logoAlt} width="150px" />
-			<h1 class="anim pt-6 font-extrabold italic md:text-6xl">{t.heroContent.title}</h1>
-			<h2 class="p-8 text-5xl font-extrabold">{t.heroContent.subtitle}</h2>
+			<img src="/Zbranch.png" alt={content.heroContent.logoAlt} width="150px" />
+			<h1 class="anim pt-6 font-extrabold italic md:text-6xl">{content.heroContent.title}</h1>
+			<h2 class="p-8 text-5xl font-extrabold">{content.heroContent.subtitle}</h2>
 			<div class="cta-zone flex flex-row gap-6 overflow-y-hidden">
 				<a
 					class="bg-initial btn mx-auto my-8 w-max text-2xl text-neutral-600 hover:text-neutral-950"
-					href="#plans">{t.heroContent.cta1}</a
+					href="#plans">{content.heroContent.cta1}</a
 				>
 				<a
 					class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
-					href="#plans">{t.heroContent.cta2}</a
+					href="#plans">{content.heroContent.cta2}</a
 				>
 			</div>
 		</div>
