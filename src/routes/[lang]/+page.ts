@@ -1,19 +1,14 @@
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params }) => {
+    const { lang } = params;
+    const modules = import.meta.glob('./*.ts');
 
-    /*     const data = await cvDB.get(params.icu);
-        console.log(data);
-        if (typeof data === 'undefined') {
-            return error(404, 'Not found');
-        } else {
-            return { ...data };
-        } */
-    //console.log(params.lang);
+    if (!modules[`./${lang}.ts`]) {
+        // Handle unsupported languages or provide a default
+        return { status: 404, error: new Error('Language not supported') };
+    }
 
-    const { content, DataType } = await import(`./${params.lang}.ts`);
-    //console.log(content.benefits.partnerForSuccess);
-
-
-    return { content, DataType };
-}
+    const { content, DataType } = await modules[`./${lang}.ts`]();
+    return { content, DataType }
+};
