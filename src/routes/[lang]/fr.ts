@@ -83,7 +83,7 @@ export const content = {
         "monthly": {
             "title": "Mensuel",
             "subtitle": "Pas d'engagement minimum",
-            "priceInfo": "Facturation mensuelle",
+            "priceInfo": "Facturation mensuelle à",
             "getStarted": "Commencer",
             "bookACall": "Réserver un appel",
             "includesTitle": "Ce qui est inclus :",
@@ -99,7 +99,7 @@ export const content = {
         "quarterly": {
             "title": "Trimestrielle",
             "subtitle": "Économiser par mois",
-            "priceInfo": "Facturation tous les 4 mois",
+            "priceInfo": "Facturation tous les 4 mois à",
             "getStarted": "Commencer",
             "bookACall": "Réserver un appel",
             "includesTitle": "Ce qui est inclus :",
@@ -115,7 +115,7 @@ export const content = {
         "yearly": {
             "title": "Annuel",
             "subtitle": "Économiser par mois",
-            "priceInfo": "Facturation annuelle",
+            "priceInfo": "Facturation annuelle à",
             "getStarted": "Commencer",
             "bookACall": "Réserver un appel",
             "includesTitle": "Ce qui est inclus :",
@@ -140,7 +140,7 @@ export const content = {
         }
     },
     "addon": {
-        "title": "complément",
+        "title": "Prémium",
         "unlimitedCall": {
             "title": "Appel illimité",
             "subtitle": "Accès à un nombre illimité d'appels de réservation pour des services de conseil"

@@ -80,7 +80,7 @@ export const content = {
         "monthly": {
             "title": "Monthly",
             "subtitle": "No minimum commitment",
-            "priceInfo": "Billing monthly",
+            "priceInfo": "Billing monthly at",
             "getStarted": "Get started",
             "bookACall": "Book a call",
             "includesTitle": "What's included:",
@@ -96,7 +96,7 @@ export const content = {
         "quarterly": {
             "title": "Quarterly",
             "subtitle": "Save per month",
-            "priceInfo": "Billing every 4 months",
+            "priceInfo": "Billing every 4 months at",
             "getStarted": "Get started",
             "bookACall": "Book a call",
             "includesTitle": "What's included:",
@@ -112,7 +112,7 @@ export const content = {
         "yearly": {
             "title": "Yearly",
             "subtitle": "Save per month",
-            "priceInfo": "Billing yearly",
+            "priceInfo": "Billing yearly at",
             "getStarted": "Get started",
             "bookACall": "Book a call",
             "includesTitle": "What's included:",
@@ -137,7 +137,7 @@ export const content = {
         }
     },
     "addon": {
-        "title": "add-on",
+        "title": "Add-on Premium",
         "unlimitedCall": {
             "title": "Unlimited call",
             "subtitle": "Get access to unlimited booking call for advisory services"

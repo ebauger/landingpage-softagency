@@ -7,17 +7,20 @@
 	let formatter = new Intl.NumberFormat(price.BCP47, {
 		style: 'currency',
 		currency: price.currency,
-		currencyDisplay: 'code',
-		minimumFractionDigits: 0
+		currencyDisplay: 'narrowSymbol',
+		minimumFractionDigits: 2
 	});
-
-	let monthlyAsMonthly = formatter.format(price.monthly.price);
-	let quarterlyAsMonthly = formatter.format(price.quarterly.price / 4);
-	let yearlyAsMonthly = formatter.format(price.yearly.price / 12);
-	let addonAsMonthly = formatter.format(price.monthly.addon.price);
-	let addonQuarterlyAsMonthly = formatter.format(price.monthly.addon.price / 4);
-	let addonYearlyAsMonthly = formatter.format(price.monthly.addon.price / 12);
-	let monthlyReferral = formatter.format(price.monthly.price * 0.05);
+	const displayPrice = (number: number) => {
+		const getCountryCodeFromLocale = (input: string) => input.split('-')[1];
+		return `${formatter.format(number)}${getCountryCodeFromLocale(price.BCP47)}`;
+	};
+	let monthlyAsMonthly = displayPrice(price.monthly.price);
+	let quarterlyAsMonthly = displayPrice(price.quarterly.price / 4);
+	let yearlyAsMonthly = displayPrice(price.yearly.price / 12);
+	let addonAsMonthly = displayPrice(price.monthly.addon.price);
+	let addonQuarterlyAsMonthly = displayPrice(price.monthly.addon.price / 4);
+	let addonYearlyAsMonthly = displayPrice(price.monthly.addon.price / 12);
+	let monthlyReferral = displayPrice(price.monthly.price * 0.05);
 
 	export let plansSection: HTMLElement;
 	export let content: any;
@@ -41,7 +44,7 @@
 				<p class="h4-subtitle">{content.plans.monthly.subtitle}</p>
 				<p class="price">{monthlyAsMonthly}/m</p>
 				<p class="price-info">{content.plans.monthly.priceInfo}</p>
-				<a class="btn" href="#plans">{content.plans.monthly.getStarted}</a>
+				<a class="btn" href={price.monthly.href}>{content.plans.monthly.getStarted}</a>
 				<a href={callUrl} class="cta-call">{content.plans.monthly.bookACall}</a>
 			</div>
 			<div class="bottom">
@@ -62,9 +65,10 @@
 				<p class="h4-subtitle">{content.plans.quarterly.subtitle}</p>
 				<p class="price">{quarterlyAsMonthly}/m</p>
 				<p class="price-info">
-					{content.plans.quarterly.priceInfo} à {formatter.format(price.quarterly.price)}
+					{content.plans.quarterly.priceInfo}
+					{displayPrice(price.quarterly.price)}
 				</p>
-				<a class="btn" href="#plans">{content.plans.quarterly.getStarted}</a>
+				<a class="btn" href={price.quarterly.href}>{content.plans.quarterly.getStarted}</a>
 				<a href={callUrl} class="cta-call inline-block">{content.plans.quarterly.bookACall}</a>
 			</div>
 			<div class="bottom">
@@ -85,9 +89,10 @@
 				<p class="h4-subtitle">{content.plans.yearly.subtitle}</p>
 				<p class="price">{yearlyAsMonthly}/m</p>
 				<p class="price-info">
-					{content.plans.yearly.priceInfo} à {formatter.format(price.yearly.price)}
+					{content.plans.yearly.priceInfo}
+					{displayPrice(price.yearly.price)}
 				</p>
-				<a class="btn" href="#plans">{content.plans.yearly.getStarted}</a>
+				<a class="btn" href={price.yearly.href}>{content.plans.yearly.getStarted}</a>
 				<a href={callUrl} class="cta-call">{content.plans.yearly.bookACall}</a>
 			</div>
 			<div class="bottom">
@@ -118,8 +123,11 @@
 		</div>
 	</div>
 	<div class="addon" id="addon">
-		<div class="badge variant-filled text-lg font-medium uppercase text-white">
-			{content.addon.title}
+		<div class="relative inline-block">
+			<span class="badge-icon variant-filled-warning absolute -right-2 -top-2 z-10">+</span>
+			<div class="badge variant-filled text-lg font-medium uppercase text-white">
+				{content.addon.title}
+			</div>
 		</div>
 		<div class="flex flex-col gap-6 pt-6">
 			<h2 class="text-white">{content.addon.unlimitedCall.title}</h2>
