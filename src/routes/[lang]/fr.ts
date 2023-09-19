@@ -19,7 +19,7 @@ export const content = {
         }
     },
     "benefits": {
-        "partnerForSuccess": "La branche est votre partenaire pour la réussite",
+        "partnerForSuccess": "Zbranch est votre partenaire pour la réussite",
         "managingTech": "Gérer la technologie comme vous l'entendez, elle vient d'arriver",
         "subscribeAndAsk": "S'abonner et demander\ndemande illimitée",
         "receiveChange": "Recevoir un changement\naprès le premier jour",
@@ -130,13 +130,13 @@ export const content = {
         },
         "call": {
             "title": "Réserver un appel",
-            "subtitle": "En savoir plus sur le fonctionnement de la branche et sur la manière dont elle peut vous aider.",
+            "subtitle": "En savoir plus sur le fonctionnement de Zbranch et sur la manière dont on peut vous aider.",
             "bookNow": "Réserver un appel"
         },
         "referral": {
             "title": "Parrainez un ami et gagnez",
-            "subtitle": "Gagnez des commissions mensuelles récurrentes pour chaque filleul.",
-            "joinNow": "S'inscrire"
+            "subtitle": "Gagnez des commissions mensuelles récurrentes pour chaque parainnage.",
+            "joinNow": "Disponible bientôt"
         }
     },
     "addon": {

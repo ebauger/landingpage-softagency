@@ -133,7 +133,7 @@ export const content = {
         "referral": {
             "title": "Refer a friend & earn",
             "subtitle": "Earn monthly recurring commissions for each referral.",
-            "joinNow": "Join now"
+            "joinNow": "Available soon"
         }
     },
     "addon": {
