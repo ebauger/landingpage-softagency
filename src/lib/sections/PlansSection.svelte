@@ -122,7 +122,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="addon" id="addon">
+	<!-- <div class="addon" id="addon">
 		<div class="relative inline-block">
 			<span class="badge-icon variant-filled-warning absolute -right-2 -top-2 z-10">+</span>
 			<div class="badge variant-filled text-lg font-medium uppercase text-white">
@@ -145,7 +145,7 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </section>
 
 <style lang="scss">
@@ -177,15 +177,15 @@
 			@apply absolute -right-1 -top-1 text-3xl font-bold;
 		}
 		.h4-subtitle {
-			@apply h-24  pb-8 text-sm;
+			@apply h-12 pb-8 text-sm;
 		}
 
 		.price {
-			@apply pb-4 text-3xl font-bold;
+			@apply pb-4 text-2xl font-bold xl:text-3xl;
 		}
 
 		.price-info {
-			@apply pb-8 text-xs font-semibold text-slate-600;
+			@apply h-12 pb-8 text-xs font-semibold text-slate-600;
 		}
 
 		.btn {

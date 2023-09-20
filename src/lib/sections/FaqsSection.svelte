@@ -11,7 +11,7 @@
 		{#each content.faqs.questions as question}
 			<AccordionItem>
 				<svelte:fragment slot="summary">
-					<p class="summary">{question.summary}</p>
+					<p class="summary font-bold">{question.summary}</p>
 				</svelte:fragment>
 				<svelte:fragment slot="content">
 					<p class="content">{question.content}</p>

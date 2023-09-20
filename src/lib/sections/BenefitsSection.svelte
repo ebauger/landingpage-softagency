@@ -63,15 +63,16 @@
 			@apply font-light;
 		}
 		.benefit-grid {
-			@apply grid grid-cols-1 gap-20;
+			@apply sm:grid sm:grid-cols-3 sm:gap-20;
 
-			@media (min-aspect-ratio: 1/1) {
-				@apply grid-flow-row grid-cols-3;
-			}
+			/* 			@media (min-aspect-ratio: 1/1) {
+				@apply grid-flow-row sm:grid-cols-3;
+			} */
 		}
 
 		.benefit-item {
 			@apply flex h-full flex-col items-center justify-center text-center text-2xl;
+			@apply mb-4;
 		}
 
 		.benefit-item-img {

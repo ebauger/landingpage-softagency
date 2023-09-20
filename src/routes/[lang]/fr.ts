@@ -6,11 +6,11 @@ export const content = {
         "testimonialName": "Serge L'Heureux",
         "testimonialCompany": "ex Cercle K",
         "shareAsync": {
-            "title": "Partager Async",
-            "description": "Un panneau de conception simple. Nous clouons le processus de communication où que vous soyez sur le globe."
+            "title": "Communication Async",
+            "description": "Nous communiquons où que vous soyez sur le globe."
         },
         "bringYourStack": {
-            "title": "Apportez votre propre pile",
+            "title": "Apportez votre propre technologie",
             "description": "Nous améliorons votre propre pile. Si vous n'en avez pas, nous vous fournirons celle qui convient à votre projet."
         },
         "unlimitedTeamMembers": {
@@ -21,9 +21,9 @@ export const content = {
     "benefits": {
         "partnerForSuccess": "Zbranch est votre partenaire pour la réussite",
         "managingTech": "Gérer la technologie comme vous l'entendez, elle vient d'arriver",
-        "subscribeAndAsk": "S'abonner et demander\ndemande illimitée",
-        "receiveChange": "Recevoir un changement\naprès le premier jour",
-        "tuneUp": "Nous nous occupons de la mise au point\njusqu'à ce que vous soyez 100% satisfait",
+        "subscribeAndAsk": "S'abonner et \najouter des demandes illimitées",
+        "receiveChange": "De la valeur\ndès le premier jour",
+        "tuneUp": "Soyez satisfait à 100%",
         "testimonialText": "Il offre une solution exceptionnelle pour gérer nos produits vendus en magasin.",
         "testimonialName": "Riel B.",
         "testimonialCompany": "Trevi"
@@ -34,8 +34,8 @@ export const content = {
         "startNow": "Commencer maintenant",
         "benefits": {
             "requestsBoard": {
-                "title": "Conseil des requêtes",
-                "description": "Demandes illimitées à votre conseil d'administration tant que vous êtes membre"
+                "title": "Gestion des demandes",
+                "description": "Demandes illimitées pour les membres de votre équipe"
             },
             "quickDelivery": {
                 "title": "Livraison rapide",
@@ -54,7 +54,7 @@ export const content = {
                 "description": "Interrompre ou annuler votre adhésion à tout moment"
             },
             "uniqueAndYours": {
-                "title": "Unique et tout à vous",
+                "title": "Unique et à vous",
                 "description": "Toute la stratégie, les codes et l'infrastructure vous appartiennent à 100 %."
             }
         }
@@ -161,7 +161,7 @@ export const content = {
             },
             {
                 "summary": "Pourquoi ne pas engager un ingénieur logiciel à temps plein ?",
-                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un ingénieur logiciel de haut niveau. En fait, les salaires d'entrée dépassent 110 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche coûte des milliers de dollars.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
+                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un ingénieur logiciel sénior. En fait, les salaires d'entrée dépassent 110 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche coûte des milliers de dollars.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
             },
             {
                 "summary": "Vraiment illimité ?",
@@ -169,11 +169,11 @@ export const content = {
             },
             {
                 "summary": "Dans quel délai recevrai-je ma demande ?",
-                "content": "En moyenne, vous recevrez votre demande dans les jours qui suivent pour les travaux de moindre envergure : correction de bogues. Pour les travaux de plus grande envergure, comme une nouvelle fonctionnalité, cela peut prendre jusqu'à 2 semaines. Pour un nouveau projet, cela peut prendre des semaines, voire des mois, en fonction de la complexité du projet. Si le projet est trop important, nous le diviserons en plusieurs parties afin de le livrer plus rapidement et de vous permettre d'en prendre connaissance et de donner votre avis.\n\nS'il s'agit du lancement d'un projet et d'un conseil, nous vous recommandons d'utiliser l'addon pour un nombre illimité d'appels. Nous serons en mesure de vous aider à définir les prochaines actions pour atteindre votre objectif.\n\nSi nous ne pouvons pas nous engager sur votre projet, nous vous le ferons savoir et nous vous rembourserons."
+                "content": "En moyenne, vous recevrez votre demande dans les jours qui suivent pour les travaux de moindre envergure : correction de bogues. Pour les travaux de plus grande envergure, comme une nouvelle fonctionnalité, cela peut prendre jusqu'à 2 semaines. Pour un nouveau projet, cela peut prendre des semaines, voire des mois, en fonction de la complexité du projet. Si le projet est trop important, nous le diviserons en plusieurs parties afin de le livrer plus rapidement et de vous permettre d'en prendre connaissance et de donner votre avis.\n\nS'il s'agit du lancement d'un projet et d'un conseil, nous vous recommandons d'utiliser l'offre prémium pour un nombre illimité de demandes. Nous serons en mesure de vous aider à définir les prochaines actions pour atteindre votre objectif.\n\nSi nous ne pouvons pas nous engager sur votre projet, nous vous le ferons savoir et nous vous rembourserons."
             },
             {
                 "summary": "Qui est l'ingénieur logiciel principal ?",
-                "content": "ZBRANCH est en fait un studio composé d'une seule personne. Le fondateur, moi-même, travaillera directement avec vous. Pour les demandes plus importantes ou plus complexes, comme un backend personnalisé ou une expertise technique particulière avec un ingénieur de haut niveau, je travaillerai avec notre réseau d'ingénieurs de haut niveau ou avec des fournisseurs tiers comme AWS."
+                "content": "Zbranch est en fait un studio composé d'une seule personne. Le fondateur, moi-même, travaillera directement avec vous. Pour les demandes plus importantes ou plus complexes, comme un backend personnalisé ou une expertise technique particulière avec un ingénieur de haut niveau, je travaillerai avec notre réseau d'ingénieurs de haut niveau ou avec des fournisseurs tiers comme AWS."
             },
             {
                 "summary": "Quelle pile utilisez-vous ?",
@@ -181,7 +181,7 @@ export const content = {
             },
             {
                 "summary": "Que se passe-t-il si je n'aime pas le service ?",
-                "content": "Nous fournissons un service de haute qualité, il n'y aura pas de remboursement. Vous pouvez annuler votre adhésion sur le portail."
+                "content": "Nous fournissons un service de haute qualité, il n'y aura pas de remboursement. Vous pouvez annuler votre adhésion sur le portail client."
             }
         ]
     },
@@ -192,11 +192,11 @@ export const content = {
             "links": [
                 {
                     "name": "Politique de confidentialité",
-                    "href": "#"
+                    "href": "https://ebaexpert.notion.site/Modalit-s-et-conditions-b11fdaa429314406be9a57fd3bd30272"
                 },
                 {
                     "name": "Conditions générales d'utilisation",
-                    "href": "#"
+                    "href": "https://ebaexpert.notion.site/Modalit-s-et-conditions-b11fdaa429314406be9a57fd3bd30272"
                 }
             ]
         },

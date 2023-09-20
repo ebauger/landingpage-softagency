@@ -4,12 +4,14 @@
 </script>
 
 <section id="hero" class="relative h-screen w-screen min-w-full border-2" bind:this={heroSection}>
-	<div class="z-10 flex h-full w-full place-content-center bg-opacity-80 text-2xl">
-		<div class="flex flex-col place-content-center items-center gap-6 rounded-full text-xl">
+	<div class="z-10 flex h-full w-full place-content-center bg-opacity-80">
+		<div class="flex flex-col place-content-center items-center gap-6 rounded-full">
 			<img src="/Zbranch.png" alt={content.heroContent.logoAlt} width="150px" />
-			<h1 class="anim pt-6 font-extrabold italic md:text-6xl">{content.heroContent.title}</h1>
-			<h2 class="p-8 text-5xl font-extrabold">{content.heroContent.subtitle}</h2>
-			<div class="cta-zone flex flex-row gap-6 overflow-y-hidden">
+			<h1 class="anim pt-6 text-5xl font-extrabold italic sm:text-6xl">
+				{content.heroContent.title}
+			</h1>
+			<h2 class="p-8 text-4xl font-extrabold sm:text-5xl">{content.heroContent.subtitle}</h2>
+			<div class="cta-zone flex flex-col-reverse overflow-y-hidden sm:flex-row sm:gap-6">
 				<a
 					class="bg-initial btn mx-auto my-8 w-max text-2xl text-neutral-600 hover:text-neutral-950"
 					href="#plans">{content.heroContent.cta1}</a

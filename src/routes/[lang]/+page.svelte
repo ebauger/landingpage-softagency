@@ -116,15 +116,19 @@
 <PlansSection bind:plansSection content={data.content} />
 <FaqsSection bind:faqsSection content={data.content} />
 
-<footer id="footer" class="bg-noise flex flex-col bg-black text-white md:flex-row md:gap-6">
-	<div class="flex flex-col md:col-span-2 md:flex-row md:justify-start md:gap-6">
+<footer
+	id="footer"
+	class="bg-noise flex flex-col items-center gap-6 bg-black text-white lg:flex-row lg:gap-6"
+>
+	<div class="flex flex-col items-center gap-6 lg:col-span-2 lg:flex-row lg:justify-start lg:gap-6">
+		<img src="/Zbranch DarkBG.png" alt="logo Zbranch" width="150px" />
 		<ProvinceOfQuebec />
 		<div>
-			<div class="self-center text-white">{data.content.footer.location}</div>
+			<div class="text-white">{data.content.footer.location}</div>
 			<div class="text-xs text-white"><CurrentTime /></div>
 		</div>
 	</div>
-	<div class="mt-auto flex flex-col md:col-span-2 md:ml-auto md:flex-row md:justify-end md:gap-6">
+	<div class="mt-auto flex flex-col lg:col-span-2 lg:ml-auto lg:flex-row lg:justify-end lg:gap-6">
 		<div>
 			<div class="mb-4 font-bold text-white">{data.content.footer.legals.name}</div>
 			<ul class="">
