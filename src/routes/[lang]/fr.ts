@@ -20,7 +20,7 @@ export const content = {
     },
     "benefits": {
         "partnerForSuccess": "Zbranch est votre partenaire pour la réussite",
-        "managingTech": "Gérer la technologie comme vous l'entendez, elle vient d'arriver",
+        "managingTech": "Gérer la technologie comme vous l'entendez",
         "subscribeAndAsk": "S'abonner et \najouter des demandes illimitées",
         "receiveChange": "De la valeur\ndès le premier jour",
         "tuneUp": "Soyez satisfait à 100%",
