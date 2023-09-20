@@ -235,7 +235,7 @@
 		/* This makes the background image not repeat */
 		//background-repeat: no-repeat;
 		/* Allow div to overflow */
-		overflow: visible;
+		//overflow: visible;
 
 		@media (min-aspect-ratio: 1/1) {
 			//lg

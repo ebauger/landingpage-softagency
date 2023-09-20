@@ -3,7 +3,7 @@
 	export let content: any;
 </script>
 
-<section id="hero" class="relative h-screen w-screen max-w-full border-2" bind:this={heroSection}>
+<section id="hero" class="relative h-screen w-screen min-w-full border-2" bind:this={heroSection}>
 	<div class="z-10 flex h-full w-full place-content-center bg-opacity-80 text-2xl">
 		<div class="flex flex-col place-content-center items-center gap-6 rounded-full text-xl">
 			<img src="/Zbranch.png" alt={content.heroContent.logoAlt} width="150px" />
