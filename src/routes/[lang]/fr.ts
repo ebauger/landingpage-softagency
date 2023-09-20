@@ -165,7 +165,7 @@ export const content = {
             },
             {
                 "summary": "Vraiment illimité ?",
-                "content": "Une fois que vous êtes membre, vous pouvez soumettre autant de demandes que vous le souhaitez dans notre file d'attente. Nous les traiterons une par une. Premier arrivé, premier servi."
+                "content": "Une fois que vous êtes membre, vous pouvez soumettre autant de demandes que vous le souhaitez dans notre file d'attente. Nous les traiterons une par une."
             },
             {
                 "summary": "Dans quel délai recevrai-je ma demande ?",
