@@ -216,6 +216,7 @@ export const content = {
         "title": "Turn your vision into reality",
         "subtitle": "We offer technical direction without the full commitment",
         "cta1": "Book a call",
+        "cta1Href": "https://calendly.com/ebaexpert/15-minutes-ebauger",
         "cta2": "Start now"
     }
 }

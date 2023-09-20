@@ -14,7 +14,7 @@
 			<div class="cta-zone flex flex-col-reverse overflow-y-hidden sm:flex-row sm:gap-6">
 				<a
 					class="bg-initial btn mx-auto my-8 w-max text-2xl text-neutral-600 hover:text-neutral-950"
-					href="#plans">{content.heroContent.cta1}</a
+					href={content.heroContent.cta1Href}>{content.heroContent.cta1}</a
 				>
 				<a
 					class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
