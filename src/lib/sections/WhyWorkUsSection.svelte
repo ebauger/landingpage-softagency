@@ -98,8 +98,16 @@
 </section>
 
 <style lang="scss">
+	/* 	ul {
+		@apply flex flex-wrap justify-center;
+	}
+	li {
+		@apply mb-4;
+	} */
 	.scope {
 		li {
+			text-wrap: balance;
+
 			font-size: clamp(0.7rem, 3vw, 1.5rem);
 			line-height: clamp(1.5rem, 2.5vw, 1.75rem);
 			padding: clamp(0.5rem, 2vw, 0.8rem) clamp(0.5rem, 2vw, 1rem);
