@@ -97,7 +97,7 @@ export const content = {
             }
         },
         "quarterly": {
-            "title": "Trimestrielle",
+            "title": "Quadmestrielle",
             "subtitle": "Économiser par mois",
             "priceInfo": "Facturation tous les 4 mois à",
             "getStarted": "Commencer",
@@ -201,7 +201,7 @@ export const content = {
             ]
         },
         "shortcuts": {
-            "name": "SHORTCUTS",
+            "name": "RACCOURCIS",
             "links": [
                 {
                     "name": "Portail clients",

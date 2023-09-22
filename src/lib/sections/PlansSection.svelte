@@ -3,6 +3,16 @@
 	import price from '$lib/data/en-US_price.json';
 	import GiveMoney from '$lib/assets/GiveMoney.svelte';
 	import BookACall2 from '$lib/assets/BookACall2.svelte';
+	import { RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
+	enum Plan {
+		Starter = 0,
+		Premium = 1
+	}
+	let value: Plan = Plan.Starter;
+
+	const displayToggle = (displayTrue: string, displayFalse: string): string => {
+		return value == Plan.Starter ? displayTrue : displayFalse;
+	};
 
 	let formatter = new Intl.NumberFormat(price.BCP47, {
 		style: 'currency',
@@ -18,8 +28,8 @@
 	let quarterlyAsMonthly = displayPrice(price.quarterly.price / 4);
 	let yearlyAsMonthly = displayPrice(price.yearly.price / 12);
 	let addonAsMonthly = displayPrice(price.monthly.addon.price);
-	let addonQuarterlyAsMonthly = displayPrice(price.monthly.addon.price / 4);
-	let addonYearlyAsMonthly = displayPrice(price.monthly.addon.price / 12);
+	let addonQuarterlyAsMonthly = displayPrice(price.quarterly.addon.price / 4);
+	let addonYearlyAsMonthly = displayPrice(price.yearly.addon.price / 12);
 	let monthlyReferral = displayPrice(price.monthly.price * 0.05);
 
 	export let plansSection: HTMLElement;
@@ -28,7 +38,15 @@
 
 <section id="plans" bind:this={plansSection}>
 	<h2>{content.plans.title}</h2>
-	<h3 class="pb-48">{content.plans.subtitle}</h3>
+	<h3 class="mb-16">{content.plans.subtitle}</h3>
+	<RadioGroup active="bg-black text-white font-bold" hover="hover:bg-gray-300" class="mb-20">
+		<RadioItem class="text-xl" bind:group={value} name="Starter" value={Plan.Starter}
+			>Démarrage</RadioItem
+		>
+		<RadioItem class="text-xl" bind:group={value} name="Premium" value={Plan.Premium}
+			>Premium</RadioItem
+		>
+	</RadioGroup>
 	<div class="cards-container relative">
 		<div class="absolute -top-20 left-5">
 			<img src="/3lines.svg" alt="" class="h-10 w-10" />
@@ -42,9 +60,11 @@
 			<div class="top">
 				<h4>{content.plans.monthly.title} <span>⚀</span></h4>
 				<p class="h4-subtitle">{content.plans.monthly.subtitle}</p>
-				<p class="price">{monthlyAsMonthly}/m</p>
-				<p class="price-info">{content.plans.monthly.priceInfo}</p>
-				<a class="btn" href={price.monthly.href}>{content.plans.monthly.getStarted}</a>
+				<p class="price">{value == Plan.Starter ? monthlyAsMonthly : addonAsMonthly}/m</p>
+				<p class="price-info" />
+				<a class="btn" href={value == Plan.Starter ? price.monthly.href : price.monthly.addon.href}
+					>{content.plans.monthly.getStarted}</a
+				>
 				<a href={callUrl} class="cta-call">{content.plans.monthly.bookACall}</a>
 			</div>
 			<div class="bottom">
@@ -63,12 +83,20 @@
 			<div class="top">
 				<h4>{content.plans.quarterly.title} <span>⚃</span></h4>
 				<p class="h4-subtitle">{content.plans.quarterly.subtitle}</p>
-				<p class="price">{quarterlyAsMonthly}/m</p>
+				<p class="price">
+					{value == Plan.Starter ? quarterlyAsMonthly : addonQuarterlyAsMonthly}/m
+				</p>
 				<p class="price-info">
 					{content.plans.quarterly.priceInfo}
-					{displayPrice(price.quarterly.price)}
+					{value == Plan.Starter
+						? displayPrice(price.quarterly.price)
+						: displayPrice(price.quarterly.addon.price)}
 				</p>
-				<a class="btn" href={price.quarterly.href}>{content.plans.quarterly.getStarted}</a>
+				<a
+					class="btn"
+					href={value == Plan.Starter ? price.quarterly.href : price.quarterly.addon.href}
+					>{content.plans.quarterly.getStarted}</a
+				>
 				<a href={callUrl} class="cta-call inline-block">{content.plans.quarterly.bookACall}</a>
 			</div>
 			<div class="bottom">
@@ -87,12 +115,16 @@
 			<div class="top">
 				<h4>{content.plans.yearly.title} <span>⚅ ⚅</span></h4>
 				<p class="h4-subtitle">{content.plans.yearly.subtitle}</p>
-				<p class="price">{yearlyAsMonthly}/m</p>
+				<p class="price">{value == Plan.Starter ? yearlyAsMonthly : addonYearlyAsMonthly}/m</p>
 				<p class="price-info">
 					{content.plans.yearly.priceInfo}
-					{displayPrice(price.yearly.price)}
+					{value == Plan.Starter
+						? displayPrice(price.yearly.price)
+						: displayPrice(price.yearly.addon.price)}
 				</p>
-				<a class="btn" href={price.yearly.href}>{content.plans.yearly.getStarted}</a>
+				<a class="btn" href={value == Plan.Starter ? price.yearly.href : price.yearly.addon.href}
+					>{content.plans.yearly.getStarted}</a
+				>
 				<a href={callUrl} class="cta-call">{content.plans.yearly.bookACall}</a>
 			</div>
 			<div class="bottom">
