@@ -150,7 +150,7 @@
 				<GiveMoney />
 				<h7>{content.plans.referral.title}</h7>
 				<p>{content.plans.referral.subtitle}</p>
-				<a href="todo" class="cta-call">{content.plans.referral.joinNow}</a>
+				<a href="#" class="cta-call">{content.plans.referral.joinNow}</a>
 			</div>
 		</div>
 	</div>
