@@ -134,7 +134,7 @@ export const content = {
             "bookNow": "Réserver un appel"
         },
         "referral": {
-            "title": "Parrainez un ami et gagnez",
+            "title": "Parrainez et gagnez",
             "subtitle": "Gagnez des commissions mensuelles récurrentes pour chaque parainnage.",
             "joinNow": "Disponible bientôt"
         }
@@ -160,7 +160,7 @@ export const content = {
                 "content": "Voici un exemple de fonctionnement :\nVous commencez votre adhésion mensuelle le 1er mai.\nVous vous arrêtez le 16 mai.\nAu 1er juin, nous ne vous facturerons pas.\nSi vous reprenez votre abonnement mensuel le 18 septembre.\nVotre prochaine facturation sera le 1er octobre."
             },
             {
-                "summary": "Pourquoi ne pas engager un ingénieur logiciel à temps plein ?",
+                "summary": "Pourquoi ne pas engager à temps plein ?",
                 "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un ingénieur logiciel sénior. En fait, les salaires d'entrée dépassent 110 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche coûte des milliers de dollars.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
             },
             {
@@ -172,8 +172,8 @@ export const content = {
                 "content": "En moyenne, vous recevrez votre demande dans les jours qui suivent pour les travaux de moindre envergure : correction de bogues. Pour les travaux de plus grande envergure, comme une nouvelle fonctionnalité, cela peut prendre jusqu'à 2 semaines. Pour un nouveau projet, cela peut prendre des semaines, voire des mois, en fonction de la complexité du projet. Si le projet est trop important, nous le diviserons en plusieurs parties afin de le livrer plus rapidement et de vous permettre d'en prendre connaissance et de donner votre avis.\n\nS'il s'agit du lancement d'un projet et d'un conseil, nous vous recommandons d'utiliser l'offre prémium pour un nombre illimité de demandes. Nous serons en mesure de vous aider à définir les prochaines actions pour atteindre votre objectif.\n\nSi nous ne pouvons pas nous engager sur votre projet, nous vous le ferons savoir et nous vous rembourserons."
             },
             {
-                "summary": "Qui est l'ingénieur logiciel principal ?",
-                "content": "Zbranch est en fait un studio composé d'une seule personne. Le fondateur, moi-même, travaillera directement avec vous. Pour les demandes plus importantes ou plus complexes, comme un backend personnalisé ou une expertise technique particulière avec un ingénieur de haut niveau, je travaillerai avec notre réseau d'ingénieurs de haut niveau ou avec des fournisseurs tiers comme AWS."
+                "summary": "Qui est le consultant en développement logiciel principal ?",
+                "content": "Zbranch est en fait un studio composé d'une seule personne. Le fondateur, moi-même, travaillera directement avec vous. Pour les demandes plus importantes ou plus complexes, comme une expertise technique particulière avec un développeur logiciel sénior, je travaillerai avec notre réseau de fournisseurs tiers comme AWS."
             },
             {
                 "summary": "Quelle pile utilisez-vous ?",

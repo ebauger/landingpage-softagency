@@ -47,6 +47,32 @@
 			>Premium</RadioItem
 		>
 	</RadioGroup>
+	{#if value}
+		<div class="addon" id="addon">
+			<div class="relative inline-block">
+				<span class="badge-icon variant-filled-warning absolute -right-2 -top-2 z-10">+</span>
+				<div class="badge variant-filled text-lg font-medium uppercase text-white">
+					{content.addon.title}
+				</div>
+			</div>
+			<div class="flex flex-col gap-6 pt-6">
+				<h2 class="text-white">{content.addon.unlimitedCall.title}</h2>
+				<p class="text-white">{content.addon.unlimitedCall.subtitle}</p>
+				<!-- 				<p class="price text-white">
+					<li class="badge variant-filled-secondary text-lg font-medium uppercase text-white">+</li>
+					{addonAsMonthly}/m
+				</p> -->
+				<div class="bottom text-white">
+					<h3>{content.addon.forWhom}</h3>
+					<ul>
+						<li>{content.addon.includes.direction}</li>
+						<li>{content.addon.includes.hireTech}</li>
+						<li>{content.addon.includes.prioritizeRequests}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	{/if}
 	<div class="cards-container relative">
 		<div class="absolute -top-20 left-5">
 			<img src="/3lines.svg" alt="" class="h-10 w-10" />
@@ -154,30 +180,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="addon" id="addon">
-		<div class="relative inline-block">
-			<span class="badge-icon variant-filled-warning absolute -right-2 -top-2 z-10">+</span>
-			<div class="badge variant-filled text-lg font-medium uppercase text-white">
-				{content.addon.title}
-			</div>
-		</div>
-		<div class="flex flex-col gap-6 pt-6">
-			<h2 class="text-white">{content.addon.unlimitedCall.title}</h2>
-			<p class="text-white">{content.addon.unlimitedCall.subtitle}</p>
-			<p class="price text-white">
-				<li class="badge variant-filled-secondary text-lg font-medium uppercase text-white">+</li>
-				{addonAsMonthly}/m
-			</p>
-			<div class="bottom text-white">
-				<h3>{content.addon.forWhom}</h3>
-				<ul>
-					<li>{content.addon.includes.direction}</li>
-					<li>{content.addon.includes.hireTech}</li>
-					<li>{content.addon.includes.prioritizeRequests}</li>
-				</ul>
-			</div>
-		</div>
-	</div> -->
 </section>
 
 <style lang="scss">
@@ -243,7 +245,7 @@
 
 	.addon {
 		background: var(--bg-noise-url), #000;
-		@apply mt-1 w-full bg-black p-8 text-center text-2xl;
+		@apply mb-28 mt-1 w-full bg-black p-8 text-center text-2xl;
 		@apply bg-noise;
 		@media (min-aspect-ratio: 1/1) {
 			//@apply text-left;

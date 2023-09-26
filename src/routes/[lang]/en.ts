@@ -131,13 +131,13 @@ export const content = {
             "bookNow": "Book a call"
         },
         "referral": {
-            "title": "Refer a friend & earn",
+            "title": "Refer & earn",
             "subtitle": "Earn monthly recurring commissions for each referral.",
             "joinNow": "Available soon"
         }
     },
     "addon": {
-        "title": "Add-on Premium",
+        "title": "Premium",
         "unlimitedCall": {
             "title": "Unlimited call",
             "subtitle": "Get access to unlimited booking call for advisory services"
