@@ -1,0 +1,131 @@
+**Politique de confidentialité**
+
+Zbranch comprend l'importance de la protection des Renseignements personnels. Pour cette raison, Zbranch s'efforce de mettre en place des procédures et des mesures de sécurité afin de protéger les Renseignements personnels sous sa garde.
+
+## 1. Application et portée
+
+La présente Politique de confidentialité (la « **Politique** ») décrit les pratiques en matière de collecte, d’utilisation et de divulgation des Renseignements personnels telles qu’en vigueur chez Zbranch et ses entités canadiennes affiliées, dont eba.expert, Etienne Beaudry Auger. (ci-après collectivement «Zbranch»).
+
+La présente Politique régit aussi les Renseignements personnels recueillis sur les utilisateurs du site Web de Zbranch (les « **Utilisateurs** ») et explique comment Zbranch utilise et divulgue les Renseignements personnels recueillis sur les personnes qui visitent le site Web de Zbranch ou qui interagissent autrement avec Zbranch sur https://zbranch.io (le « **Site Web** »). Celle-ci explique également comment Zbranch utilise les fichiers témoins (ou *cookies*) et les technologies semblables.
+
+## 2. Conformité à l’échelle internationale
+
+Zbranch respecte : (i) les lois sur la protection des données applicables à Zbranch ; et (ii) les normes de l'industrie relatives à la protection, à la confidentialité et à la sécurité des renseignements. Zbranch mène des activités mondiales. Par conséquent, dans certains cas, les renseignements gérés par Zbranch peuvent être transférés, traités et stockés dans d'autres pays. Cela étant, Zbranch s'assure en tout temps que les Renseignements personnels sont protégés par des procédures de sécurité et de confidentialité et par des mesures de protection qui équivalent, au minimum, à celles utilisées par Zbranch elle-même.
+
+Zbranch respecte la présente Politique ainsi que les lois sur la protection des données du secteur privé, comme la *Loi sur la protection des renseignements personnels et les documents électroniques* (la « **LPRPDE** ») et les lois provinciales essentiellement semblables qui portent sur la collecte, l'utilisation et la divulgation de Renseignements personnels. La LPRPDE prévoit une protection adéquate des Renseignements personnels conformément à la décision de la Commission européenne du 20 décembre 2001 en vertu de la directive 95/46/CE du Parlement européen et du Conseil européen.
+
+## 3. Définition des Renseignements personnels
+
+L’expression « **Renseignement personnel** » désigne tout renseignement sur une personne identifiable. Cela peut comprendre, par exemple, les adresses courriel et les coordonnées ainsi que tout renseignement semblable fourni à Zbranch dans le cours de ses activités commerciales ou reçu par Zbranch par l’intermédiaire de demandes de renseignements d'affaires. De tels renseignements ne sont pas considérés comme des Renseignements personnels lorsqu’ils sont agrégés et/ou anonymisés et qu’ils ne peuvent pas être associés à une personne identifiable.
+
+## 4. Collecte et utilisation des Renseignements personnels par l’intermédiaire du Site Web
+
+Zbranch collecte et utilise généralement les Renseignements personnels concernant les Utilisateurs de son Site Web et fournis par ceux-ci pour le motifs suivants :
+
+### 4.1 Renseignements fournis par les Utilisateurs.
+
+Dans de nombreux cas, Zbranch collecte les Renseignements personnels directement auprès des Utilisateurs lorsqu'ils visitent ou utilisent le Site Web. Par exemple, Zbranch peut collecter les types de renseignements suivants :
+
+- **Questions.** Zbranch peut collecter le nom de l'Utilisateur, ses coordonnées, son adresse courriel et tout autre renseignement fourni lorsque l'Utilisateur fait une demande à Zbranch ou communique avec elle à partir du Site Web, lorsqu'il télécharge de la documentation ou du contenu sécurisé à partir du Site Web, ou lorsqu’il s’inscrit à un webinaire ou au bulletin d'information de Zbranch.
+- **Soumission d’une candidature.** Zbranch peut collecter le nom, les coordonnées, l’adresse courriel et toute autre information fournie par un Utilisateur qui soumet sa candidature à un poste affiché sur le Site Web.
+- **Personnalisation du Site Web**. Lorsque les Utilisateurs visitent le Site Web, ils peuvent de temps à autre être invités à fournir des renseignements, comme leur poste, ou la taille de leur organisation, afin d'aider Zbranch à personnaliser l'expérience des Utilisateurs du Site Web.
+
+### 4.2 Renseignements techniques.
+
+Lorsque les Utilisateurs visitent le Site Web, Zbranch peut collecter, à l'aide de moyens électroniques comme les *cookies*, des renseignements techniques. Ces renseignements peuvent inclure des renseignements sur les visites du Site Web, y compris l'adresse IP de l'ordinateur de l’Utilisateur, le navigateur utilisé pour visiter le Site Web, le système d'exploitation de l'Utilisateur, la résolution de l'écran, l'emplacement, les paramètres de langue des navigateurs, le site d'où provient l'Utilisateur, les mots-clés recherchés (si l'Utilisateur provient d'un moteur de recherche), le nombre de pages visitées, les renseignements entrés, les publicités vues, etc. Ces renseignements sont utilisés pour évaluer et accroître l'efficacité du Site Web ou pour améliorer l'expérience des Utilisateurs. Bien que ces renseignements soient généralement dépersonnalisés, s'ils portent sur une personne identifiable, Zbranch les traitera comme des Renseignements personnels. Zbranch peut aussi, sans restriction, collecter et utiliser les types de renseignements suivants lorsque les Utilisateurs visitent le Site Web ou y interagissent avec Zbranch :
+
+- **Google Analytics**: Zbranch utilise Google Analytics, ce qui lui permet de voir les renseignements sur les activités des Utilisateurs sur le Site Web, y compris, sans toutefois s'y limiter, les pages visitées, la source et le temps passé sur le Site Web. Ces renseignements sont dépersonnalisés et sont affichés sous forme de chiffres, ce qui signifie qu'il est impossible de remonter jusqu'aux personnes concernées. Les Utilisateurs peuvent bloquer l'utilisation de Google Analytics par Zbranch en visitant la page [Désactivation de Google Analytics](https://tools.google.com/dlpage/gaoptout).
+- **Marketo**: Zbranch utilise Marketo, ce qui lui permet de voir les renseignements sur les activités des Utilisateurs sur le Site Web, y compris, sans toutefois s'y limiter, les pages visitées, la source et le temps passé sur le Site Web. Toutefois, ces renseignements ne sont pas dépersonnalisés et les utilisateurs ne peuvent pas bloquer l'utilisation de Marketo par Zbranch.
+- **Google AdWords**: Zbranch utilise la fonction « Remarketing » de Google AdWords pour promouvoir Zbranch sur Internet et sur les sites Web de tiers (y compris Google) pour les visiteurs précédents du Site Web. Le « Remarketing » d’AdWords affichera des publicités aux Utilisateurs en fonction des parties du site Web de Zbranch qu'ils ont visitées en plaçant un fichier témoin sur le navigateur Web des Utilisateurs. Cela signifie que Zbranch pourrait promouvoir son site Web aux visiteurs précédents qui n'ont pas terminé une tâche sur le site Web ou afficher une publicité sur la page des résultats de recherche de Google ou sur un site avec le réseau Display de Google. Ce fichier témoin n'identifie d'aucune façon les Utilisateurs et ne donne pas accès à l'ordinateur ou à l'appareil mobile des Utilisateurs. Ce fichier témoin est uniquement utilisé pour indiquer aux autres sites Web que l'Utilisateur a visité une page précise sur le site Web, afin que les publicités montrées à l'Utilisateur soient liées à cette page. Si les Utilisateurs ne souhaitent pas participer au « Remarketing » de Google AdWords, ils peuvent le désactiver en consultant la page [Contrôler les paramètres d'annonces de Google AdWords](https://www.google.com/settings/u/0/ads/anonymous?sig=ACi0TCjdWMfU3lfsMB8h1Zo3epJGYa1PdSGjUG-HmdhICq4kkkwdk3JSyJKlkRHKnYDk49L76tvIqB_F_KMKQw3t_OBkijcTFwJcpflE_zGGTNJmfYk1qRk&hl=fr-CA).
+- **Publicité ciblée par centre d'intérêt.** Zbranch peut aussi permettre à un nombre limité de tiers de confiance d'installer des *cookies* à partir du Site Web. Le Site Web peut inclure des publicités de tiers et des liens vers d'autres sites Web qui peuvent être utilisés pour générer des publicités personnalisées. Les publicités personnalisées, parfois appelées publicités ciblées par centre d'intérêt ou par comportement, sont des publicités basées sur des renseignements sur les Utilisateurs, comme les pages visitées, les renseignements demandés ou les achats effectués sur le Site Web. Zbranch ne fournit pas de Renseignements personnels aux publicitaires ou aux sites tiers qui affichent des publicités ciblées par centre d'intérêt sur le Site Web. Toutefois, les publicitaires et les autres tiers (y compris les réseaux de publicité, les entreprises de transmission d'annonces et les autres fournisseurs de service qu'ils peuvent utiliser) peuvent présumer que les Utilisateurs qui interagissent avec une publicité personnalisée et du contenu personnalisé affichés sur le site Web ou qui cliquent sur ceux-ci font partie du groupe visé par la publicité ou le contenu. Les publicitaires ou les agences de publicité qui travaillent pour Zbranch peuvent parfois utiliser des technologies pour envoyer les publicités qui apparaissent sur le site Web directement sur le navigateur de l'Utilisateur. Ils peuvent aussi utiliser des *cookies* pour évaluer l'efficacité de leurs publicités et pour personnaliser le contenu publicitaire. Zbranch n'a pas accès aux *cookies* et aux autres fonctionnalités utilisés par les publicitaires et les tiers et n'a pas le contrôle sur ces *cookies* et fonctionnalités. Les pratiques de traitement des renseignements de ces publicitaires et des sites Web tiers ne sont pas assujetties à la présente Politique. Veuillez communiquer avec eux directement pour obtenir plus de renseignements sur leurs pratiques en matière de confidentialité. En général, les Utilisateurs peuvent aussi refuser les publicités personnalisées des publicitaires et réseaux de publicité tiers qui sont membres de l'Alliance de la publicité numérique du Canada (DAAC). Veuillez visiter la [Page de retrait de la DAAC](http://youradchoices.ca/fr/retrait) pour de plus amples renseignements.****
+
+### 4.3 Choix relatifs aux *cookies*.
+
+Les Utilisateurs peuvent bloquer l'utilisation de *cookies* en activant le paramètre à cet effet dans leur navigateur. La fonctionnalité « Aide » de la plupart des navigateurs permet aux Utilisateurs de savoir comment empêcher un navigateur d'accepter de nouveaux *cookies*, comment recevoir un avis lorsque le navigateur reçoit un nouveau *cookie* ou comment désactiver tous les *cookies*. Si les Utilisateurs choisissent de refuser ou de bloquer les *cookies*, il se peut qu'ils ne puissent plus accéder à une partie ou à la totalité du contenu du Site Web. De plus, les Utilisateurs peuvent désactiver ou supprimer les données semblables utilisées par les modules complémentaires du navigateur, en changeant les paramètres de ces modules ou en visitant le site Web de leur fabricant.
+
+### 4.4 Politiques de confidentialité des sites Web tiers.
+
+La présente Politique porte uniquement sur l'utilisation et la divulgation de renseignements par Zbranch. Les sites Web tiers qui peuvent être consultés à partir du Site Web ont leur propre politique de confidentialité et leurs propres pratiques en matière de collecte, d'utilisation et de divulgation de renseignements.
+
+### 4.5 Renseignements personnels provenant d'autres sources.
+
+Zbranch peut obtenir par des tiers des Renseignements personnels supplémentaires sur un Utilisateur du Site Web si cet Utilisateur a autorisé ces tiers à partager ses Renseignements personnels.
+
+## 5. Bases juridiques du traitement des Renseignements personnels
+
+Zbranch recueille et traite les Renseignements personnels des Utilisateurs en vertu de diverses bases juridiques, selon la raison de cette collecte ou de ce traitement. Zbranch ne collecte, traite ou utilise des Resneignements personnels que dans les cas suivants :
+
+- Les Renseignements personnels sont nécessaires pour fournir le Site Web et tous les services auxiliaires au bon fonctionnement du Site Web, tels que les services d'assistance, pour offrir une expérience personnalisée et pour assurer la sûreté et la sécurité du Site Web ;
+- L'Utilisateur a donné à Zbranch le consentement d'utiliser les Renseignements personnels dans un but spécifique ;
+- Le traitement des Renseignements personnels est nécessaire pour se conformer à une obligation légale ;
+- Le traitement des Renseignements personnels est justifié par un intérêt légitime de Zbranch (qui n'est pas supplanté par vos intérêts en matière de protection des Renseignements personnels) ou pour protéger les droits et intérêts légaux de Zbranch.
+
+## 6. Partage et transfert des Renseignements personnels
+
+Zbranch ne vendra pas de Renseignements personnels à tout tiers et n'en échangera pas avec ceux-ci. Toutefois, Zbranch peut partager des Renseignements personnels lorsqu'elle y est autorisée, lorsque la loi l'exige ou dans les cas suivants :
+
+### 6.1 Utilisation interne à Zbranch.
+
+Nous pouvons partager des Renseignements personnels au sein de Zbranch (par exemple entre sociétés affiliées) au Canada aux fins décrites à la clause 4 de la Politique.
+
+### 6.2 Fournisseurs de service.
+
+Zbranch peut transférer les Renseignements personnels à un fournisseur de service tiers relativement à la performance ou à l'amélioration de son Site Web. Avant de transférer tout Renseignement personnel avec un de ses fournisseurs de services tiers, Zbranch s'assurera que ce tiers adopte des pratiques de gestion des données raisonnables afin de préserver la confidentialité et la sécurité des Renseignements personnels et de prévenir tout accès non autorisé.
+
+### 6.3 Si la loi le permet ou l'exige.
+
+Zbranch peut divulguer des Renseignements personnels lorsque la loi applicable ou une autorité légale ou gouvernementale compétente l'exige. Zbranch peut aussi divulguer des renseignements à ses comptables, vérificateurs, agents et avocats relativement à l'application et à la protection de ses droits. Zbranch peut aussi divulguer certains Renseignements personnels lorsqu'elle a des motifs raisonnables de croire que cette divulgation est raisonnablement nécessaire pour protéger les droits, la propriété et la sécurité des autres et d'elle-même conformément à la loi. Si Zbranch reçoit une demande réglementaire ou gouvernementale concernant les Renseignements personnels d’un Utilisateur, elle accepte d'aviser immédiatement l’Utilisateur, sauf si cela est interdit, afin qu'il ait le choix de se défendre dans le cadre d'une telle demande. Zbranch s’engage à collaborer raisonnablement avec l’Utilisateur relativement à une telle défense.
+
+### 6.4 Transaction commerciale.
+
+Zbranch peut divulguer des Renseignements personnels à un tiers relativement à une vente ou à un transfert d'entreprise ou d'actifs, à une fusion, à une réorganisation ou au financement de parts de l'entreprise. Toutefois, si une transaction est conclue, les Renseignements personnels resteront protégés par les lois sur la protection des données applicables. Si la transaction n'est pas conclue, Zbranch exigera de l'autre partie qu’elle n’utilise pas et qu’elle ne divulgue pas les Renseignements personnels reçus de quelconque façon que ce soit, et qu’elle les supprime.
+
+## 7. Sécurité des Renseignements personnels
+
+Zbranch stockera et traitera les Renseignements personnels d'une manière conforme aux normes de sécurité de l'industrie. Zbranch a mis en place des procédures, des politiques et des systèmes techniques, organisationnels et administratifs pour assurer la sécurité, l'intégrité et la confidentialité des Renseignements personnels et pour réduire le risque d'accès non autorisé aux Renseignements personnels ou d'utilisation non autorisée de ceux-ci, y compris :
+
+des mesures de protection administratives, techniques et matérielles et d'autres mesures de sécurité visant à assurer la sécurité et la confidentialité des Renseignements personnels sous sa garde ;
+
+- une approche de sécurité visant à éviter de compromettre ses propres systèmes d'information, ses réseaux informatiques et ses fichiers de données par un accès non autorisé à ceux-ci par des Utilisateurs, par des virus ou par des programmes informatiques malveillants ;
+- des pratiques internes appropriées, y compris, sans toutefois s'y limiter, le chiffrement des données en transit, l'utilisation de pare-feu et de logiciels antivirus appropriés, le maintien des mesures de prévention des systèmes d'exploitation et des autres applications à l’aide de définitions de virus et de correctifs de sécurité à jour afin d’éviter tout impact sur les Renseignements personnels sous sa garde ;
+- une journalisation et des alertes appropriés pour surveiller les contrôles d'accès et pour assurer l'intégrité et la confidentialité des données et le contrôle des accès aux systèmes et aux applications permis uniquement aux utilisateurs autorisés; et
+- des mesures permettant l’accès aux systèmes et aux données uniquement aux Utilisateurs autorisés, et assurant que les personnes ayant une autorisation d'accès aux renseignements personnels ont réellement besoin de les connaître (le « **Programme de sécurité** »).
+
+## 8. Formation et supervision
+
+Zbranch maintient des programmes de formation adéquats afin d'assurer que ses employés et toute autre personne agissant en son nom connaissent et respectent le Programme de sécurité. Zbranch s’engage à exercer le contrôle nécessaire et adéquat sur ses employés concernés afin de maintenir la sécurité et la confidentialité des Renseignements personnels sous sa garde.
+
+## 9. Incidents relatifs aux données impliquant des Renseignements personnels
+
+Zbranch s’engage à aviser immédiatement l’Utilisateur concernant une atteinte à la protection des données ou une compromission ou une violation de son Programme de sécurité :
+
+- qui a entraîné ou est soupçonné d’avoir entraîné une perte, une divulgation, une utilisation ou une acquisition non autorisée de Renseignements personnels (incluant des copies physiques de ceux-ci) ou encore l’accès non autorisé à des Renseignements personnels; et
+- qui, selon l’opinion de Zbranch, présente un risque réel de préjudice grave envers les personnes dont les Renseignements personnels sont concernés (un « **Incident relatif aux données** »).
+
+Bien que l'avis initial puisse prendre la forme d'un résumé, un avis écrit détaillé sera transmis à l’Utilisateur dans les délais prescrits par la loi, le cas échéant. L'avis décrira de façon raisonnablement détaillée la nature et la portée de l'Incident relatif aux données (y compris chaque catégorie de données) et la mesure corrective déjà prise ou qui sera prise par Zbranch. Zbranch prendra promptement toutes les mesures correctives nécessaires et recommandées et collaborera pleinement avec l’Utilisateur afin de déployer tous les efforts raisonnables pour atténuer les effets nuisibles de l'Incident relatif aux données et pour prévenir que celui-ci se reproduise.
+
+## 10. Droits des Utilisateurs en matière de Renseignements personnels
+
+Dans la mesure où le traitement de Renseignements personnels par Zbranch est soumis à l’application du *Règlement général sur la protection des données* (Règlement (EU) 2016/679) ou du *Data Protection Act 2018* et du RGPD tel qu’incorporé au droit du Royaume-Uni en vertu de l’article 3 du *European Union (Withdrawal) Act 2018* du Royaume-Uni, Zbranch se fonde sur les intérêts légitimes décrits plus haut, lesquels ne sont pas supplantés par les intérêts des Utilisateurs en matière de protection des données, dans le cadre du traitement des Renseignements personnels. Sous réserve du droit applicable, les Utilisateurs ont le droit de : (i) avoir accès, rectifier et demander la suppression de leurs Renseignements personnels, sous réserve du droit qu’à Zbranch de conserver une copie de certains Renseignements personnels à des fins d’archivage ou encore afin de se conformer à toute exigence juridique applicable ; (ii) restreindre le traitement des Renseignements personnels par Zbranch ou s’y objecter (ce qui, dans certains cas, peut consister à cesser d’accéder au Site Web) lorsque Zbranch se fonde sur un intérêt légitime (ou celui d’une tierce partie) et lorsque la situation particulière a un impact sur les droits et libertés fondamentaux de l’Utilisateur ; (iii) porter plainte auprès de leur autorité locale responsable de la protection des données (les coordonnées des autorités responsables de la protection des données de l’Espace économique européen sont disponibles [ici](http://ec.europa.eu/newsroom/article29/document.cfm?action=display&doc_id=50061)) ; et (iv) bénéficier de la portabilité des données. Les Utilisateurs peuvent exercer leurs droits sans frais, mais Zbranch peut imposer des frais raisonnables ou encore refuser de se conformer à une requête lorsque celle-ci est infondée, répétitive ou excessive.
+
+## 11. Comment communiquer avec nous
+
+Toute question ou plainte concernant la présente Politique ou le traitement des Renseignements personnels par Zbranch peut être communiquée à notre service à la clientèle aux coordonnées suivantes :
+
+**Technologies Zbranch inc.**
+
+À l’attention de la Responsable de la protection des renseignements personnels
+
+1751, rue Richardson, Suite 1.050
+
+Montréal (Québec) H3K 1G6
+
+courriel : [support-legal@Zbranch.com](mailto:support-legal@Zbranch.com)
+
+Notre Responsable de la protection des renseignements personnels tentera de répondre à votre demande suivant le délai prévu par la loi, et dans tous les cas au plus tard sous 30 jours de la réception de votre demande. Nous vous aviserons par écrit de notre réponse à votre demande. Advenant que nous refusions de donner suite à votre demande, nous vous informerons des motifs de notre refus, et nous vous indiquerons quels sont les recours qui s’offrent à vous ainsi que le délai applicable à l’exercice de ces recours.
+
+En cas d’insatisfaction relativement au traitement de votre demande, vous pouvez porter plainte à l’autorité responsable, la Commission d’accès à l’information (https://www.cai.gouv.qc.ca/a-propos/nous-joindre/).
+
+## 12. Modification de la Politique de confidentialité
+
+Zbranch passera en revue et mettra à jour ses politiques et ses procédures comme il se doit afin de tenir compte des règles et règlements, des nouvelles technologies, des normes et des préoccupations des clients. Par conséquent, la présente Politique pourrait être modifiée de temps à autre.
