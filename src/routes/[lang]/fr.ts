@@ -192,11 +192,11 @@ export const content = {
             "links": [
                 {
                     "name": "Politique de confidentialité",
-                    "href": "https://ebaexpert.notion.site/Modalit-s-et-conditions-b11fdaa429314406be9a57fd3bd30272"
+                    "href": "fr/confidentialite"
                 },
                 {
-                    "name": "Conditions générales d'utilisation",
-                    "href": "https://ebaexpert.notion.site/Modalit-s-et-conditions-b11fdaa429314406be9a57fd3bd30272"
+                    "name": "Conditions d'utilisation",
+                    "href": "fr/conditions-utilisation"
                 }
             ]
         },
@@ -208,7 +208,7 @@ export const content = {
                     "href": "https://billing.stripe.com/p/login/14k4iybRo2tz5BC288"
                 },
                 {
-                    "name": "Prix",
+                    "name": "Forfaits",
                     "href": "#"
                 }
             ]
