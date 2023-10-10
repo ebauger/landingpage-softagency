@@ -69,11 +69,11 @@ export const content = {
             "shopifyBoutique": "Je souhaite ouvrir une superbe boutique Shopify",
             "reliableBackend": "J'ai besoin d'un backend performant, fiable et sécurisé.",
             "cloudMigration": "Nous avons besoin d'aide pour migrer sur le cloud public",
-            "reinforceTeam": "Je souhaite renforcer mon équipe d'ingénieurs",
+            "reinforceTeam": "Je souhaite renforcer mon équipe de développeurs logiciels",
             "mvpDevelopment": "Je souhaite développer un produit minimum viable",
-            "ctoReplacement": "Nous avons besoin de remplacer notre CTO pour un congé parental ou des départs.",
-            "hiringHelp": "Aidez-nous à recruter une agence ou un ingénieur logiciel et à renforcer notre équipe interne.",
-            "ctoLeaveReplacement": "Nous avons besoin de remplacer notre CTO pour un congé parental ou un départ."
+            "ctoReplacement": "Nous avons besoin de remplacer notre CTO.",
+            "hiringHelp": "Aidez-nous à recruter une agence ou un développeur logiciel et à renforcer notre équipe interne.",
+            "ctoLeaveReplacement": "Nous avons besoin d'un remplacement pour un congé parental ou un départ."
         }
     },
     "plans": {
@@ -148,7 +148,7 @@ export const content = {
         "forWhom": "Pour qui ?",
         "includes": {
             "direction": "Besoin d'une orientation pour le projet et votre équipe",
-            "hireTech": "Recrutement d'un nouvel ingénieur technique",
+            "hireTech": "Recrutement d'un nouvel développeur logiciel",
             "prioritizeRequests": "Nous vous aidons à hiérarchiser les demandes qui ont le plus de valeur pour votre entreprise."
         }
     },
@@ -157,11 +157,11 @@ export const content = {
         "questions": [
             {
                 "summary": "Ne payez que ce que vous consommez",
-                "content": "Voici un exemple de fonctionnement :\nVous commencez votre adhésion mensuelle le 1er mai.\nVous vous arrêtez le 16 mai.\nAu 1er juin, nous ne vous facturerons pas.\nSi vous reprenez votre abonnement mensuel le 18 septembre.\nVotre prochaine facturation sera le 1er octobre."
+                "content": "Voici un exemple de fonctionnement :\nVous commencez votre adhésion mensuelle le 1er mai.\nVous suspendez le 16 mai votre abonnement.\nAu 1er juin, nous ne vous facturerons pas.\nSi vous réactivez votre abonnement mensuel le 18 septembre.\nVotre prochaine facturation sera le 1er octobre."
             },
             {
                 "summary": "Pourquoi ne pas engager à temps plein ?",
-                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un ingénieur logiciel sénior. En fait, les salaires d'entrée dépassent 110 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche coûte des milliers de dollars.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
+                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un développeur logiciel sénior. En fait, les salaires d'entrée dépassent 110 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche coûte des milliers de dollars.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
             },
             {
                 "summary": "Vraiment illimité ?",
