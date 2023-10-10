@@ -161,7 +161,7 @@ export const content = {
             },
             {
                 "summary": "Pourquoi ne pas engager à temps plein ?",
-                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un développeur logiciel sénior. En fait, les salaires d'entrée dépassent 110 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche coûte des milliers de dollars.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
+                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un développeur logiciel sénior. En fait, les salaires d'entrée dépassent 120 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche entre 15k et 20k par poste.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
             },
             {
                 "summary": "Vraiment illimité ?",
@@ -176,12 +176,12 @@ export const content = {
                 "content": "Zbranch est en fait un studio composé d'une seule personne. Le fondateur, moi-même, travaillera directement avec vous. Pour les demandes plus importantes ou plus complexes, comme une expertise technique particulière avec un développeur logiciel sénior, je travaillerai avec notre réseau de fournisseurs tiers comme AWS."
             },
             {
-                "summary": "Quelle pile utilisez-vous ?",
-                "content": "Pour le frontend, nous utilisons SvelteKit/Skeleton/Tailwind. Pour le backend, nous utilisons Supabase ou SurrealDB. Pour le déploiement de l'infrastructure, nous pouvons déployer sur AWS, Vercel, Netlify ou Cloudflare ou un déploiement personnalisé avec Kubernetes.\n\nSi vous avez déjà une stack personnalisée comme react ou vue ou n'importe quel langage comme PHP, Python, Ruby. Nous pouvons travailler avec votre stack."
+                "summary": "Quelles technologies utilisez-vous ?",
+                "content": "Pour le frontend, nous utilisons SvelteKit/Skeleton/Tailwind. Pour le backend, nous utilisons Supabase ou SurrealDB. Pour le déploiement de l'infrastructure, nous pouvons déployer sur AWS, Vercel, Netlify ou Cloudflare ou un déploiement personnalisé avec Docker/Kubernetes.\n\nSi vous avez déjà une pile technologique personnalisée comme React ou Vue.js ou n'importe quel langage comme PHP, Python, Ruby. Nous pouvons travailler avec votre stack."
             },
             {
                 "summary": "Que se passe-t-il si je n'aime pas le service ?",
-                "content": "Nous fournissons un service de haute qualité, il n'y aura pas de remboursement. Vous pouvez annuler votre adhésion sur le portail client."
+                "content": "Nous comprenons que chaque client a des attentes différentes. Dès les premiers jours de votre abonnement, nous mettons tout en œuvre pour livrer des résultats et des services conformément à nos engagements. De ce fait, comme les ressources ont été allouées et les services ont été délivrés dès le début, nous ne proposons pas de remboursement en cas d'insatisfaction. Toutefois, nous sommes toujours à l'écoute de vos retours et nous nous engageons à améliorer continuellement notre offre pour répondre au mieux à vos besoins."
             }
         ]
     },
