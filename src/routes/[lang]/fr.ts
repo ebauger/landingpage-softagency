@@ -168,7 +168,7 @@ export const content = {
                 "content": "Une fois que vous êtes membre, vous pouvez soumettre autant de demandes que vous le souhaitez dans notre file d'attente. Nous les traiterons une par une."
             },
             {
-                "summary": "Dans quel délai recevrai-je ma demande ?",
+                "summary": "Dans quel délai recevrai-je la livraison d'une demande ?",
                 "content": "En moyenne, vous recevrez votre demande dans les jours qui suivent pour les travaux de moindre envergure : correction de bogues. Pour les travaux de plus grande envergure, comme une nouvelle fonctionnalité, cela peut prendre jusqu'à 2 semaines. Pour un nouveau projet, cela peut prendre des semaines, voire des mois, en fonction de la complexité du projet. Si le projet est trop important, nous le diviserons en plusieurs parties afin de le livrer plus rapidement et de vous permettre d'en prendre connaissance et de donner votre avis.\n\nS'il s'agit du lancement d'un projet et d'un conseil, nous vous recommandons d'utiliser l'offre prémium pour un nombre illimité de demandes. Nous serons en mesure de vous aider à définir les prochaines actions pour atteindre votre objectif.\n\nSi nous ne pouvons pas nous engager sur votre projet, nous vous le ferons savoir et nous vous rembourserons."
             },
             {
