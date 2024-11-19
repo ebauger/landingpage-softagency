@@ -148,7 +148,7 @@ export const content = {
         "forWhom": "Pour qui ?",
         "includes": {
             "direction": "Besoin d'une orientation pour le projet et votre équipe",
-            "hireTech": "Recrutement d'un nouvel développeur logiciel",
+            "hireTech": "Recrutement d'un nouveau développeur logiciel",
             "prioritizeRequests": "Nous vous aidons à hiérarchiser les demandes qui ont le plus de valeur pour votre entreprise."
         }
     },
