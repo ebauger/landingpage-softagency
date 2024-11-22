@@ -189,11 +189,11 @@ export const content = {
             "links": [
                 {
                     "name": "Privacy Policy",
-                    "href": "#"
+                    "href": "en/privacy"
                 },
                 {
                     "name": "Terms & Conditions",
-                    "href": "#"
+                    "href": "fr/terms-conditions"
                 }
             ]
         },
