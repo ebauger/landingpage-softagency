@@ -193,7 +193,7 @@ export const content = {
                 },
                 {
                     "name": "Terms & Conditions",
-                    "href": "fr/terms-conditions"
+                    "href": "en/terms-conditions"
                 }
             ]
         },
