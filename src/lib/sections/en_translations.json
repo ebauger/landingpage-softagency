@@ -191,11 +191,11 @@
 			"links": [
 				{
 					"name": "Privacy Policy",
-					"href": "/en/privacy"
+					"href": "en/privacy"
 				},
 				{
 					"name": "Terms & Conditions",
-					"href": "#"
+					"href": "en/terms-conditions"
 				}
 			]
 		},
