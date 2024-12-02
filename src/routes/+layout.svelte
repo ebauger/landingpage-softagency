@@ -8,10 +8,15 @@
 	import '../app.postcss';
 
 	import type { Config } from '@sveltejs/adapter-vercel';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	export const config: Config = {
 		runtime: 'edge'
 	};
 </script>
 
-<slot />
+{@render children?.()}

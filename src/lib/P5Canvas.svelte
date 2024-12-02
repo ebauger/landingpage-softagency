@@ -1,8 +1,12 @@
 <script lang="ts">
 	//import p5 from 'p5';
 	import { onMount, onDestroy } from 'svelte';
-	export let sketch: any;
-	let canvasDiv: HTMLElement;
+	interface Props {
+		sketch: any;
+	}
+
+	let { sketch }: Props = $props();
+	let canvasDiv: HTMLElement = $state();
 	let p5instance: p5;
 	onMount(async function () {
 		if (sketch) {
@@ -18,7 +22,7 @@
 	});
 </script>
 
-<div bind:this={canvasDiv} />
+<div bind:this={canvasDiv}></div>
 
 <style lang="scss">
 	div {

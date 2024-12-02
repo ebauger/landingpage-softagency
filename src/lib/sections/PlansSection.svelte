@@ -8,7 +8,7 @@
 		Starter = 0,
 		Premium = 1
 	}
-	let value: Plan = Plan.Starter;
+	let value: Plan = $state(Plan.Starter);
 
 	const displayToggle = (displayTrue: string, displayFalse: string): string => {
 		return value == Plan.Starter ? displayTrue : displayFalse;
@@ -32,8 +32,12 @@
 	let addonYearlyAsMonthly = displayPrice(price.yearly.addon.price / 12);
 	let monthlyReferral = displayPrice(price.monthly.price * 0.05);
 
-	export let plansSection: HTMLElement;
-	export let content: any;
+	interface Props {
+		plansSection: HTMLElement;
+		content: any;
+	}
+
+	let { plansSection = $bindable(), content }: Props = $props();
 </script>
 
 <section id="plans" bind:this={plansSection}>
@@ -87,7 +91,7 @@
 				<h4>{content.plans.monthly.title} <span>⚀</span></h4>
 				<p class="h4-subtitle">{content.plans.monthly.subtitle}</p>
 				<p class="price">{value == Plan.Starter ? monthlyAsMonthly : addonAsMonthly}/m</p>
-				<p class="price-info" />
+				<p class="price-info"></p>
 				<a class="btn" href={value == Plan.Starter ? price.monthly.href : price.monthly.addon.href}
 					>{content.plans.monthly.getStarted}</a
 				>

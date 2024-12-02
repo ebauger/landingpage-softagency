@@ -3,7 +3,7 @@
 	import { browser } from '$app/environment';
 	import P5Canvas from '$lib/P5Canvas.svelte';
 	import { get } from 'svelte/store';
-	let sketch: void; // sketch is a function
+	let sketch: void = $state(); // sketch is a function
 
 	let parentElement: HTMLElement;
 	let parentWidth, parentHeight: number;

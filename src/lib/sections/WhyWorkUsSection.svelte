@@ -3,8 +3,12 @@
 
 	let once = false;
 
-	export let whyWorkUsSection: HTMLElement;
-	export let content: any;
+	interface Props {
+		whyWorkUsSection: HTMLElement;
+		content: any;
+	}
+
+	let { whyWorkUsSection = $bindable(), content }: Props = $props();
 </script>
 
 <section class="scope" id="scope" bind:this={whyWorkUsSection}>

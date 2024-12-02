@@ -25,7 +25,6 @@
 	/** Import Datas */
 	import brands from '$lib/data/brands.json';
 	import type { PageData } from './$types';
-	export let data: PageData;
 	//const { data, DataType } = data;
 
 	//TODO: use data type and convert the json to /lang/fr.ts
@@ -33,6 +32,11 @@
 	/** Import Studio*/
 	import * as core from '@theatre/core';
 	import studio from '@theatre/studio';
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	function initTheatreStudio() {
 		if (process.env.NODE_ENV === 'development') {
@@ -43,7 +47,7 @@
 		}
 	}
 
-	let translateXValue = 50;
+	let translateXValue = $state(50);
 	if (browser) {
 		const updateTransform = () => {
 			const rect = projectElement.getBoundingClientRect();
@@ -67,14 +71,14 @@
 		}
 	});
 
-	let heroSection: HTMLElement;
-	let projectElement: HTMLElement;
-	let benefitsSection: HTMLElement;
-	let benefits2Section: HTMLElement;
-	let membershipSection: HTMLElement;
-	let whyWorkUsSection: HTMLElement;
-	let plansSection: HTMLElement;
-	let faqsSection: HTMLElement;
+	let heroSection: HTMLElement = $state();
+	let projectElement: HTMLElement = $state();
+	let benefitsSection: HTMLElement = $state();
+	let benefits2Section: HTMLElement = $state();
+	let membershipSection: HTMLElement = $state();
+	let whyWorkUsSection: HTMLElement = $state();
+	let plansSection: HTMLElement = $state();
+	let faqsSection: HTMLElement = $state();
 </script>
 
 <HeroSection bind:heroSection content={data.content} />

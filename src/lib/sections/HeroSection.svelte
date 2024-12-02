@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let heroSection: HTMLElement;
-	export let content: any;
+	interface Props {
+		heroSection: HTMLElement;
+		content: any;
+	}
+
+	let { heroSection = $bindable(), content }: Props = $props();
 </script>
 
 <section id="hero" class="relative h-screen w-screen min-w-full border-2" bind:this={heroSection}>

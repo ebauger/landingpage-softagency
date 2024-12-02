@@ -26,8 +26,8 @@
 	import * as core from '@theatre/core';
 	import studio from '@theatre/studio';
 
-	let projectElement: HTMLElement;
-	let translateXValue = 50;
+	let projectElement: HTMLElement = $state();
+	let translateXValue = $state(50);
 
 	function initTheatreStudio() {
 		if (process.env.NODE_ENV === 'development') {
@@ -55,7 +55,6 @@
 
 	import { setContext } from 'svelte';
 	import CurrentTime from '$lib/utils/CurrentTime.svelte';
-	import { bind } from 'svelte/internal';
 	import MembershipSection from '$lib/sections/MembershipSection.svelte';
 	import WhyWorkUsSection from '$lib/sections/WhyWorkUsSection.svelte';
 	import FaqsSection from '$lib/sections/FaqsSection.svelte';
@@ -69,13 +68,13 @@
 		}
 	});
 
-	let heroSection: HTMLElement;
-	let benefitsSection: HTMLElement;
-	let benefits2Section: HTMLElement;
-	let membershipSection: HTMLElement;
-	let whyWorkUsSection: HTMLElement;
-	let plansSection: HTMLElement;
-	let faqsSection: HTMLElement;
+	let heroSection: HTMLElement = $state();
+	let benefitsSection: HTMLElement = $state();
+	let benefits2Section: HTMLElement = $state();
+	let membershipSection: HTMLElement = $state();
+	let whyWorkUsSection: HTMLElement = $state();
+	let plansSection: HTMLElement = $state();
+	let faqsSection: HTMLElement = $state();
 </script>
 
 <HeroSection bind:heroSection />
@@ -349,7 +348,9 @@
 		transition: transform var(--duration) ease-out;
 		img.animate-scaleUp {
 			transform: scale(1);
-			transition: transform var(--duration) ease-out, box-shadow var(--duration) ease-out;
+			transition:
+				transform var(--duration) ease-out,
+				box-shadow var(--duration) ease-out;
 		}
 
 		img:hover.animate-scaleUp {

@@ -3,8 +3,8 @@
 
 	//import { text } from '@sveltejs/kit';
 
-	let text1: HTMLSpanElement;
-	let text2: HTMLSpanElement;
+	let text1: HTMLSpanElement = $state();
+	let text2: HTMLSpanElement = $state();
 	const texts = [
 		'crafting',
 		'kickoff',
@@ -91,8 +91,8 @@
 </script>
 
 <div>
-	<span bind:this={text1} />
-	<span bind:this={text2} />
+	<span bind:this={text1}></span>
+	<span bind:this={text2}></span>
 </div>
 
 <svg id="filters">

@@ -2,8 +2,12 @@
 	import viewport from '$lib/actions/viewport';
 
 	let once = false;
-	export let membershipSection: HTMLElement;
-	export let content: any;
+	interface Props {
+		membershipSection: HTMLElement;
+		content: any;
+	}
+
+	let { membershipSection = $bindable(), content }: Props = $props();
 </script>
 
 <section class="benefits" bind:this={membershipSection}>

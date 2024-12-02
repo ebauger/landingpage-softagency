@@ -1,8 +1,12 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
-	export let faqsSection: HTMLElement;
-	export let content: any;
+	interface Props {
+		faqsSection: HTMLElement;
+		content: any;
+	}
+
+	let { faqsSection = $bindable(), content }: Props = $props();
 </script>
 
 <section id="faqs" bind:this={faqsSection}>
@@ -10,12 +14,16 @@
 	<Accordion>
 		{#each content.faqs.questions as question}
 			<AccordionItem>
-				<svelte:fragment slot="summary">
-					<p class="summary font-bold">{question.summary}</p>
-				</svelte:fragment>
-				<svelte:fragment slot="content">
-					<p class="content">{question.content}</p>
-				</svelte:fragment>
+				{#snippet summary()}
+							
+						<p class="summary font-bold">{question.summary}</p>
+					
+							{/snippet}
+				{#snippet content()}
+							
+						<p class="content">{question.content}</p>
+					
+							{/snippet}
 			</AccordionItem>
 		{/each}
 	</Accordion>
