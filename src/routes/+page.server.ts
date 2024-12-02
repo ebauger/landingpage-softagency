@@ -8,9 +8,9 @@ export const load: PageServerLoad = async ({ request }) => {
         const preferredLanguage = acceptLanguage.split(',')[0].split('-')[0];
 
         if (preferredLanguage === 'en') {
-            throw redirect(302, '/en');
+            redirect(302, '/en');
         }
     }
 
-    throw redirect(302, '/fr');
+    redirect(302, '/fr');
 };
