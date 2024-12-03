@@ -79,7 +79,7 @@ export const content = {
     "plans": {
         "title": "Niveaux d'adhésion",
         "subtitle": "Choisissez le plan qui vous convient",
-        "mostPopular": "les plus populaires",
+        "mostPopular": "le plus populaire",
         "monthly": {
             "title": "Mensuel",
             "subtitle": "Pas d'engagement minimum",
