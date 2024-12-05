@@ -1,17 +1,16 @@
 <script lang="ts">
 	interface Props {
 		label?: string;
-		color?: string;
 	}
 
-	let { label = 'Online', color = 'error' }: Props = $props();
+	let { label = 'Online'}: Props = $props();
 </script>
 
 <div class="flex items-center gap-2">
 	<div class="relative flex">
-		<div class="h-3 w-3 rounded-full bg-{color}-500"></div>
+		<div class="h-3 w-3 rounded-full bg-error-500"></div>
 		<div class="absolute -inset-1">
-			<div class="h-full w-full animate-ping rounded-full bg-{color}-500 opacity-75"></div>
+			<div class="h-full w-full animate-ping rounded-full bg-error-500 opacity-75"></div>
 		</div>
 	</div>
 	{#if label}

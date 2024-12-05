@@ -45,7 +45,7 @@
 	<h2>{content.plans.title}</h2>
 	<h3 class="mb-10">{content.plans.subtitle}</h3>
   <div class="mb-6">
-    <StatusIndicator label={content.availability} color="error"/>
+    <StatusIndicator label={content.availability}/>
   </div>
 	<RadioGroup active="bg-black text-white font-bold" hover="hover:bg-gray-300" class="mb-20">
 		<RadioItem class="text-xl" bind:group={value} name="Starter" value={Plan.Starter}

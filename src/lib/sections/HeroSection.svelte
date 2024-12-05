@@ -27,7 +27,7 @@
 					href="#plans">{content.heroContent.cta2}</a
 				>
 			</div>
-			<StatusIndicator label={content.availability} color="error" />
+			<StatusIndicator label={content.availability}/>
 		</div>
 	</div>
 	<div class="z-0">
