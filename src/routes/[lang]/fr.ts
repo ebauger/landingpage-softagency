@@ -161,7 +161,7 @@ export const content = {
             },
             {
                 "summary": "Pourquoi ne pas engager à temps plein ?",
-                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un développeur logiciel sénior. En fait, les salaires d'entrée dépassent 135 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Le seul processus d'embauche entre 15k et 20k par poste.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
+                "content": "Vous pourriez, mais en réalité, il est difficile d'embaucher à plein temps un développeur logiciel sénior. En fait, les salaires d'entrée dépassent 135 000 dollars, plus les avantages. La procédure d'embauche est longue et coûteuse. Un seul processus d'embauche peut coûter entre 15k et 20k par poste.\n\nIl est parfois plus intéressant de consacrer votre temps à votre entreprise et de nous laisser nous occuper de la technologie."
             },
             {
                 "summary": "Vraiment illimité ?",

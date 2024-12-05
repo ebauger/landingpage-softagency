@@ -158,7 +158,7 @@ export const content = {
             },
             {
                 "summary": "Why wouldn't I just hire a fulltime software engineer?",
-                "content": "You could, in but the reality it's difficult to hire a fulltime senior-level software engineer. Actually, to entry salaries exceed $110 000, plus beneficts. The process for hiring one is long and costly. It cost thosands of dollars for just hiring process. \n\nSometimes it's more valuable to spend your time on your business and let us handle the technology."
+                "content": "You could, in but the reality it's difficult to hire a fulltime senior-level software engineer. Actually, to entry salaries exceed $135 000, plus beneficts. The process for hiring one is long and costly. It cost thosands of dollars for just hiring process. \n\nSometimes it's more valuable to spend your time on your business and let us handle the technology."
             },
             {
                 "summary": "Really unlimited?",
