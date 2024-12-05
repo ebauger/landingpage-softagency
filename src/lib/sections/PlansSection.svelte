@@ -3,6 +3,7 @@
 	import price from '$lib/data/en-US_price.json';
 	import GiveMoney from '$lib/assets/GiveMoney.svelte';
 	import BookACall2 from '$lib/assets/BookACall2.svelte';
+	import StatusIndicator from '$lib/components/StatusIndicator.svelte';
 	import { RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
 	enum Plan {
 		Starter = 0,
@@ -42,7 +43,10 @@
 
 <section id="plans" bind:this={plansSection}>
 	<h2>{content.plans.title}</h2>
-	<h3 class="mb-16">{content.plans.subtitle}</h3>
+	<h3 class="mb-10">{content.plans.subtitle}</h3>
+  <div class="mb-6">
+    <StatusIndicator label={content.availability} color="error"/>
+  </div>
 	<RadioGroup active="bg-black text-white font-bold" hover="hover:bg-gray-300" class="mb-20">
 		<RadioItem class="text-xl" bind:group={value} name="Starter" value={Plan.Starter}
 			>Démarrage</RadioItem
@@ -62,10 +66,6 @@
 			<div class="flex flex-col gap-6 pt-6">
 				<h2 class="text-white">{content.addon.unlimitedCall.title}</h2>
 				<p class="text-white">{content.addon.unlimitedCall.subtitle}</p>
-				<!-- 				<p class="price text-white">
-					<li class="badge variant-filled-secondary text-lg font-medium uppercase text-white">+</li>
-					{addonAsMonthly}/m
-				</p> -->
 				<div class="bottom text-white">
 					<h3>{content.addon.forWhom}</h3>
 					<ul>
@@ -190,7 +190,6 @@
 	.bg-noise {
 		background-image: var(--bg-noise-url);
 		background-repeat: repeat;
-		/* Add other properties if needed */
 	}
 	.cards-container {
 		@apply grid h-fit grid-flow-col grid-cols-1 grid-rows-4 gap-1;

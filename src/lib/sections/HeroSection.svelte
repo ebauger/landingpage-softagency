@@ -1,4 +1,6 @@
 <script lang="ts">
+	import StatusIndicator from '$lib/components/StatusIndicator.svelte';
+
 	interface Props {
 		heroSection: HTMLElement;
 		content: any;
@@ -25,6 +27,7 @@
 					href="#plans">{content.heroContent.cta2}</a
 				>
 			</div>
+			<StatusIndicator label={content.availability} color="error" />
 		</div>
 	</div>
 	<div class="z-0">
@@ -54,3 +57,45 @@
 		</div>
 	</div>
 </section>
+
+<style lang="scss">
+	@keyframes appear {
+		0% {
+			opacity: 0;
+			transform: translate3d(0, -10px, 0);
+		}
+
+		50% {
+			opacity: 0.5;
+		}
+
+		100% {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+	#hero {
+		overflow: visible;
+
+		:global(svg),
+		img {
+			animation: 1200ms ease 0ms 1 normal backwards running appear;
+			backface-visibility: hidden;
+		}
+
+		h1 {
+			animation: 1000ms ease 0s 1 normal backwards running appear;
+			@apply text-5xl md:text-7xl;
+		}
+
+		h2 {
+			@apply inline pt-12 text-center font-medium;
+			animation: 1200ms ease 400ms 1 normal backwards running appear;
+		}
+
+		.cta-zone {
+			animation: 1200ms ease 800ms 1 normal backwards running appear;
+		}
+	}
+</style>

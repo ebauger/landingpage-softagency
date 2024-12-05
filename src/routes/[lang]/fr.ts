@@ -221,6 +221,7 @@ export const content = {
         "cta1": "Réserver un appel",
         "cta1Href": "https://calendar.app.google/axXePnTUm7gcCZf56",
         "cta2": "Commencer maintenant"
-    }
+    },
+    "availability": "Place disponible maintenant"
 };
 export type DataType = typeof content;

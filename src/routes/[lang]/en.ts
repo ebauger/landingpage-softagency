@@ -218,7 +218,8 @@ export const content = {
         "cta1": "Book a call",
         "cta1Href": "https://calendar.app.google/axXePnTUm7gcCZf56",
         "cta2": "Start now"
-    }
+    },
+    "availability": "Available slot now"
 }
 
 export type DataType = typeof content;
