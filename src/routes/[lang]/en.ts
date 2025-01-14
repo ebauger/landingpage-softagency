@@ -227,7 +227,7 @@ export const content = {
 		title: 'Turn your vision into reality',
 		subtitle: 'We offer technical direction without the full commitment',
 		cta1: 'Book a call',
-		cta1Href: 'https://calendar.app.google/axXePnTUm7gcCZf56',
+		cta1Href: 'https://calendar.app.google/dJZc5wBJAowW3Xsp8',
 		cta2: 'Start now'
 	},
 	availability: 'Available slot now'
