@@ -142,13 +142,13 @@ export const content = {
     "addon": {
         "title": "Prémium",
         "unlimitedCall": {
-            "title": "Appel illimité",
-            "subtitle": "Accès à un nombre illimité d'appels de réservation pour des services de conseil"
+            "title": "Rencontre synchronisé avec votre équipe",
+            "subtitle": "Accès à un nombre illimité de rencontre pour des services conseil"
         },
         "forWhom": "Pour qui ?",
         "includes": {
             "direction": "Besoin d'une orientation pour le projet et votre équipe",
-            "hireTech": "Recrutement d'un nouveau développeur logiciel",
+            "hireTech": "Recrutement d'un chef d'équipe avec une équipe technique",
             "prioritizeRequests": "Nous vous aidons à hiérarchiser les demandes qui ont le plus de valeur pour votre entreprise."
         }
     },
@@ -165,11 +165,11 @@ export const content = {
             },
             {
                 "summary": "Vraiment illimité ?",
-                "content": "Une fois que vous êtes membre, vous pouvez soumettre autant de demandes que vous le souhaitez dans notre file d'attente. Nous les traiterons une par une."
+                "content": "Une fois que vous êtes membre, vous pouvez soumettre autant de demandes que vous le souhaitez dans notre file d'attente. Nous les traiterons une par une selon votre priorité."
             },
             {
                 "summary": "Dans quel délai recevrai-je la livraison d'une demande ?",
-                "content": "En moyenne, vous recevrez votre demande dans les jours qui suivent pour les travaux de moindre envergure : correction de bogues. Pour les travaux de plus grande envergure, comme une nouvelle fonctionnalité, cela peut prendre jusqu'à 2 semaines. Pour un nouveau projet, cela peut prendre des semaines, voire des mois, en fonction de la complexité du projet. Si le projet est trop important, nous le diviserons en plusieurs parties afin de le livrer plus rapidement et de vous permettre d'en prendre connaissance et de donner votre avis.\n\nS'il s'agit du lancement d'un projet et d'un conseil, nous vous recommandons d'utiliser l'offre prémium pour un nombre illimité de demandes. Nous serons en mesure de vous aider à définir les prochaines actions pour atteindre votre objectif.\n\nSi nous ne pouvons pas nous engager sur votre projet, nous vous le ferons savoir et nous vous rembourserons."
+                "content": "Vous pouvez vous attendre à recevoir une réponse pour les tâches mineures, telles que la correction de bogues, dans les jours suivant votre demande. Pour les tâches plus importantes, comme l’ajout d’une nouvelle fonctionnalité, cela peut prendre jusqu’à deux semaines. Pour un nouveau projet, le temps de réponse dépendra de sa complexité et pourrait s’étendre sur des semaines, voire des mois. Si le projet est trop vaste, nous le diviserons en plusieurs parties afin de le livrer plus rapidement et de vous permettre d’en prendre connaissance et de donner votre avis. Si nous ne sommes pas en mesure d’accepter votre projet, nous vous en informerons avant de commencer le travail. Dans ce cas, nous vous rembourserons les jours non utilisés selon votre abonnement."
             },
             {
                 "summary": "Qui est le consultant en développement logiciel principal ?",
@@ -181,7 +181,7 @@ export const content = {
             },
             {
                 "summary": "Que se passe-t-il si je n'aime pas le service ?",
-                "content": "Nous comprenons que chaque client a des attentes différentes. Dès les premiers jours de votre abonnement, nous mettons tout en œuvre pour livrer des résultats et des services conformément à nos engagements. De ce fait, comme les ressources ont été allouées et les services ont été délivrés dès le début, nous ne proposons pas de remboursement en cas d'insatisfaction. Toutefois, nous sommes toujours à l'écoute de vos retours et nous nous engageons à améliorer continuellement notre offre pour répondre au mieux à vos besoins."
+                "content": "Nous sommes vraiment désolés de l'apprendre. Avec notre modèle d'abonnement, aucun remboursement ne sera effectué pour la période d'engagement. Dans ce cas, vous pouvez annuler votre abonnement sur le portail ou nous envoyer un e-mail."
             }
         ]
     },

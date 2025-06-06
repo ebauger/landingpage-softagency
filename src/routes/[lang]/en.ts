@@ -143,12 +143,12 @@ export const content = {
 	addon: {
 		title: 'Premium',
 		unlimitedCall: {
-			title: 'Unlimited call',
+			title: 'Unlimited Sync Meetup with your Team',
 			subtitle: 'Get access to unlimited booking call for advisory services'
 		},
 		forWhom: 'For whom?',
 		includes: {
-			direction: 'Need direction for the project and your team',
+			direction: 'Need technical advice for the project and your team',
 			hireTech: 'Hire new tech engineer leadership',
 			prioritizeRequests: 'We help to prioritize what requests have more value for your business'
 		}
@@ -174,7 +174,7 @@ export const content = {
 			{
 				summary: 'How fast I will receive my request',
 				content:
-					"On average, you'll receive your request in next few days for smaller scope of work: bug fix. For bigger scope of work. like a new feature, it can take up to 2 weeks. For new kickoff project, it can take up to weeks to months depending the complexity of the project. If the scope of work is too big, we'll split it in smaller scope of work for delivery faster where you can review and give feedback. \n\nIf the complexity is kickoff for a project and a advisory, we recommand using the addon for unlimited call. We'll be able to help you to define the next actions for your goal outcome. \n\nIf we can't commit to your project, we'll let you know and we'll refund you."
+					"You can expect to receive a response for minor tasks, such as bug fixes, within a few days of your request. For larger tasks, such as adding a new feature, it can take up to two weeks. For a new project, the response time will depend on its complexity and could extend over weeks or even months. If the project is too large, we will split it into several parts to deliver it more quickly and allow you to review and provide feedback. If we are unable to accept your project, we will notify you before starting work. In this case, we will refund you for any unused days according to your subscription."
 			},
 			{
 				summary: 'Who is the principal Software engineer?',
