@@ -117,7 +117,7 @@
 <Benefits2Section bind:benefits2Section content={data.content} />
 <MembershipSection bind:membershipSection content={data.content} />
 <WhyWorkUsSection bind:whyWorkUsSection content={data.content} />
-<PlansSection bind:plansSection content={data.content} />
+<!-- <PlansSection bind:plansSection content={data.content} /> -->
 <FaqsSection bind:faqsSection content={data.content} />
 
 <footer
@@ -174,7 +174,9 @@
 		transition: transform var(--duration) ease-out;
 		img.animate-scaleUp {
 			transform: scale(1);
-			transition: transform var(--duration) ease-out, box-shadow var(--duration) ease-out;
+			transition:
+				transform var(--duration) ease-out,
+				box-shadow var(--duration) ease-out;
 		}
 
 		img:hover.animate-scaleUp {
