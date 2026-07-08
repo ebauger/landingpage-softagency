@@ -11,3 +11,13 @@ node_modules
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Tooling and generated files
+.beads/
+.claude/
+.devbox/
+.vercel/
+.vscode/
+src/paraglide/
+project.inlang/
+static/

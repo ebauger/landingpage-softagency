@@ -3,13 +3,13 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 	import viewport from '$lib/actions/viewport';
+	import type { PageData } from './$types';
 
 	// Import components
-	import StatusIndicator from '$lib/components/StatusIndicator.svelte';
 	import TerminalMessage from '$lib/components/TerminalMessage.svelte';
 
 	interface Props {
-		data: any;
+		data: PageData;
 	}
 
 	let { data }: Props = $props();
@@ -49,9 +49,7 @@
 	<!-- Video Background Container -->
 	<div class="absolute inset-0 bg-black">
 		<!-- Video placeholder - you can replace this with actual YouTube embed -->
-		<div
-			class="flex h-full w-full items-center justify-center bg-white"
-		>
+		<div class="flex h-full w-full items-center justify-center bg-white">
 			<div class="text-center text-gray-900">
 				<div class="mb-8 text-2xl font-light opacity-80">
 					{data.content.sourcingTalents.hero.videoPlaceholder}
@@ -123,7 +121,7 @@
 		</div>
 
 		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-			{#each data.content.sourcingTalents.advantages.items as item}
+			{#each data.content.sourcingTalents.advantages.items as item (item.title)}
 				<div class="rounded-lg bg-white p-8 shadow-lg slideInUp" use:viewport={{ once }}>
 					<div class="mb-4 text-{item.iconType}-600">
 						<svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -197,10 +195,17 @@
 		</div>
 
 		<div class="grid gap-8 md:grid-cols-3">
-			{#each data.content.sourcingTalents.benefits.items as item}
+			{#each data.content.sourcingTalents.benefits.items as item (item.title)}
 				<div class="text-center slideInUp" use:viewport={{ once }}>
-					<div class="mb-6 inline-flex items-center justify-center rounded-full bg-{item.iconType}-100 p-4">
-						<svg class="h-8 w-8 text-{item.iconType}-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<div
+						class="mb-6 inline-flex items-center justify-center rounded-full bg-{item.iconType}-100 p-4"
+					>
+						<svg
+							class="h-8 w-8 text-{item.iconType}-600"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
 							{#if item.iconType === 'blue'}
 								<path
 									stroke-linecap="round"
@@ -250,7 +255,7 @@
 		</div>
 
 		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-			{#each data.content.sourcingTalents.process.items as item}
+			{#each data.content.sourcingTalents.process.items as item (item.title)}
 				<div class="text-center slideInUp" use:viewport={{ once }}>
 					<div
 						class="mb-6 inline-flex items-center justify-center rounded-full bg-{item.iconType}-600 text-white text-2xl font-bold h-16 w-16"
@@ -324,58 +329,126 @@
 
 	// TV Static Animations
 	@keyframes static-flicker {
-		0% { opacity: 0.1; }
-		25% { opacity: 0.3; }
-		50% { opacity: 0.05; }
-		75% { opacity: 0.2; }
-		100% { opacity: 0.1; }
+		0% {
+			opacity: 0.1;
+		}
+		25% {
+			opacity: 0.3;
+		}
+		50% {
+			opacity: 0.05;
+		}
+		75% {
+			opacity: 0.2;
+		}
+		100% {
+			opacity: 0.1;
+		}
 	}
 
 	@keyframes static-shift {
-		0% { transform: translate3d(0, 0, 0) scale(1); }
-		25% { transform: translate3d(-2px, 2px, 0) scale(1.02); }
-		50% { transform: translate3d(2px, -2px, 0) scale(0.98); }
-		75% { transform: translate3d(-1px, -1px, 0) scale(1.01); }
-		100% { transform: translate3d(0, 0, 0) scale(1); }
+		0% {
+			transform: translate3d(0, 0, 0) scale(1);
+		}
+		25% {
+			transform: translate3d(-2px, 2px, 0) scale(1.02);
+		}
+		50% {
+			transform: translate3d(2px, -2px, 0) scale(0.98);
+		}
+		75% {
+			transform: translate3d(-1px, -1px, 0) scale(1.01);
+		}
+		100% {
+			transform: translate3d(0, 0, 0) scale(1);
+		}
 	}
 
 	@keyframes static-zoom {
-		0% { transform: scale(1); }
-		50% { transform: scale(1.1); }
-		100% { transform: scale(1); }
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
 	}
 
 	@keyframes scanlines {
-		0% { transform: translateY(-100%); }
-		100% { transform: translateY(100%); }
+		0% {
+			transform: translateY(-100%);
+		}
+		100% {
+			transform: translateY(100%);
+		}
 	}
 
 	@keyframes glitch {
-		0% { clip-path: inset(0 0 0 0); }
-		10% { clip-path: inset(20% 0 30% 0); }
-		20% { clip-path: inset(50% 0 20% 0); }
-		30% { clip-path: inset(10% 0 60% 0); }
-		40% { clip-path: inset(80% 0 5% 0); }
-		50% { clip-path: inset(5% 0 80% 0); }
-		60% { clip-path: inset(30% 0 40% 0); }
-		70% { clip-path: inset(60% 0 20% 0); }
-		80% { clip-path: inset(15% 0 70% 0); }
-		90% { clip-path: inset(70% 0 15% 0); }
-		100% { clip-path: inset(0 0 0 0); }
+		0% {
+			clip-path: inset(0 0 0 0);
+		}
+		10% {
+			clip-path: inset(20% 0 30% 0);
+		}
+		20% {
+			clip-path: inset(50% 0 20% 0);
+		}
+		30% {
+			clip-path: inset(10% 0 60% 0);
+		}
+		40% {
+			clip-path: inset(80% 0 5% 0);
+		}
+		50% {
+			clip-path: inset(5% 0 80% 0);
+		}
+		60% {
+			clip-path: inset(30% 0 40% 0);
+		}
+		70% {
+			clip-path: inset(60% 0 20% 0);
+		}
+		80% {
+			clip-path: inset(15% 0 70% 0);
+		}
+		90% {
+			clip-path: inset(70% 0 15% 0);
+		}
+		100% {
+			clip-path: inset(0 0 0 0);
+		}
 	}
 
 	@keyframes rgb-shift {
-		0% { filter: hue-rotate(0deg) saturate(1); }
-		25% { filter: hue-rotate(90deg) saturate(1.2); }
-		50% { filter: hue-rotate(180deg) saturate(0.8); }
-		75% { filter: hue-rotate(270deg) saturate(1.1); }
-		100% { filter: hue-rotate(360deg) saturate(1); }
+		0% {
+			filter: hue-rotate(0deg) saturate(1);
+		}
+		25% {
+			filter: hue-rotate(90deg) saturate(1.2);
+		}
+		50% {
+			filter: hue-rotate(180deg) saturate(0.8);
+		}
+		75% {
+			filter: hue-rotate(270deg) saturate(1.1);
+		}
+		100% {
+			filter: hue-rotate(360deg) saturate(1);
+		}
 	}
 
 	@keyframes noise-pulse {
-		0% { opacity: 0.03; }
-		50% { opacity: 0.08; }
-		100% { opacity: 0.03; }
+		0% {
+			opacity: 0.03;
+		}
+		50% {
+			opacity: 0.08;
+		}
+		100% {
+			opacity: 0.03;
+		}
 	}
 
 	// Text Glitch Animations
@@ -495,7 +568,9 @@
 
 	.tv-static-layer-1 {
 		background: url('/noise.png') center/cover;
-		animation: static-flicker 0.1s infinite, static-shift 3s infinite;
+		animation:
+			static-flicker 0.1s infinite,
+			static-shift 3s infinite;
 		mix-blend-mode: multiply;
 		opacity: 0.1;
 		filter: contrast(2) brightness(1.2) hue-rotate(20deg);
@@ -503,7 +578,9 @@
 
 	.tv-static-layer-2 {
 		background: url('/noise-2.png') center/cover;
-		animation: static-flicker 0.15s infinite reverse, static-shift 4s infinite;
+		animation:
+			static-flicker 0.15s infinite reverse,
+			static-shift 4s infinite;
 		mix-blend-mode: overlay;
 		opacity: 0.08;
 		filter: contrast(1.5) brightness(0.8) saturate(0.8);
@@ -511,7 +588,9 @@
 
 	.tv-static-layer-3 {
 		background: url('/noise-3.png') center/cover;
-		animation: static-flicker 0.2s infinite, static-zoom 5s infinite;
+		animation:
+			static-flicker 0.2s infinite,
+			static-zoom 5s infinite;
 		mix-blend-mode: screen;
 		opacity: 0.06;
 		filter: contrast(1.8) brightness(1.1) sepia(0.2);
@@ -544,7 +623,9 @@
 
 	.tv-static-layer-4 {
 		background: url('/noise-4.png') center/cover;
-		animation: noise-pulse 0.3s infinite, rgb-shift 8s infinite;
+		animation:
+			noise-pulse 0.3s infinite,
+			rgb-shift 8s infinite;
 		mix-blend-mode: color-dodge;
 		opacity: 0.04;
 		filter: contrast(3) brightness(0.9) saturate(1.5);
@@ -580,7 +661,8 @@
 		.title-glitch {
 			animation:
 				appear 1000ms ease 0s 1 normal backwards running,
-				text-glitch-1 6s infinite 4s, // Slower glitch on mobile
+				text-glitch-1 6s infinite 4s,
+				// Slower glitch on mobile
 				text-glitch-2 5s infinite 5s,
 				text-shadow-glitch 8s infinite 6s;
 		}

@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment -- legacy untyped action, typed on rewrite
 // @ts-nocheck
 /*
     A viewport action that:
@@ -11,45 +12,43 @@
  forked from: https://svelte.dev/repl/1c57533d63774c818203a7a5898eb34d
 */
 
-let intersectionObserver
+let intersectionObserver;
 
 function ensureIntersectionObserver() {
-    if (intersectionObserver) return
+	if (intersectionObserver) return;
 
-    intersectionObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport'
-                const className = entry.isIntersecting ? 'onscreen' : 'offscreen'
-                const element = entry.target
+	intersectionObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport';
+			const className = entry.isIntersecting ? 'onscreen' : 'offscreen';
+			const element = entry.target;
 
-                element.dispatchEvent(new CustomEvent(eventName))
+			element.dispatchEvent(new CustomEvent(eventName));
 
-                element.classList.remove('onscreen', 'offscreen')
-                element.classList.add(className)
+			element.classList.remove('onscreen', 'offscreen');
+			element.classList.add(className);
 
-                if (entry.isIntersecting && element.viewportOptions.once) {
-                    intersectionObserver.unobserve(element)
-                }
-            })
-        }
-    )
+			if (entry.isIntersecting && element.viewportOptions.once) {
+				intersectionObserver.unobserve(element);
+			}
+		});
+	});
 }
 
 export default function viewport(element, options = {}) {
-    element.viewportOptions = options
+	element.viewportOptions = options;
 
-    ensureIntersectionObserver()
+	ensureIntersectionObserver();
 
-    intersectionObserver.observe(element)
+	intersectionObserver.observe(element);
 
-    return {
-        update(options = {}) {
-            element.viewportOptions = options
-            intersectionObserver.observe(element)
-        },
-        destroy() {
-            intersectionObserver.unobserve(element)
-        }
-    }
+	return {
+		update(options = {}) {
+			element.viewportOptions = options;
+			intersectionObserver.observe(element);
+		},
+		destroy() {
+			intersectionObserver.unobserve(element);
+		}
+	};
 }

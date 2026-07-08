@@ -1,14 +1,12 @@
 import type { PageLoad } from './$types';
+import { error } from '@sveltejs/kit';
 
 export const load: PageLoad = async ({ params }) => {
-    const { lang } = params;
-    const modules = import.meta.glob('./*.ts');
+	const { lang } = params;
 
-    if (!modules[`./${lang}.ts`]) {
-        // Handle unsupported languages or provide a default
-        return { status: 404, error: new Error('Language not supported') };
-    }
+	if (!['en', 'fr'].includes(lang)) {
+		error(404, 'Language not supported');
+	}
 
-    const { content, DataType } = await modules[`./${lang}.ts`]();
-    return { content, DataType }
+	return { lang };
 };

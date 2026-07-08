@@ -1,52 +1,52 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages.js';
 	import viewport from '$lib/actions/viewport';
 
 	let once = false;
 	interface Props {
 		membershipSection: HTMLElement;
-		content: any;
 	}
 
-	let { membershipSection = $bindable(), content }: Props = $props();
+	let { membershipSection = $bindable() }: Props = $props();
 </script>
 
 <section class="benefits" bind:this={membershipSection}>
-	<h2>{content.membership.title}</h2>
-	<h3>{content.membership.subtitle}</h3>
+	<h2>{m.membership_title()}</h2>
+	<h3>{m.membership_subtitle()}</h3>
 	<a
 		class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
-		href="#plans">{content.membership.startNow}</a
+		href="#plans">{m.membership_startNow()}</a
 	>
 	<div class="benefit-grid fadeIn" use:viewport={{ once }}>
 		<div class="benefit-item">
 			<img src="/animate/edit.apng" alt="edit" class="benefit-item-img" />
-			<h4>{content.membership.benefits.requestsBoard.title}</h4>
-			<p class="benefit-item-text">{content.membership.benefits.requestsBoard.description}</p>
+			<h4>{m.membership_benefits_requestsBoard_title()}</h4>
+			<p class="benefit-item-text">{m.membership_benefits_requestsBoard_description()}</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/calendar.apng" alt="calendar" class="benefit-item-img" />
-			<h4>{content.membership.benefits.quickDelivery.title}</h4>
-			<p class="benefit-item-text">{content.membership.benefits.quickDelivery.description}</p>
+			<h4>{m.membership_benefits_quickDelivery_title()}</h4>
+			<p class="benefit-item-text">{m.membership_benefits_quickDelivery_description()}</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/analysis.apng" alt="analysis" class="benefit-item-img" />
-			<h4>{content.membership.benefits.flatRate.title}</h4>
-			<p class="benefit-item-text">{content.membership.benefits.flatRate.description}</p>
+			<h4>{m.membership_benefits_flatRate_title()}</h4>
+			<p class="benefit-item-text">{m.membership_benefits_flatRate_description()}</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/guarantee.apng" alt="guarantee" class="benefit-item-img" />
-			<h4>{content.membership.benefits.topQuality.title}</h4>
-			<p class="benefit-item-text">{content.membership.benefits.topQuality.description}</p>
+			<h4>{m.membership_benefits_topQuality_title()}</h4>
+			<p class="benefit-item-text">{m.membership_benefits_topQuality_description()}</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/pause.apng" alt="" class="benefit-item-img" />
-			<h4>{content.membership.benefits.flexible.title}</h4>
-			<p class="benefit-item-text">{content.membership.benefits.flexible.description}</p>
+			<h4>{m.membership_benefits_flexible_title()}</h4>
+			<p class="benefit-item-text">{m.membership_benefits_flexible_description()}</p>
 		</div>
 		<div class="benefit-item">
 			<img src="/animate/fingerprint.apng" alt="fingerprint" class="benefit-item-img" />
-			<h4>{content.membership.benefits.uniqueAndYours.title}</h4>
-			<p class="benefit-item-text">{content.membership.benefits.uniqueAndYours.description}</p>
+			<h4>{m.membership_benefits_uniqueAndYours_title()}</h4>
+			<p class="benefit-item-text">{m.membership_benefits_uniqueAndYours_description()}</p>
 		</div>
 	</div>
 </section>

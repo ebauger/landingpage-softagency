@@ -1,33 +1,33 @@
 <script lang="ts">
 	import StatusIndicator from '$lib/components/StatusIndicator.svelte';
+	import * as m from '$paraglide/messages.js';
 
 	interface Props {
 		heroSection: HTMLElement;
-		content: any;
 	}
 
-	let { heroSection = $bindable(), content }: Props = $props();
+	let { heroSection = $bindable() }: Props = $props();
 </script>
 
 <section id="hero" class="relative h-screen w-screen min-w-full border-2" bind:this={heroSection}>
 	<div class="z-10 flex h-full w-full place-content-center bg-opacity-80">
 		<div class="flex flex-col place-content-center items-center gap-6 rounded-full">
-			<img src="/Zbranch.png" alt={content.heroContent.logoAlt} width="150px" />
+			<img src="/Zbranch.png" alt={m.heroContent_logoAlt()} width="150px" />
 			<h1 class="anim pt-6 text-5xl font-extrabold italic sm:text-6xl">
-				{content.heroContent.title}
+				{m.heroContent_title()}
 			</h1>
-			<h2 class="p-8 text-4xl font-extrabold sm:text-5xl">{content.heroContent.subtitle}</h2>
+			<h2 class="p-8 text-4xl font-extrabold sm:text-5xl">{m.heroContent_subtitle()}</h2>
 			<div class="cta-zone flex flex-col-reverse overflow-y-hidden sm:flex-row sm:gap-6">
 				<a
 					class="bg-initial btn mx-auto my-8 w-max text-2xl text-neutral-600 hover:text-neutral-950"
-					href={content.heroContent.cta1Href}>{content.heroContent.cta1}</a
+					href={m.heroContent_cta1Href()}>{m.heroContent_cta1()}</a
 				>
 				<a
 					class="btn variant-filled-primary mx-auto my-8 w-max border-b-4 border-primary-900 text-2xl hover:translate-y-1"
-					href="#plans">{content.heroContent.cta2}</a
+					href="#plans">{m.heroContent_cta2()}</a
 				>
 			</div>
-			<StatusIndicator label={content.availability}/>
+			<StatusIndicator label={m.availability()} />
 		</div>
 	</div>
 	<div class="z-0">

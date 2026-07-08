@@ -1,102 +1,102 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages.js';
 	import viewport from '$lib/actions/viewport';
 
 	let once = false;
 
 	interface Props {
 		whyWorkUsSection: HTMLElement;
-		content: any;
 	}
 
-	let { whyWorkUsSection = $bindable(), content }: Props = $props();
+	let { whyWorkUsSection = $bindable() }: Props = $props();
 </script>
 
 <section class="scope" id="scope" bind:this={whyWorkUsSection}>
-	<h2>{content.whyWorkUs.title}</h2>
+	<h2>{m.whyWorkUs_title()}</h2>
 	<ul class="max-w-10/12 m-4 text-center">
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=1"
 		>
-			{content.whyWorkUs.reasons.webApp}
+			{m.whyWorkUs_reasons_webApp()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=2"
 		>
-			{content.whyWorkUs.reasons.aiIntegration}
+			{m.whyWorkUs_reasons_aiIntegration()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=3"
 		>
-			{content.whyWorkUs.reasons.browserExtension}
+			{m.whyWorkUs_reasons_browserExtension()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=4"
 		>
-			{content.whyWorkUs.reasons.collectData}
+			{m.whyWorkUs_reasons_collectData()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=5"
 		>
-			{content.whyWorkUs.reasons.shopifyBoutique}
+			{m.whyWorkUs_reasons_shopifyBoutique()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=6"
 		>
-			{content.whyWorkUs.reasons.reliableBackend}
+			{m.whyWorkUs_reasons_reliableBackend()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=7"
 		>
-			{content.whyWorkUs.reasons.cloudMigration}
+			{m.whyWorkUs_reasons_cloudMigration()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full"
 			use:viewport={{ once }}
 			style="--animation-step=8"
 		>
-			{content.whyWorkUs.reasons.reinforceTeam}
+			{m.whyWorkUs_reasons_reinforceTeam()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full px-6 py-3"
 			use:viewport={{ once }}
 			style="--animation-step=9"
 		>
-			{content.whyWorkUs.reasons.mvpDevelopment}
+			{m.whyWorkUs_reasons_mvpDevelopment()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full px-6 py-3"
 			use:viewport={{ once }}
 			style="--animation-step=9"
 		>
-			{content.whyWorkUs.reasons.ctoReplacement}
+			{m.whyWorkUs_reasons_ctoReplacement()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full px-6 py-3"
 			use:viewport={{ once }}
 			style="--animation-step=9"
 		>
-			{content.whyWorkUs.reasons.hiringHelp}
+			{m.whyWorkUs_reasons_hiringHelp()}
 		</li>
 		<li
 			class="fadeIn badge variant-filled mb-6 rounded-full px-6 py-3"
 			use:viewport={{ once }}
 			style="--animation-step=9"
 		>
-			{content.whyWorkUs.reasons.ctoLeaveReplacement}
+			{m.whyWorkUs_reasons_ctoLeaveReplacement()}
 		</li>
 	</ul>
 </section>

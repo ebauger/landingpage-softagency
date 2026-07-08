@@ -3,7 +3,7 @@
 		label?: string;
 	}
 
-	let { label = 'Online'}: Props = $props();
+	let { label = 'Online' }: Props = $props();
 </script>
 
 <div class="flex items-center gap-2">

@@ -1,19 +1,19 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages.js';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import viewport from '$lib/actions/viewport';
 	let once = false;
 
 	interface Props {
 		benefitsSection: HTMLElement;
-		content: any;
 	}
 
-	let { benefitsSection = $bindable(), content }: Props = $props();
+	let { benefitsSection = $bindable() }: Props = $props();
 </script>
 
 <section class="benefits" bind:this={benefitsSection}>
-	<h2>{content.benefits.partnerForSuccess}</h2>
-	<h3>{content.benefits.managingTech}</h3>
+	<h2>{m.benefits_partnerForSuccess()}</h2>
+	<h3>{m.benefits_managingTech()}</h3>
 	<div class="benefit-grid">
 		<div class="benefit-item">
 			<img
@@ -22,7 +22,7 @@
 				class="benefit-item-img fadeIn animation-delay-1"
 				use:viewport={{ once }}
 			/>
-			<p class="text-center">{content.benefits.subscribeAndAsk}</p>
+			<p class="text-center">{m.benefits_subscribeAndAsk()}</p>
 		</div>
 		<div class="benefit-item">
 			<img
@@ -31,7 +31,7 @@
 				class="benefit-item-img fadeIn animation-delay-2"
 				use:viewport={{ once }}
 			/>
-			<p class="text-center">{content.benefits.receiveChange}</p>
+			<p class="text-center">{m.benefits_receiveChange()}</p>
 		</div>
 		<div class="benefit-item">
 			<img
@@ -40,7 +40,7 @@
 				class="benefit-item-img fadeIn animation-delay-3"
 				use:viewport={{ once }}
 			/>
-			<p class="text-center">{content.benefits.tuneUp}</p>
+			<p class="text-center">{m.benefits_tuneUp()}</p>
 		</div>
 		<div
 			class="bg-noise slideInLeft relative col-span-3 flex flex-col items-center gap-6 bg-surface-300 p-6"
@@ -48,12 +48,12 @@
 		>
 			<div class="h-14 text-left text-9xl font-extrabold text-tertiary-500">’’</div>
 			<cite class="text-center text-2xl font-semibold">
-				{content.benefits.testimonialText}
+				{m.benefits_testimonialText()}
 			</cite>
 			<div class="flex flex-row items-center gap-4">
 				<Avatar src="/testimonials/riel.jpeg" width="w-12" />
 				<p class="inline-block text-base">
-					{content.benefits.testimonialName}, <strong>{content.benefits.testimonialCompany}</strong>
+					{m.benefits_testimonialName()}, <strong>{m.benefits_testimonialCompany()}</strong>
 				</p>
 			</div>
 			<img class="absolute -right-8 top-0 w-24" src="/blobSquareDots.svg" alt="blob" />

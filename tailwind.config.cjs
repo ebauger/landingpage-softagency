@@ -1,9 +1,9 @@
 // @ts-check
-import { join } from 'path'
+import { join } from 'path';
 
 /* addons */
-import forms from '@tailwindcss/forms'
-import typography from '@tailwindcss/typography'
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
 /* end addons */
 
 import { skeleton } from '@skeletonlabs/tw-plugin';
@@ -15,18 +15,18 @@ module.exports = {
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
-		join(require.resolve(
-			'@skeletonlabs/skeleton'),
-			'../**/*.{html,js,svelte,ts}'
-		)
+		join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
 	theme: {
-		extend: {},
+		extend: {}
 	},
-	plugins: [forms, typography, skeleton({
-		themes: {
-			custom: [myCustomTheme]
-		}
-	})
-	],
-}
+	plugins: [
+		forms,
+		typography,
+		skeleton({
+			themes: {
+				custom: [myCustomTheme]
+			}
+		})
+	]
+};

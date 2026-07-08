@@ -7,16 +7,11 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
-	import type { Config } from '@sveltejs/adapter-vercel';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
 
 	let { children }: Props = $props();
-
-	export const config: Config = {
-		runtime: 'edge'
-	};
 </script>
 
 {@render children?.()}
