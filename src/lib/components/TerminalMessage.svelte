@@ -72,9 +72,7 @@
 		<div class="terminal-content">
 			<pre>$ <span class="typed-text" class:typing={!showTerminated}>{displayMessage}</span></pre>
 			{#if showTerminated}
-				<div class="terminal-result">
-					Terminated
-				</div>
+				<div class="terminal-result">Terminated</div>
 			{/if}
 			{#if showFinalPrompt}
 				<div class="final-prompt">

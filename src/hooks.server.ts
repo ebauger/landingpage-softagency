@@ -1,27 +1,25 @@
-import { sequence } from '@sveltejs/kit/hooks'
+import type { Handle } from '@sveltejs/kit';
+import { paraglideMiddleware } from '$paraglide/server.js';
 
-// Custom locale middleware without complex routing to avoid cookie access errors
-const customLocaleMiddleware = async ({ event, resolve }) => {
-	// Set locale based on URL path or Accept-Language header
-	const url = new URL(event.request.url);
-	const pathSegments = url.pathname.split('/');
-	const langFromPath = pathSegments[1];
+const localizedPath = /^\/(en|fr)(\/|$)/;
 
-	// Check if we have a lang in the URL path (en, fr, etc.)
-	const supportedLangs = ['en', 'fr'];
-	const detectedLang = supportedLangs.includes(langFromPath) ? langFromPath : 'en';
-
-	// Set locale in event.locals for use in components
-	event.locals.locale = detectedLang;
-
-	// Continue with the request
-	return resolve(event);
-};
-
-export const handle = sequence(
-	customLocaleMiddleware,
-	// Your other hooks
-	async function({ event, resolve }) {
-		return resolve(event)
+export const handle: Handle = ({ event, resolve }) => {
+	// Non-localized paths (/, assets) bypass paraglide entirely
+	if (!localizedPath.test(event.url.pathname)) {
+		return resolve(event, {
+			transformPageChunk: ({ html }) => html.replace('%lang%', 'en')
+		});
 	}
-)
+
+	// paraglideMiddleware scopes the locale per request (AsyncLocalStorage),
+	// so m.*() calls during SSR resolve to the locale of the URL
+	return paraglideMiddleware(event.request, ({ request, locale }) => {
+		event.locals.locale = locale;
+		return resolve(
+			{ ...event, request },
+			{
+				transformPageChunk: ({ html }) => html.replace('%lang%', locale)
+			}
+		);
+	});
+};

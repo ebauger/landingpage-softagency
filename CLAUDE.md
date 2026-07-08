@@ -21,3 +21,13 @@ You MUST use this tool whenever writing Svelte code before sending it to the use
 
 Generates a Svelte Playground link with the provided code.
 After completing the code, ask the user if they want a playground link. Only call this tool after user confirmation and NEVER if code was written to files in their project.
+
+## i18n rules (Paraglide JS)
+
+Every page must be available in both `en` and `fr` through Paraglide:
+
+- All user-facing strings go through `m.*()` functions imported from `$paraglide/messages.js` — never hardcode display text in components or routes, and never create per-route translation modules (the old `[lang]/en.ts`/`fr.ts` pattern is banned).
+- Every message key must exist in BOTH `messages/en.json` and `messages/fr.json`, with matching `{placeholder}` names. Values must be plain strings (no arrays, objects, or numbers — they crash the Paraglide compiler; flatten lists into 1-based indexed keys like `faqs_questions_1_summary`).
+- `pnpm check:i18n` (also runs as part of `pnpm check`) enforces the message-file rules; run it after touching `messages/*.json`.
+- New pages live under `src/routes/[lang]/` so they are served at `/en/...` and `/fr/...`. SSR locale is handled by `paraglideMiddleware` in `src/hooks.server.ts`; it only wraps `/en` and `/fr` paths — keep it that way so non-localized paths are not redirected.
+- Dev-only pages (not exposed in production) must guard their server `load` with `if (!dev) error(404)` using `dev` from `$app/environment`, like `sourcing-talents`.

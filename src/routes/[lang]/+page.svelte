@@ -16,36 +16,13 @@
 	import HeroSection from '$lib/sections/HeroSection.svelte';
 	import BenefitsSection from '$lib/sections/BenefitsSection.svelte';
 	import Benefits2Section from '$lib/sections/Benefits2Section.svelte';
-	import PlansSection from '$lib/sections/PlansSection.svelte';
 	import MembershipSection from '$lib/sections/MembershipSection.svelte';
 	import WhyWorkUsSection from '$lib/sections/WhyWorkUsSection.svelte';
 	import FaqsSection from '$lib/sections/FaqsSection.svelte';
-	/* import FloatingMenu from '$lib/sections/FloatingMenu.svelte'; */
 
 	/** Import Datas */
 	import brands from '$lib/data/brands.json';
-	import type { PageData } from './$types';
-	//const { data, DataType } = data;
-
-	//TODO: use data type and convert the json to /lang/fr.ts
-
-	/** Import Studio*/
-	import * as core from '@theatre/core';
-	import studio from '@theatre/studio';
-	interface Props {
-		data: PageData;
-	}
-
-	let { data }: Props = $props();
-
-	function initTheatreStudio() {
-		if (process.env.NODE_ENV === 'development') {
-			studio.initialize();
-			const project = core.getProject('Branch');
-			const sheet = project.sheet('LandingPage');
-			studio.ui.hide();
-		}
-	}
+	import * as m from '$paraglide/messages.js';
 
 	let translateXValue = $state(50);
 	if (browser) {
@@ -65,7 +42,6 @@
 
 	onMount(() => {
 		if (browser) {
-			initTheatreStudio();
 			console.log('setContext', heroSection);
 			setContext('parent', heroSection);
 		}
@@ -77,11 +53,10 @@
 	let benefits2Section: HTMLElement = $state();
 	let membershipSection: HTMLElement = $state();
 	let whyWorkUsSection: HTMLElement = $state();
-	let plansSection: HTMLElement = $state();
 	let faqsSection: HTMLElement = $state();
 </script>
 
-<HeroSection bind:heroSection content={data.content} />
+<HeroSection bind:heroSection />
 <div bind:this={projectElement} class="projects relative">
 	<img
 		loading="lazy"
@@ -103,22 +78,22 @@
 </div>
 <div id="ruban">
 	<div>
-		{#each brands as brand}
+		{#each brands as brand (brand.imgUrl)}
 			<img src={brand.imgUrl} width={brand.width} alt="" />
 		{/each}
 	</div>
 	<div>
-		{#each brands as brand}
+		{#each brands as brand (brand.imgUrl)}
 			<img src={brand.imgUrl} width={brand.width} alt="" />
 		{/each}
 	</div>
 </div>
-<BenefitsSection bind:benefitsSection content={data.content} />
-<Benefits2Section bind:benefits2Section content={data.content} />
-<MembershipSection bind:membershipSection content={data.content} />
-<WhyWorkUsSection bind:whyWorkUsSection content={data.content} />
-<!-- <PlansSection bind:plansSection content={data.content} /> -->
-<FaqsSection bind:faqsSection content={data.content} />
+<BenefitsSection bind:benefitsSection />
+<Benefits2Section bind:benefits2Section />
+<MembershipSection bind:membershipSection />
+<WhyWorkUsSection bind:whyWorkUsSection />
+<!-- <PlansSection bind:plansSection /> -->
+<FaqsSection bind:faqsSection />
 
 <footer
 	id="footer"
@@ -128,43 +103,37 @@
 		<img src="/Zbranch DarkBG.png" alt="logo Zbranch" width="150px" />
 		<ProvinceOfQuebec />
 		<div>
-			<div class="text-white">{data.content.footer.location}</div>
+			<div class="text-white">{m.footer_location()}</div>
 			<div class="text-xs text-white"><CurrentTime /></div>
 		</div>
 	</div>
 	<div class="mt-auto flex flex-col lg:col-span-2 lg:ml-auto lg:flex-row lg:justify-end lg:gap-6">
 		<div>
-			<div class="mb-4 font-bold text-white">{data.content.footer.legals.name}</div>
+			<div class="mb-4 font-bold text-white">{m.footer_legals_name()}</div>
 			<ul class="">
 				<li class="mb-3 list-none">
-					<a href={data.content.footer.legals.links[0].href}
-						>{data.content.footer.legals.links[0].name}</a
-					>
+					<a href={m.footer_legals_links_1_href()}>{m.footer_legals_links_1_name()}</a>
 				</li>
 				<li class="mb-3 list-none">
-					<a href={data.content.footer.legals.links[1].href}
-						>{data.content.footer.legals.links[1].name}</a
-					>
+					<a href={m.footer_legals_links_2_href()}>{m.footer_legals_links_2_name()}</a>
 				</li>
 			</ul>
 		</div>
 		<div>
-			<div class="mb-4 font-bold text-white">{data.content.footer.shortcuts.name}</div>
+			<div class="mb-4 font-bold text-white">{m.footer_shortcuts_name()}</div>
 			<ul class="">
 				<li class="mb-3 list-none">
 					<a href="https://billing.stripe.com/p/login/14k4iybRo2tz5BC288"
-						>{data.content.footer.shortcuts.links[0].name}</a
+						>{m.footer_shortcuts_links_1_name()}</a
 					>
 				</li>
 				<li class="mb-3 list-none">
-					<a href="#plans">{data.content.footer.shortcuts.links[1].name}</a>
+					<a href="#plans">{m.footer_shortcuts_links_2_name()}</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </footer>
-
-<!-- <FloatingMenu /> -->
 
 <style lang="scss">
 	//@import "open-props/postcss/animations";
@@ -304,11 +273,11 @@
 
 		> div {
 			@apply absolute flex items-center gap-28;
-			width: 1568px; //1008px +  5 * 112px
+			width: 1568px; //1008px +  5 * 112px
 			animation: slide 25s linear infinite;
 		}
 		> div:nth-child(2) {
-			left: 2016px; //1008px +  9 * 112px
+			left: 2016px; //1008px +  9 * 112px
 		}
 
 		@keyframes slide {
@@ -316,7 +285,7 @@
 				transform: translate3d(0, 0, 0);
 			}
 			100% {
-				transform: translate3d(-2016px, 0, 0); //1008px +  9 * 112px
+				transform: translate3d(-2016px, 0, 0); //1008px +  9 * 112px
 			}
 		}
 	}
